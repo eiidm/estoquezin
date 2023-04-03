@@ -64,16 +64,16 @@ body
 
 .btn-dois
 {
-    background-color: blueviolet;
-    border: 1px solid blueviolet;
+    background-color:#597FB1;
+    border: 1px solid #597FB1;
     transition: background-color .5s;
 }
 
 .btn-dois:hover
 {
     background-color: #fff;
-    border: 1px solid blueviolet;
-    color: blueviolet;
+    border: 1px solid #597FB1;
+    color: #597FB1;
 }
 
 .container
@@ -91,7 +91,7 @@ body
     border-radius: 15px;
     background-color: #fff;
     width: 960px;
-    height: 50%;
+    height: 60%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -101,7 +101,7 @@ body
 {
     content: "";
     position: absolute;
-    background-color:blueviolet;
+    background-color:#597FB1;
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -113,8 +113,8 @@ body
 /* tela para cadastro */
 .Um
 {
-    height: 500px;
-    border: 1px solid blueviolet;
+    height: 550px;
+    border: 1px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     display: flex;
@@ -236,7 +236,7 @@ body
 {
     background-color: transparent;
     text-decoration: underline 3px;
-    text-decoration-color: blueviolet;
+    text-decoration-color: #597FB1;
 }
 
 .center
