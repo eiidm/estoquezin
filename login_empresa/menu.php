@@ -16,13 +16,25 @@
                 <span></span>
             </label>
             <ul class='menu_box'>
-                <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Produtos/cadastros/cad_pesq_produtos_front.php' target='_parent'>Cadastro de Produtos</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Cadastro de Usuários</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/estatisticas/estatistica.php'>Estatísticas</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
+                <li><a class='menu_item' href=''>Home</a></li>
+
+                <li><a class='menu_topico' href=''>Grupos</a></li>
+                    <li><a class='menu_item' href=''>Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+
+                <li><a class='menu_topico' href=''>Produtos</a></li>
+                    <li><a class='menu_item' href=''>Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href=''>Consulta</a></li>
+
+                <li><a class='menu_topico' href=''>Fornecedoes</a></li>
+                    <li><a class='menu_item' href=''>Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+
+               
             </ul>
            
             
