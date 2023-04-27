@@ -11,4 +11,5 @@ $conecta = mysqli_connect($host, $port, $dbname, $user, $password);
 if (!$conecta) {
         die("Erro ao conectar com o MySQL: " . mysqli_connect_error());
     }
+    
 ?>    
