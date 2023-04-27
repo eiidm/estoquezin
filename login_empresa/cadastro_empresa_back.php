@@ -16,10 +16,10 @@ include "../utils/conexao.php";
            DEFAULT,
            '$razaosocial',  
            '$email', 
-           '$cnpj',
+           $cnpj,
            '$endereco',
-           '$telefone',
-           '$senha');";
+           $telefone,
+           $senha);";
 
 // Execução
    $resultado=mysqli_query($conecta,$sql);
@@ -31,7 +31,7 @@ if ($linhas > 0)
        echo "alert('Empresa salvo com sucesso!')";
        echo '</script>';	
 
-       header("Location: cad_empresa_front.php");
+       header("Location: cadastro_empresa_front.php");
    }   
    else
    {
