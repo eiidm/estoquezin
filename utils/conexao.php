@@ -5,7 +5,6 @@
                         user=efesonet08
                         password=eq173b189";
 
-                        //lmkm
 $conecta = mysqli_connect($stringdeconexao);
 
 if (!$conecta) {
