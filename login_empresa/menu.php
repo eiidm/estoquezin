@@ -17,6 +17,7 @@
             </label>
             <ul class='menu_box'>
                 <li><a class='menu_item' href=''>Home</a></li>
+                <li><a class='menu_item' href=''>Colaborador</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href=''>Cadastro</a></li>
@@ -28,6 +29,7 @@
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
                     <li><a class='menu_item' href=''>Consulta</a></li>
+                    <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
                 <li><a class='menu_topico'>Fornecedoes</a></li>
                     <li><a class='menu_item' href=''>Cadastro</a></li>
@@ -36,12 +38,11 @@
 
                
             </ul>
-           
-            
-           
-           
-            
-            
         </div>
+
+    <div class='home'>
+        <img scr=''>
+    </div>
+
 </body>
 </html>
