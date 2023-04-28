@@ -5,9 +5,8 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../login_empresa/login_empresa.css">
-    <!--<link rel="shortcut icon" href="../imagens/logo.png">-->
-    <title>Cadastro COlaborador</title>
+    <link rel="stylesheet" href="../login_colaborador/login_colaborador.css">
+    <title>Cadastro Colaborador</title>
 </head>
 
 <body>
