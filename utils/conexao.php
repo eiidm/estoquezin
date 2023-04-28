@@ -1,17 +1,16 @@
 <?php
- $stringdeconexao = "host= mysql.efesonet.com
-                        port=3306
-                        dbname=projetoscti4
-                        user=efesonet08
-                        password=eq173b189";
 
-$conecta = mysqli_connect($stringdeconexao);
+$host = mysql.efesonet.com;
+$port=3306; 
+$dbname=efesonet08; // endereço do servidor MySQL
+$user = efesonet08; // nome do usuário do MySQL
+$password = eq173b189; // senha do MySQL
+                        
+$conecta = mysqli_connect($host, $port, $dbname, $user, $password);
 
 if (!$conecta) {
-        echo '<script language="javascript">';
-        echo "alert('Não foi possível estabelecer conexão com o banco de dados!')";
-        echo '</script>';	
-        
-        exit;
+        die("Erro ao conectar com o MySQL: " . mysqli_connect_error());
     }
+
 ?>    
+
