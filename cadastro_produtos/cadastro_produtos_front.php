@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../cadastro_produto/cadastro_produto.css">
+    <link rel="stylesheet" href="../cadastro_produtos/cadastro_produtos.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
@@ -41,7 +41,7 @@
                         <input type="text" name="obs" placeholder="Observação" required>
                     </label>
                 </form>
-            </div>  <!--coluna dois -->
+            </div>  <!--coluna um -->
             
         <div class="colunaDois">
             <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post">                    
@@ -67,7 +67,7 @@
                 
                 <button class="btn btn-dois">Cadastrar produto</button>
             </form>
-            </div>  <!--coluna dois-->
+        </div>  <!--coluna dois-->
         </div>  <!--tela um-->
     </div><!--container-->
 
