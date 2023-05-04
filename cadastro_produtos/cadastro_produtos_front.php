@@ -45,7 +45,7 @@
             </div>  <!--coluna um -->
             
         <div class="colunaDois">
-            <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post">                    
+            <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post" enctype="multipart/form-data">                    
                 <label class="label-input" for="">
                     <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
                 </label>
