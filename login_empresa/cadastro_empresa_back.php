@@ -16,10 +16,10 @@ include "../utils/conexao.php";
            DEFAULT,
            '$razaosocial',  
            '$email', 
-           $cnpj,
+           '$cnpj',
            '$endereco',
-           $telefone,
-           $senha);";
+           '$telefone',
+           '$senha');";
 
 // Execução
    $resultado=mysqli_query($conecta,$sql);
