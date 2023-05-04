@@ -63,7 +63,7 @@
                 </label>
                 
                 <label class="label-input" for="">
-                    <input type="text" name="img" placeholder="   Nome da imagem" required>
+                    <input type="file" name="img" placeholder="   Imagem do produto" required>
                 </label>
                 
                 <button class="btn btn-dois">Cadastrar produto</button>
