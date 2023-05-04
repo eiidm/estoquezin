@@ -113,10 +113,11 @@ body
 /* tela para cadastro */
 .Um
 {
-    height: 550px;
+    height: 900px;
     border: 1px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
+    position: absolute;
     display: flex;
 }
 
@@ -156,7 +157,7 @@ body
 /* tela das informações */
 .colunaDois
 {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
