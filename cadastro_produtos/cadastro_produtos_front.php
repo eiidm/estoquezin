@@ -12,33 +12,34 @@
 <body>
 
     <div class="container">
+   
         <div class="tela Um">
             <div class="colunaDois">
-                <h2 class="texto texto-um">Cadastro de Produtos</h2>
+            <h2 class="texto texto-um">Cadastro de Produtos</h2>
 
                 <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post">                    
                     <label class="label-input" for="">
-                        <input type="text" name="nomematerial" placeholder="Nome do material" required>
+                        <input type="text" name="nomematerial" placeholder="   Nome do material" required>
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="email" name="nomegrupo" placeholder="Nome do grupo" required> 
+                        <input type="email" name="nomegrupo" placeholder="   Nome do grupo" required> 
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="number" name="unidade" placeholder="Unidade" required> 
+                        <input type="number" name="unidade" placeholder="   Unidade" required> 
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="text" name="local" placeholder="Local" required>
+                        <input type="text" name="local" placeholder="   Local" required>
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="text" name="ncm" placeholder="NCM (ID)" required>
+                        <input type="text" name="ncm" placeholder="   NCM (ID)" required>
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="text" name="obs" placeholder="Observação" required>
+                        <input type="text" name="obs" placeholder="   Observação" required>
                     </label>
                 </form>
             </div>  <!--coluna um -->
@@ -46,23 +47,23 @@
         <div class="colunaDois">
             <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post">                    
                 <label class="label-input" for="">
-                    <input type="number" name="estmax" placeholder="Estoque máximo" required> 
+                    <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
                 </label>
                 
                 <label class="label-input" for="">
-                    <input type="number" name="estmin" placeholder="Estoque mínimo" required> 
+                    <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
                 </label>
 
                 <label class="label-input" for="">
-                    <input type="number" name="estideal" placeholder="Estoque ideal" required> 
+                    <input type="number" name="estideal" placeholder="   Estoque ideal" required> 
                 </label>
 
                 <label class="label-input" for="">
-                    <input type="text" name="valor" placeholder="Valor de custo" required>
+                    <input type="text" name="valor" placeholder="   Valor de custo" required>
                 </label>
                 
                 <label class="label-input" for="">
-                    <input type="text" name="img" placeholder="Nome do arquivo de imagem" required>
+                    <input type="text" name="img" placeholder="   Nome da imagem" required>
                 </label>
                 
                 <button class="btn btn-dois">Cadastrar produto</button>
