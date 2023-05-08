@@ -43,11 +43,12 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
+
     <div class="container">
         <div class="tela Um">
             <div class="colunaDois">
             <h2 class="texto texto-um">Cadastro de Grupos</h2>
-<br>
+    <br>
                 <form class="form" action="../cadastro_grupo/cadastro_grupo_back.php" method="post">                    
                     <label class="label-input" for="">
                         <input type="text" name="nomegrupo" placeholder="   Nome do grupo" required>
@@ -56,7 +57,7 @@
                     <button class="btn btn-dois">Cadastrar Grupo</button>
                 </form>
               
-            </div>  <!--coluna um -->
+            </div><!--coluna um -->
             
     
         </div>  <!--tela um-->
