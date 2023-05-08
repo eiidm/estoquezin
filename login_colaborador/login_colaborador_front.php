@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../login_colaborador/login_colaborador.css">
+    <link rel="stylesheet" href="./menu.css">
     <title>Cadastro Colaborador</title>
 </head>
 
@@ -20,12 +21,12 @@
                 <li><a class='menu_item' href='./login_colaborador/login_colaborador_front.php'>Colaborador</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
-                    <li><a class='menu_item' href="./cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
+                    <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
-                    <li><a class='menu_item' href='./cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
                     <li><a class='menu_item' href=''>Consulta</a></li>

@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../login_empresa/login_empresa.css">
+    <link rel="stylesheet" href="./menu.css">
     <!--<link rel="shortcut icon" href="../imagens/logo.png">-->
     <title>Login de Empresas</title>
 </head>
