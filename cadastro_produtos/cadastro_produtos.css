@@ -8,6 +8,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    background-color: #cde9ff;
 }
 
 .texto
@@ -18,7 +19,9 @@ body
 
 .texto-um
 {
-    color: #fff;
+    color: #6a5be2;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .texto-dois
@@ -92,7 +95,7 @@ body
     background-color: #fff;
     width: 960px;
     height: 60%;
-    justify-content: space-between;
+    justify-content: inherit;
     align-items: center;
     position: relative;
 }
@@ -101,20 +104,20 @@ body
 {
     content: "";
     position: absolute;
-    background-color:#597FB1;
+   /* background-color:#597FB1;*/
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
     left: 0;
 }
 
 /* tela para cadastro */
 .Um
 {
-    height: 900px;
-    border: 1px solid#597FB1;
+    margin-top: 500px;
+    height: 500px;
+    border: 2px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     position: absolute;
@@ -129,7 +132,7 @@ body
 /* tela para login */
 .Dois
 {
-    height: 1000px;
+    height: 500px;
     position: absolute;
     display: flex;
 }
@@ -158,6 +161,7 @@ body
 .colunaDois
 {
     width: 50%;
+    margin-left: -50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +178,7 @@ body
 .form input
 {
     height: 45px;
-    width: 100%;
+    width: 280px;
     border: none;
     background-color: #ecf0f1;  
 }
@@ -185,13 +189,10 @@ body
     display: flex;
     align-items: center;
     margin: 8px;
+    height: 45px;
+    width: 280px;
 }
 
-.icon
-{
-    color: #7f8c87;
-    padding: 0 5px;
-}
 
 .lado
 {
