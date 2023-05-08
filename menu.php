@@ -31,7 +31,7 @@
                     <li><a class='menu_item' href=''>Consulta</a></li>
                     <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
-                <li><a class='menu_topico'>Fornecedoes</a></li>
+                <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href=''>Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
