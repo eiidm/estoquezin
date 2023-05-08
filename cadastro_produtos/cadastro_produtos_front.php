@@ -26,7 +26,7 @@
                     <li><a class='menu_item' href=''>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
-                    <li><a class='menu_item' href='./cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href='cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
                     <li><a class='menu_item' href=''>Consulta</a></li>

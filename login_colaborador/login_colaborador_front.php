@@ -18,7 +18,7 @@
         </label>
             <ul class='menu_box'>
                 <li><a class='menu_item' href=''>Home</a></li>
-                <li><a class='menu_item' href='./login_colaborador/login_colaborador_front.php'>Colaborador</a></li>
+                <li><a class='menu_item' href='login_colaborador_front.php'>Colaborador</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
