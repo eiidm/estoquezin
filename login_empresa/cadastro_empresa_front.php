@@ -19,7 +19,7 @@
                 <h2 class="texto texto-um">Seja bem-vindo!</h2>
                 <p class="descricao">Crie a conta da sua empresa</p>
                 <p class="descricao">Insira os dados ao lado</p>
-                <a href="login_front.php"><button class="btn btn-um">Entrar</button></a>
+                <a href="login_empresa_front.php"><button class="btn btn-um">Entrar</button></a>
             </div>  <!--coluna um -->
             
         <div class="colunaDois">
