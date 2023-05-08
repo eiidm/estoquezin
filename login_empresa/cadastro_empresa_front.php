@@ -12,6 +12,38 @@
 </head>
 
 <body>
+    <div class='cabecalho'>
+        <input id='menu_to' type='checkbox' />
+        <label class='menu_btn' for='menu_to'>
+            <span></span>
+        </label>
+            <ul class='menu_box'>
+                <li><a class='menu_item' href=''>Home</a></li>
+                <li><a class='menu_item' href='./login_colaborador/login_colaborador_front.php'>Colaborador</a></li>
+
+                <li><a class='menu_topico'>Grupos</a></li>
+                    <li><a class='menu_item' href="./cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+
+                <li><a class='menu_topico'>Produtos</a></li>
+                    <li><a class='menu_item' href='./cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href=''>Consulta</a></li>
+                    <li><a class='menu_item' href=''>Pedido de compra</a></li>
+
+                <li><a class='menu_topico'>Fornecedores</a></li>
+                    <li><a class='menu_item' href=''>Cadastro</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
+            </ul>
+        </div>
+
+    <div class='home'>
+        <img scr=''>
+    </div> <!-- ------ MENU ------ -->
+
 
     <div class="container">
         <div class="tela Um">
@@ -19,7 +51,7 @@
                 <h2 class="texto texto-um">Seja bem-vindo!</h2>
                 <p class="descricao">Crie a conta da sua empresa</p>
                 <p class="descricao">Insira os dados ao lado</p>
-                <a href="login_front.php"><button class="btn btn-um">Entrar</button></a>
+                <a href="login_empresa_front.php"><button class="btn btn-um">Entrar</button></a>
             </div>  <!--coluna um -->
             
         <div class="colunaDois">
