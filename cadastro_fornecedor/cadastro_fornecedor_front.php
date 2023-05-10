@@ -46,7 +46,8 @@
     <div class="container">
    
         <div class="tela Um">
-            <div class="colunaDois">
+            <div class="colunaUm">
+            <br><br>
             <h2 class="texto texto-um">Cadastro de Fornecedores</h2><br>
 
                 <form class="form" action="../cadastro_fornecedor/cadastro_fornecedor_back.php" method="post">                    
@@ -67,7 +68,7 @@
             
         <div class="colunaDois">
             <form class="form" action="../cadastro_fornecedor/cadastro_forncedor_back.php" method="post">                    
-                
+                    <br><br>
                     <label class="label-input" for="">
                         <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="   CNPJ" required>
                     </label>

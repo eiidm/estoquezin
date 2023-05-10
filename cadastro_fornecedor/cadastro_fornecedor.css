@@ -122,6 +122,7 @@ body
     border-color: blueviolet;*/
     position: absolute;
     display: flex;
+    z-index: -1;
 }
 
 .Um .colunaDois
@@ -152,9 +153,15 @@ body
 /* tela da mensagem */
 .colunaUm
 {
-    text-align: center;
+    width: 50%;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+    /*text-align: center;
     width: 40%;
-    z-index: 10;
+    z-index: 10;*/
 }
 
 /* tela das informações */
