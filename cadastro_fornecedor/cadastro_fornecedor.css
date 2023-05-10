@@ -254,20 +254,3 @@ body
     padding-left: 63%;
     margin-top: 12px;
 }
-
-#file-upload-button{
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 10px 50px;
-    cursor: pointer;
-    align-self: center;
-    border: none;
-    margin-top: 1rem;
-
-    background-color:#597FB1;
-    border: 1px solid #597FB1;
-    transition: background-color .5s;
-}

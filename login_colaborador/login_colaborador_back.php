@@ -27,6 +27,4 @@ else
 
 mysqli_close($conecta);
 
-
-
 ?>
