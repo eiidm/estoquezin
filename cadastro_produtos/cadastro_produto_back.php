@@ -13,7 +13,7 @@ $estideal=$_POST['estideal'];
 $valor=$_POST['valor'];
 
 $sql="INSERT INTO material
-         (id, nomematerial, nomegrupo, unidade, local, id_ncm, estoquemin, estoquemax, estoqueideal, valor_custo)
+         (id, nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo)
          VALUES (
            DEFAULT,
            '$nomematerial',  
@@ -21,10 +21,10 @@ $sql="INSERT INTO material
            '$unidade',
            '$local',
            '$ncm',
-           '$estmin',
-           '$estmax',
-           '$estideal',
-           '$valor');";
+           $estmin,
+           $estmax,
+           $estideal,
+           $valor);";
 
 $resultado=mysqli_query($conecta,$sql);
 $linhas=mysqli_affected_rows($resultado);
