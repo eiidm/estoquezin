@@ -10,7 +10,7 @@ $sql="INSERT INTO nometabelagrupo
            '$nomegrupo');";
 
 $resultado_grupo=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado_grupo);
+$linhas=mysqli_affected_rows(mysqli.$resultado_grupo);
 
 if ($linhas > 0)
 {
