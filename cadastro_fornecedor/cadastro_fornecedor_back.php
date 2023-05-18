@@ -19,8 +19,8 @@ $sql="INSERT INTO nometabelafornecedor
            $inscricao,
            '$number');";
 
-$resultado=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado);
+$resultado_fornc=mysqli_query($conecta,$sql);
+$linhas=mysqli_affected_rows($resultado_fornc);
 
 if ($linhas > 0)
 {

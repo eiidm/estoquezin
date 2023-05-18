@@ -5,10 +5,10 @@ $nome=$_POST['nome'];
 $cpf=$_POST['cpf'];
 
 $sql="INSERT INTO nometabelacolaborador(id, nome, cpf)
-        VALUES(DEFAULT, '$nome', '$cpf); ";
+        VALUES(DEFAULT, '$nome', '$cpf'); ";
 
-$resultado=mysqli_query($conecta, $sql);
-$linhas=mysqli_affected_rows($resultado);
+$resultado_colab=mysqli_query($conecta, $sql);
+$linhas=mysqli_affected_rows($resultado_colab);
 
 if ($linhas > 0)
 {
