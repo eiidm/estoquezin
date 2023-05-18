@@ -7,7 +7,7 @@ $cpf=$_POST['cpf'];
 $sql="INSERT INTO nometabelacolaborador(id, nome, cpf)
         VALUES(DEFAULT, '$nome', '$cpf); ";
 
-$resultado=mysqli_query($conecta,$sql);
+$resultado=mysqli_query($conecta, $sql);
 $linhas=mysqli_affected_rows($resultado);
 
 if ($linhas > 0)
