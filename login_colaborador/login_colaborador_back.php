@@ -4,7 +4,7 @@ include "../utils/conexao.php";
 $nome=$_POST['nome'];
 $cpf=$_POST['cpf'];
 
-$sql="INSERT INTO nometabelacolaborador(id, nome, cpf)
+$sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
         VALUES(DEFAULT, '$nome', '$cpf'); ";
 
 $resultado_colab=mysqli_query($conecta, $sql);
