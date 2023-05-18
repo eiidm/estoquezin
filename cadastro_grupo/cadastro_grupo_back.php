@@ -4,7 +4,7 @@ include "../utils/conexao.php";
 $nomegrupo=$_POST['nomegrupo'];
 
 $sql="INSERT INTO nometabelagrupo
-         (id_grupo, nomegrupo)
+         (id_grupo, nomegrupo)php
          VALUES (
            DEFAULT,
            '$nomegrupo');";
