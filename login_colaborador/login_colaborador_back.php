@@ -2,10 +2,10 @@
 include "../utils/conexao.php";
 
 $nome=$_POST['nome'];
-$cnpj=$_POST['cnpj'];
+$cpf=$_POST['cpf'];
 
-$sql="INSERT INTO colaborador(id, nome, cnpj)
-        VALUES(DEFAULT, '$nome', '$cnpj); ";
+$sql="INSERT INTO nometabelacolaborador(id, nome, cpf)
+        VALUES(DEFAULT, '$nome', '$cpf); ";
 
 $resultado=mysqli_query($conecta,$sql);
 $linhas=mysqli_affected_rows($resultado);

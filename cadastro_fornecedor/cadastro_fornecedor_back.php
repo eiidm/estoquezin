@@ -6,7 +6,7 @@ $razaosocial=$_POST['razaosocial'];
 $contato=$_POST['contato'];
 $cnpj=$_POST['cnpj'];
 $inscricao=$_POST['inscricao'];
-$number=$_POST['number']
+$number=$_POST['number'];
 
 $sql="INSERT INTO nometabelafornecedor
          (id_fornecedor, nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
