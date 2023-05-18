@@ -18,7 +18,7 @@ if ($linhas > 0)
     echo "alert('Empresa salvo com sucesso!')";
     echo '</script>';	
 
-    header("Location: cadastro_fornecedor_front.php");
+    header("Location: cadastro_grupo_front.php");
 }   
 else
 {
