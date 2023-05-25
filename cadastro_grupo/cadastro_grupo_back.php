@@ -4,13 +4,13 @@ include "../utils/conexao.php";
 $nomegrupo=$_POST['nomegrupo'];
 
 $sql="INSERT INTO nometabelagrupo
-         (id_grupo, nomegrupo)php
+         (id_grupo, id_material, nomegrupo)
          VALUES (
            DEFAULT,
            '$nomegrupo');";
 
 $resultado_grupo=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows(mysqli.$resultado_grupo);
+$linhas=mysqli_affected_rows($resultado_grupo);
 
 if ($linhas > 0)
 {
