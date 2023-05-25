@@ -50,7 +50,7 @@
         </div> 
 
         <div class="btn_ver">
-            <a href="./detalhes_produtos_front.php">Ver detalhes</a>
+            <a class="texto_btn" href="./detalhes_produtos_front.php">Ver detalhes</a>
         </div>
     </div>
 
