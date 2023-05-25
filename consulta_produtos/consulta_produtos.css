@@ -1,10 +1,31 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #cde9ff;
+}
+
 .quadro
 {
-
+    background-color: #fff;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
 }
 
 .nome_produto
 {
-    
     text-align: center;
+}
+
+.btn_ver
+{
+    text-align: center;
+    width: 340px;
+    height: 30px;
+    background: #4F719D;
+    color:#fff;
+    margin-left: 5px;
+    text-decoration: none;
 }

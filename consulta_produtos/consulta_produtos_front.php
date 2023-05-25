@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../cadastro_produtos/cadastro_produtos.css">
+    <link rel="stylesheet" href="./consulta_produtos.css">
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
@@ -46,8 +46,12 @@
     <div class="quadro">
         <img src=""> <!-- colocar imagem através do php -->
         <div class="nome_produto">
-            <!-- colocar nome do produto através do php -->
+            aaaaaaaa<!-- colocar nome do produto através do php -->
         </div> 
+
+        <div class="btn_ver">
+            <a href="./detalhes_produtos_front.php">Ver detalhes</a>
+        </div>
     </div>
 
 </body>
