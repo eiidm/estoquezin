@@ -26,8 +26,8 @@ $sql="INSERT INTO material
            $estideal,
            $valor);";
 
-$resultado=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado);
+$resultado_produto=mysqli_query($conecta,$sql);
+$linhas=mysqli_affected_rows($resultado_produto);
 
 if ($linhas > 0)
 {

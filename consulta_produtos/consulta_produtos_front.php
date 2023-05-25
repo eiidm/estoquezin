@@ -43,7 +43,12 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    
+    <div class="quadro">
+        <img src=""> <!-- colocar imagem através do php -->
+        <div class="nome_produto">
+            <!-- colocar nome do produto através do php -->
+        </div> 
+    </div>
 
 </body>
 </html>
