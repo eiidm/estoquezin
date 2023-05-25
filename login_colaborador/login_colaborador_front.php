@@ -60,7 +60,7 @@
 
                     <label class="label-input" for="">
                         <i class="fa-solid fa-id-card icon"></i>
-                        <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="CPF" required>
+                        <input type="text" name="cpf" id="cpf" maxlength="18" placeholder="CPF" required>
                     </label>
         
                     <button type = "submit" class="btn btn-dois">Cadastrar</button>

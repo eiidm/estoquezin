@@ -6,7 +6,7 @@ $razaosocial=$_POST['razaosocial'];
 $contato=$_POST['contato'];
 $cnpj=$_POST['cnpj'];
 $inscricao=$_POST['inscricao'];
-$number=$_POST['number']
+$number=$_POST['number'];
 
 $sql="INSERT INTO nometabelafornecedor
          (id_fornecedor, nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
@@ -19,8 +19,8 @@ $sql="INSERT INTO nometabelafornecedor
            $inscricao,
            '$number');";
 
-$resultado=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado);
+$resultado_fornc=mysqli_query($conecta,$sql);
+$linhas=mysqli_affected_rows($resultado_fornc);
 
 if ($linhas > 0)
 {

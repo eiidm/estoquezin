@@ -2,13 +2,13 @@
 include "../utils/conexao.php";
 
 $nome=$_POST['nome'];
-$cnpj=$_POST['cnpj'];
+$cpf=$_POST['cpf'];
 
-$sql="INSERT INTO colaborador(id, nome, cnpj)
-        VALUES(DEFAULT, '$nome', '$cnpj); ";
+$sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
+        VALUES(DEFAULT, '$nome', '$cpf'); ";
 
-$resultado=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado);
+$resultado_colab=mysqli_query($conecta, $sql);
+$linhas=mysqli_affected_rows(mysqli.$resultado_colab);
 
 if ($linhas > 0)
 {
