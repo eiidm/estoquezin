@@ -48,6 +48,10 @@
         <div class="nome_produto">
             aaaaaaaa<!-- colocar nome do produto através do php -->
         </div> 
+
+        <div class="btn_ver">
+            <a href="./detalhes_produtos_front.php">Ver detalhes</a>
+        </div>
     </div>
 
 </body>
