@@ -118,6 +118,7 @@ body
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     display: flex;
+    z-index: -1;
 }
 
 .Um .colunaDois
