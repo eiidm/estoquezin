@@ -6,10 +6,10 @@ body
 .quadro
 {
     background-color: #fff;
-    padding: 200px;
-    border-radius: 15px;
-   /* width: 96px;
-    height: 20%;*/
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
 }
 
 .nome_produto
