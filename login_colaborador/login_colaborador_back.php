@@ -8,7 +8,7 @@ $sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
         VALUES(DEFAULT, '$nome', '$cpf'); ";
 
 $resultado_colab=mysqli_query($conecta, $sql);
-$linhas=mysqli_affected_rows(mysqli.$resultado_colab);
+$linhas=mysqli_affected_rows($resultado_colab);
 
 if ($linhas > 0)
 {
