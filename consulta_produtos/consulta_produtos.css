@@ -1,10 +1,20 @@
+body
+{
+    background-color: #cde9ff;
+}
+
 .quadro
 {
-
+    background-color: #fff;
+    padding: 200px;
+    border-radius: 15px;
+   /* width: 96px;
+    height: 20%;*/
 }
 
 .nome_produto
 {
-    
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
     text-align: center;
 }
