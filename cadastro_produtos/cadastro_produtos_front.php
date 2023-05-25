@@ -93,6 +93,10 @@
                 <label class="label-input" for="">
                     <input type="text" name="valor" placeholder="   Valor de custo" required>
                 </label>
+
+                <label class="label-input" for="">
+                    <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
+                </label>
                 
                 <label class="label-input" for="">
                     <input type="file" name="img" placeholder="   Imagem do produto" required>
