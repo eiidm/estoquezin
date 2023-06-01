@@ -14,9 +14,9 @@
       {
         $linha = mysqli_fetch_array($res);
 
-        $_SESSION["cnpjlogado"] = $linha;
+        $_SESSION["empresalogada"] = $linha;
         $_SESSION["adm"] = $linha['adm'];
-        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../menu.php'>";
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../index.php'>";
      }
      else
      {
