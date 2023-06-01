@@ -1,9 +1,9 @@
 <?php
 
 $host = "mysql.efesonet.com"; //nome do servidor do MySQL
+$port=3306; //numero da porta no banco
 $usuario = "efesonet08"; // nome do usuário do MySQL
 $password = "eq173b189"; // senha do MySQL
-$port=3306; 
 $database="efesonet08"; // endereço do servidor MySQL
 
 /*
@@ -16,7 +16,7 @@ $database="efesonet08"; // endereço do servidor MySQL
 */
 
                         
-$conecta = mysqli_connect($host, $usuario, $password, $port, $database);
+$conecta = mysqli_connect($host, $usuario, $password, $database, $port);
 
 /*$conecta = mysqli_connect($stringconexao);*/
 
