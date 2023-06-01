@@ -123,6 +123,7 @@ body
     border-color: blueviolet;*/
     position: absolute;
     display: flex;
+    z-index: -1;
 }
 
 .Um .colunaDois

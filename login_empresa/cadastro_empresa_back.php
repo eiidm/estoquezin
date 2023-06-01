@@ -22,8 +22,8 @@ include "../utils/conexao.php";
            '$senha');";
 
 // Execução
-   $resultado=mysqli_query($conecta,$sql);
-   $linhas=mysqli_affected_rows($resultado);
+   $resultado_empresa=mysqli_query($conecta,$sql);
+   $linhas=mysqli_affected_rows($resultado_empresa);
 
 if ($linhas > 0)
    {

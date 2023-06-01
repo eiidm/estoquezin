@@ -29,7 +29,7 @@
                     <li><a class='menu_item' href='cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
-                    <li><a class='menu_item' href=''>Consulta</a></li>
+                    <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
                     <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
@@ -92,6 +92,10 @@
 
                 <label class="label-input" for="">
                     <input type="text" name="valor" placeholder="   Valor de custo" required>
+                </label>
+
+                <label class="label-input" for="">
+                    <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
                 </label>
                 
                 <label class="label-input" for="">

@@ -1,0 +1,32 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #cde9ff;
+}
+
+.quadro
+{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 900px;
+    height: 450px;
+    margin-left: 15px;
+}
+
+.nome_produto
+{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.center
+{
+    margin-left: 200px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
