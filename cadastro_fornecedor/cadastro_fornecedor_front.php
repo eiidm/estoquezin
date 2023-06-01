@@ -29,7 +29,7 @@
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href=''>Alteração</a></li>
                     <li><a class='menu_item' href=''>Exclusão</a></li>
-                    <li><a class='menu_item' href=''>Consulta</a></li>
+                    <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
                     <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
@@ -47,10 +47,9 @@
    
         <div class="tela Um">
             <div class="colunaUm">
-            <br><br>
-            <h2 class="texto texto-um">Cadastro de Fornecedores</h2><br>
+                <br><br><h2 class="texto texto-um">Cadastro de Fornecedores</h2><br>
 
-                <form class="form" action="../cadastro_fornecedor/cadastro_fornecedor_back.php" method="post">                    
+                <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
                     <label class="label-input" for="">
                         <input type="text" name="nomefornecedor" placeholder="   Nome do fornecedor" required>
                     </label>
@@ -66,24 +65,24 @@
                 </form>
             </div>  <!--coluna um -->
             
-        <div class="colunaDois">
-            <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
+            <div class="colunaDois">
+                <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
                     <br><br>
                     <label class="label-input" for="">
                         <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="   CNPJ" required>
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="number" name="inscricao" placeholder="     Inscrição Estadual" required>
+                        <input type="number" name="inscricao" placeholder="   Inscrição Estadual" required>
+                    </label>
+                        
+                    <label class="label-input" for="">
+                        <input type="tel" id="phone" name="phone" placeholder="   Telefone" required>
                     </label>
                     
-                    <label class="label-input" for="">
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="   Telefone" required>
-                    </label>
-                
-                <button class="btn btn-dois">Cadastrar fornecedor</button>
-            </form>
-        </div>  <!--coluna dois-->
+                    <button class="btn btn-dois">Cadastrar fornecedor</button>
+                </form>
+            </div>  <!--coluna dois-->
         </div>  <!--tela um-->
     </div><!--container-->
 

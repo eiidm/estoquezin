@@ -48,11 +48,11 @@
             <div class="colunaUm">
                 <h2 class="texto texto-um">Cadastre seu colaborador</h2>
                 <p class="descricao">Insira os dados do colaborador ao lado</p>
-               </div>  <!--coluna usa um -->
+            </div>  <!--coluna um -->
             
             <div class="colunaDois">
-            <h2 class="texto texto-dois">Cadastre aqui</h2>
-                <form class="form" action="login_colaborador_back.php" method="post">
+                <h2 class="texto texto-dois">Cadastre aqui</h2>
+                <form class="form" action="./login_colaborador_back.php" method="post">
                     <label class="label-input" for="">
                         <i class="fa-solid fa-user icon"></i>
                         <input type="text" name="nome" placeholder="Nome" required>
