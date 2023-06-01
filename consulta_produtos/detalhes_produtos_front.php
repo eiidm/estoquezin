@@ -44,33 +44,28 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="center">
-        <div class="coluna_um">
-            <div class="quadro">
+        <div class="quadro">
+            <div class="colunaUm">
                 <img src=""> <!-- colocar imagem através do php -->
                 <div class="nome_produto">
                     aaaaaaaa<!-- colocar nome do produto através do php -->
-                </div> 
-            </div><!--quadro-->
-        </div><!--coluna um-->
+                </div>
+            </div><!--coluna um-->
 
-        <div class="coluna_dois">
-            <div class="texto">
-                NCM:
-                Nome do material:
-                Local:
-                Quantidade:
-                Valor de custo:
-            </div>
-        </div><!--coluna dois-->
-
-        <div class="coluna_tres">
-            <div class="texto">
-                Observação:
-                Estoque máximo:
-                Estoque mínimo:
-                Estoque ideal:
-            </div>
-        </div><!--coluna tres-->
+            <div class="colunaDois">
+                <div class="texto">
+                    <br><br>NCM:
+                    <br><br>Nome do material:
+                    <br><br>Local:
+                    <br><br>Quantidade:
+                    <br><br>Valor de custo:
+                    <br><br>Observação:
+                    <br><br>Estoque máximo:
+                    <br><br>Estoque mínimo:
+                    <br><br>Estoque ideal:
+                </div>
+            </div><!--coluna dois-->
+        </div><!--quadro-->
     </div><!--center-->
 
 </body>

@@ -34,7 +34,7 @@ $linhas=mysqli_affected_rows($resultado_produto);
 if ($linhas > 0)
 {
      echo '<script language="javascript">';
-     echo "alert('Empresa salvo com sucesso!')";
+     echo "alert('Produto salvo com sucesso!')";
      echo '</script>';	
 
      header("Location: cadastro_produto_front.php");
@@ -42,7 +42,7 @@ if ($linhas > 0)
 else
 {
     echo '<script language="javascript">';
-    echo "alert('Erro na gravação da empresa!')";
+    echo "alert('Erro na gravação do produto!')";
     echo '</script>';	
  }
 

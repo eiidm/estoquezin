@@ -67,7 +67,7 @@
             </div>  <!--coluna um -->
             
         <div class="colunaDois">
-            <form class="form" action="../cadastro_fornecedor/cadastro_forncedor_back.php" method="post">                    
+            <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
                     <br><br>
                     <label class="label-input" for="">
                         <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="   CNPJ" required>

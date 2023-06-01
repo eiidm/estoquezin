@@ -49,7 +49,7 @@
             <div class="colunaDois">
             <h2 class="texto texto-um">Cadastro de Produtos</h2>
 
-                <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post">                    
+                <form class="form" action="./cadastro_produto_back.php" method="post">                    
                     <label class="label-input" for="">
                         <input type="text" name="nomematerial" placeholder="   Nome do material" required>
                     </label>
@@ -77,7 +77,7 @@
             </div>  <!--coluna um -->
             
         <div class="colunaDois">
-            <form class="form" action="../cadastro_produto/cadastro_produto_back.php" method="post" enctype="multipart/form-data">                    
+            <form class="form" action="./cadastro_produto_back.php" method="post" enctype="multipart/form-data">                    
                 <label class="label-input" for="">
                     <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
                 </label>
