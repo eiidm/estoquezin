@@ -10,30 +10,23 @@ body
     background-color: #fff;
     border-radius: 10px;
     width: 900px;
-    height: 350px;
+    height: 450px;
     margin-left: 15px;
 }
 
 .nome_produto
 {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
 }
 
-.btn_ver
+.center
 {
+    margin-left: 200px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    width: 340px;
-    height: 30px;
-    background: #4F719D;
-    margin-left: 5px;
-    border-radius: 3px;
-}
-
-.texto_btn
-{
-    padding-top: 5px;
-    text-align: center;
-    color:#fff;
-    text-decoration: none;
 }
