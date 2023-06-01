@@ -11,7 +11,7 @@ $estmax=$_POST['estmax'];
 $estmin=$_POST['estmin'];
 $estideal=$_POST['estideal'];
 $valor=$_POST['valor'];
-$excluido=$_POST['excluido'];
+$excluido='n';
 
 $sql="INSERT INTO material
          (id, nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, excluido)
@@ -26,7 +26,7 @@ $sql="INSERT INTO material
            $estmax,
            $estideal,
            $valor,
-           $excluido);";
+           '$excluido');";
 
 $resultado_produto=mysqli_query($conecta,$sql);
 $linhas=mysqli_affected_rows($resultado_produto);
