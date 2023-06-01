@@ -9,7 +9,7 @@ body
 {
     background-color: #fff;
     border-radius: 10px;
-    width: 900px;
+    width: 350px;
     height: 350px;
     margin-left: 15px;
 }
@@ -28,6 +28,7 @@ body
     background: #4F719D;
     margin-left: 5px;
     border-radius: 3px;
+    padding-top: 3%;
 }
 
 .texto_btn
