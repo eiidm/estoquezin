@@ -7,20 +7,21 @@ ul{
     margin-left: auto;
     margin-right: auto;
     margin: 0px auto;
-    background-color: #112D4E;
+  
 
 }
-
+.corpo{
+    display: flex;
+    margin-top: 10px;
+}
 .Colunaum
 {
-    margin-left:150px;
+
     float: left;
-    width: 700px;
 }
 .descricao{
     justify-content: space-between;
-    display:flex;
-    height: 570px;
+    height: 500px;
 }
 .desc_img1{
     
@@ -35,18 +36,29 @@ ul{
     border-bottom-right-radius: 8px;
 }
 .desc_btn{
-    background-color: #78a1d7;
+   /* background-color: #78a1d7;
     width: 236px;
     height: 21px;
-    margin-left: 150px;
-    /* position: absolute; */
+    margin-left: 100px;
+     position: absolute; 
     padding: 10px;
     backface-visibility: hidden;
+    */
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
 }
 
 .desc_btn a{
     
-    text-decoration: none;
+   /* text-decoration: none;
     border: 3px;
     
     outline: none;
@@ -59,13 +71,17 @@ ul{
     
     color: #595858;
     text-decoration: none;
-    font-size: 18px;
-    width: 75px;
+    font-size: 16px;
+    width: 80px;
+    */
+    background-color:#597FB1;
+    border: 1px solid #597FB1;
+    transition: background-color .5s;
     
 }
 .desc_btn a:hover{
     
-    text-decoration: none;
+   /* text-decoration: none;
     border: 3px;
     
     outline: none;
@@ -79,7 +95,10 @@ ul{
     color: #000000;
     text-decoration: double;
     font-size: 18px;
-
+*/
+background-color: #fff;
+border: 1px solid #597FB1;
+color: #597FB1;
    
 }
 /* .desc_txt{
@@ -98,7 +117,7 @@ ul{
     text-align: justify;
     letter-spacing: -0.015em;
     color: #000000;
-    margin-left: 50px;
+    margin-left: 120px;
     width: 30%;
 }
 .desc_txt2{
@@ -108,7 +127,6 @@ ul{
         text-align: start;
         letter-spacing: -0.015em;
         color: #211b51;
-        margin-top: -392px;
         margin-left: 50px;
 }
 .prod_btn1 a{
@@ -150,13 +168,14 @@ ul{
     color: #9797a5;
 }
 
-.prod_imgs {
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 8%;
-    margin-right:8%;
-    border-radius: 8px;
+    padding-left: 8%;
+    padding-right:8%;
+    background-color: #a3ceef;
+ 
 }
 .prod_img{
         width: 100%;
@@ -173,9 +192,9 @@ ul{
     padding-left: 13px;
     padding-right: 13px;
     width: 30%;
-    background-color: #ffffff;
+    background-color: #BBD2EC;
     border-radius: 8px;
-    height:500px;
+    height:200px;
     
 }
 
@@ -197,8 +216,13 @@ ul{
 }
 .colunadois
 {
-    margin-left:150px;
-    float: left;
-    width: 700px;
 
+    margin-left:100px;
+    float: left;
+    width: 100%;
+
+}
+
+.imghome{
+    width: 100%;
 }

@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class= 'mae'>
     <div class='cabecalho'>
         <input id='menu_to' type='checkbox' />
         <label class='menu_btn' for='menu_to'>
@@ -38,11 +39,12 @@
                     <li><a class='menu_item' href=''>Exclusão</a></li>
             </ul>
         </div>
-
-    <div class='colunadois'>
-        <img scr=''>
-    </div> <!-- ------ MENU ------ -->
+ <!-- ------ MENU ------ -->
     <div class="corpo">
+        
+    <div class='colunadois'>
+        <img src="imghome.jpg" alt='imagem da home' class='imghome'>
+    </div>
             <a name="topo"></a>
             <div class="Colunaum">
                 <div class="descricao"> 
@@ -54,41 +56,39 @@
         
              </div>
         </div>
-            <br>
-            <div class="prod_imgs">
-
-                <div class="prod1">
-                    <div class="prod_txt1">
-                        <p class="prod_txt">
-                            O totem responsável por registrar momentos de forma fisica.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="prod2">
-                
-                    <div class="prod_txt1">
-                        <p class="prod_txt">
-                            Tire foto com amigos para que possam se lembrar do dia.
-                        </p>
-                    
-                    </div>
-                </div>
-                <div class="prod3">
-               
-                    <div class="prod_txt1">
-                        <p class="prod_txt">
-                            E por fim tenha registrado de forma fisica.
-                         </p>
-                    </div>
-                </div>
-            </div>
-            <br><br>
 
         </div>
+        <div class="footer">
+
+<div class="prod1">
+    <div class="prod_txt1">
+        <p class="prod_txt">
+        Eficiência: Um estoque organizado permite localizar e acessar os produtos de forma rápida e precisa, otimizando os processos operacionais e economizando tempo.
+        </p>
+    </div>
+</div>
+
+<div class="prod2">
+
+    <div class="prod_txt1">
+        <p class="prod_txt">
+        Controle: A organização do estoque possibilita um controle efetivo do inventário, permitindo identificar discrepâncias e agir prontamente para corrigi-las, evitando faltas ou excessos de produtos.
+        </p>
+    
+    </div>
+</div>
+<div class="prod3">
+
+    <div class="prod_txt1">
+        <p class="prod_txt">
+        Satisfação do cliente: Um estoque organizado contribui para cumprir prazos de entrega, evitar erros de envio e garantir a disponibilidade dos produtos desejados pelos clientes, o que resulta em maior satisfação e fidelização dos mesmos.
+         </p>
+    </div>
+</div>
+</div>
    
   
-
+</div>
 
 </body>
 </html>
