@@ -24,7 +24,7 @@ body
     margin-left: 30px;
 }
 
-.texto-dois
+/*.texto-dois
 {    
     color: #6a5be2;
 }
@@ -35,7 +35,7 @@ body
     font-weight: 300;
     color: #fff;
     line-height: 30px;
-}
+}*/
 
 .btn
 {
@@ -125,13 +125,14 @@ body
     display: flex;
 }
 
+/*
 .Um .colunaDois
 {
     z-index: 0;
-}
+}*/
 
 /* tela para login */
-.Dois
+/*.Dois
 {
     height: 500px;
     position: absolute;
@@ -148,15 +149,16 @@ body
 {
     order: 1;
     z-index: -1;
-}
+}*/
 
 /* tela da mensagem */
-.colunaUm
+
+/*.colunaUm
 {
     text-align: center;
     width: 40%;
     z-index: 10;
-}
+}*/
 
 /* tela das informações */
 .colunaDois

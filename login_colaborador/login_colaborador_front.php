@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../login_colaborador/login_colaborador.css">
+    <link rel="stylesheet" href="./login_colaborador.css">
     <link rel="stylesheet" href="./menu.css">
     <title>Cadastro Colaborador</title>
 </head>
@@ -51,8 +51,7 @@
             
             <div class="colunaDois">
                 <h2 class="texto texto-dois">Cadastre aqui</h2>
-                <form class="form" action="../login_colaborador/login_colaborador_back.php" method="post">
-                                
+                <form class="form" action="../login_colaborador/login_colaborador_back.php" method="post">                    
                     <label class="label-input" for="">
                         <i class="fa-solid fa-user icon"></i>
                         <input type="text" name="nome" placeholder="Nome" required>
@@ -60,10 +59,10 @@
 
                     <label class="label-input" for="">
                         <i class="fa-solid fa-id-card icon"></i>
-                        <input type="text" name="cpf" id="cpf" maxlength="18" placeholder="CPF" required>
+                        <input type="text" name="cpf" maxlength="18" placeholder="CPF" required>
                     </label>
-        
-                    <button class="btn btn-dois">Cadastrar</button>
+
+                    <button type="submit" class="btn btn-dois">Cadastrar</button>
                 </form>
             </div>  <!--coluna dois-->
         </div><!--tela um-->

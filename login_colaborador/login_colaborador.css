@@ -58,7 +58,7 @@ body
 .btn-um:hover
 {
     background-color: #fff;
-    color: #6a5be2
+    color: #6a5be2;
     /*color:blueviolet;*/
 }
 
@@ -107,19 +107,21 @@ body
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
     left: 0;
 }
 
 /* tela para cadastro */
 .Um
 {
-    height: 550px;
+    margin-top: 500px;
+    height: 500px;
     border: 1px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     display: flex;
     z-index: -1;
+
+    position: absolute;
 }
 
 .Um .colunaDois
