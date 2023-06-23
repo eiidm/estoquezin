@@ -125,41 +125,6 @@ body
     display: flex;
 }
 
-/*
-.Um .colunaDois
-{
-    z-index: 0;
-}*/
-
-/* tela para login */
-/*.Dois
-{
-    height: 500px;
-    position: absolute;
-    display: flex;
-}
-
-.Dois .colunaUm
-{
-    order: 2;
-    z-index: -1;
-}
-
-.Dois .colunaDois
-{
-    order: 1;
-    z-index: -1;
-}*/
-
-/* tela da mensagem */
-
-/*.colunaUm
-{
-    text-align: center;
-    width: 40%;
-    z-index: 10;
-}*/
-
 /* tela das informações */
 .colunaDois
 {

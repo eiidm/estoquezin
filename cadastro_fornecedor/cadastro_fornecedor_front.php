@@ -43,12 +43,10 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="container">
-   
+        <h2 class="texto texto-um">Cadastro de Fornecedores</h2><br>
         <div class="tela Um">
-            <div class="colunaUm">
-                <br><br><h2 class="texto texto-um">Cadastro de Fornecedores</h2><br>
-
-                <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
+            <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
+                <div class="colunaDois">       
                     <label class="label-input" for="">
                         <input type="text" name="nomefornecedor" placeholder="   Nome do fornecedor" required>
                     </label>
@@ -60,12 +58,7 @@
                     <label class="label-input" for="">
                         <input type="text" name="contato" placeholder="   Nome para contato" required> 
                     </label>
-                </form>
-            </div>  <!--coluna um -->
-            
-            <div class="colunaDois">
-                <form class="form" action="./cadastro_fornecedor_back.php" method="post">                    
-                    <br><br>
+                
                     <label class="label-input" for="">
                         <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="   CNPJ" required>
                     </label>
@@ -79,8 +72,8 @@
                     </label>
                     
                     <button class="btn btn-dois">Cadastrar fornecedor</button>
-                </form>
-            </div>  <!--coluna dois-->
+                </div>  <!--coluna dois-->
+            </form>            
         </div>  <!--tela um-->
     </div><!--container-->
 
