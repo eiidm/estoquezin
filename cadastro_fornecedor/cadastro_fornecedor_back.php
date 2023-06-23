@@ -19,13 +19,13 @@ $sql="INSERT INTO nometabelafornecedor
            $inscricao,
            '$number');";
 
-<<<<<<< Updated upstream
+
 $resultado_fornc=mysqli_query($conecta,$sql);
 $linhas=mysqli_affected_rows($resultado_fornc);
-=======
+
 $resultado=mysqli_query($conecta, $sql);
 $linhas=mysqli_affected_rows($resultado);
->>>>>>> Stashed changes
+
 
 if ($linhas > 0)
 {

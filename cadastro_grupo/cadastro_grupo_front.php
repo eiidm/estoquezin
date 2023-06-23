@@ -54,12 +54,10 @@
                         <input type="text" name="nomegrupo" placeholder="   Nome do grupo" required>
                     </label>
 
-                    <button class="btn btn-dois">Cadastrar Grupo</button>
+                    <button type="submit" class="btn btn-dois">Cadastrar Grupo</button>
                 </form>
               
             </div><!--coluna um -->
-            
-    
         </div>  <!--tela um-->
     </div><!--container-->
 

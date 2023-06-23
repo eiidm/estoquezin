@@ -61,7 +61,6 @@
                     <label class="label-input" for="">
                         <input type="text" name="contato" placeholder="   Nome para contato" required> 
                     </label>
-
                 </form>
             </div>  <!--coluna um -->
             
