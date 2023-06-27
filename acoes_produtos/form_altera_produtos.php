@@ -43,7 +43,91 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-          
+    <?php
+       $id = $_GET["id"];
+       include "info_produtos_back.php"; 
+    ?>   
 
+    <div class="container">
+        <h2 class="texto texto-um">Alteração de Produtos</h2>
+        <div class="tela Um">
+            <form class="form" action="./alterar_produtos_back.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="colunaUm">
+                        Código do produto
+                        <label class="label-input">
+                            <input type="text" name="id" value="<?php echo $linha['id']; ?>" readonly>
+                        </label>
+       
+                        <br>Nome do material
+                        <label class="label-input">
+                            <input type="text" name="nomematerial" value="<?php echo $linha['nomematerial']; ?>" >
+                        </label>
+        
+                        <br>Nome do grupo
+                        <label class="label-input">
+                            <input type="text" name="nomegrupo" value="<?php echo $linha['nomegrupo']; ?>" >
+                        </label>
+
+                        <br>Unidade
+                        <label class="label-input">
+                            <input type="number" name="unidade" value="<?php echo $linha['unidade']; ?>" >
+                        </label>
+        
+                        <br>Local
+                        <label class="label-input">
+                            <input type="text" name="local" value="<?php echo $linha['local']; ?>" >
+                        </label>
+
+                        <br>NCM (ID)
+                        <label class="label-input">
+                            <input type="number" name="ncm" value="<?php echo $linha['ncm']; ?>" >
+                        </label>
+
+                        <br>Observação
+                        <label class="label-input">
+                            <input type="text" name="obs" value="<?php echo $linha['obs']; ?>" >
+                        </label>
+                    </div><!--coluna um-->
+
+                    <div class="colunaDois">
+                        Estoque máximo
+                        <label class="label-input">
+                            <input type="number" name="estmax" value="<?php echo $linha['estmax']; ?>" >
+                        </label>
+                        
+                        <br>Estoque mínimo
+                        <label class="label-input">
+                            <input type="number" name="estmin" value="<?php echo $linha['estmin']; ?>" >
+                        </label>
+                        
+                        <br>Estoque ideal
+                        <label class="label-input">
+                            <input type="number" name="estideal" value="<?php echo $linha['estideal']; ?>" >
+                        </label>
+
+                        <br>Valor
+                        <label class="label-input">
+                            <input type="text" name="valor" value="<?php echo $linha['valor']; ?>" >
+                        </label>
+
+                        <br>Excluido(s/n)
+                        <label class="label-input">
+                            <input type="text" name="excluido" value="<?php echo $linha['excluido']; ?>" >
+                        </label>
+
+                        <br>Imagem do produto
+                        <label class="label-input">
+                            <input type="file" name="img" value="<?php echo $linha['img']; ?>" >
+                        </label>
+                    </div><!--coluna dois-->
+                </div><!--row-->
+
+                <div class="lado">
+                    <button class="btn btn-dois">Alterar</button>
+                </div>
+            </form>
+        </div><!--tela um-->
+    </div><!--container-->
 </body>
 </html>
