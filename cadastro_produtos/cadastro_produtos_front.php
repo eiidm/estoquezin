@@ -44,12 +44,11 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="container">
-   
+        <h2 class="texto texto-um">Cadastro de Produtos</h2>
         <div class="tela Um">
-            <div class="colunaDois">
-            <h2 class="texto texto-um">Cadastro de Produtos</h2>
-
-                <form class="form" action="./cadastro_produto_back.php" method="post">                    
+            <form class="form" action="./cadastro_produto_back.php" method="post" enctype="multipart/form-data"> 
+            <div class="row">    
+            <div class="colunaUm">      
                     <label class="label-input" for="">
                         <input type="text" name="nomematerial" placeholder="   Nome do material" required>
                     </label>
@@ -73,38 +72,39 @@
                     <label class="label-input" for="">
                         <input type="text" name="obs" placeholder="   Observação" required>
                     </label>
-                </form>
-            </div>  <!--coluna um -->
+                </div>  <!--coluna um -->
             
-        <div class="colunaDois">
-            <form class="form" action="./cadastro_produto_back.php" method="post" enctype="multipart/form-data">                    
-                <label class="label-input" for="">
-                    <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
-                </label>
-                
-                <label class="label-input" for="">
-                    <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
-                </label>
+                <div class="colunaDois">                    
+                    <label class="label-input" for="">
+                        <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
+                    </label>
 
-                <label class="label-input" for="">
-                    <input type="number" name="estideal" placeholder="   Estoque ideal" required> 
-                </label>
+                    <label class="label-input" for="">
+                        <input type="number" name="estideal" placeholder="   Estoque ideal" required> 
+                    </label>
 
-                <label class="label-input" for="">
-                    <input type="text" name="valor" placeholder="   Valor de custo" required>
-                </label>
+                    <label class="label-input" for="">
+                        <input type="text" name="valor" placeholder="   Valor de custo" required>
+                    </label>
 
-                <label class="label-input" for="">
-                    <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
-                </label>
+                    <label class="label-input" for="">
+                        <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <input type="file" name="img" placeholder="   Imagem do produto" required>
+                    </label>
+                </div>  <!--coluna dois-->
+            </div>
                 
-                <label class="label-input" for="">
-                    <input type="file" name="img" placeholder="   Imagem do produto" required>
-                </label>
-                
-                <button class="btn btn-dois">Cadastrar produto</button>
+            <div class="lado">
+                <button class="btn btn-dois">Cadastrar produto</button></div>
             </form>
-        </div>  <!--coluna dois-->
+        
         </div>  <!--tela um-->
     </div><!--container-->
 
