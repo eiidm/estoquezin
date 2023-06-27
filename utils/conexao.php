@@ -6,11 +6,7 @@ $usuario = "efesonet08"; // nome do usuário do MySQL
 $password = "eq173b189"; // senha do MySQL
 $database="efesonet08"; // endereço do servidor MySQL
 
-
-                        
 $conecta = mysqli_connect($host, $usuario, $password, $database, $port);
-
-/*$conecta = mysqli_connect($stringconexao);*/
 
 if (!$conecta) {
         die("Erro ao conectar com o MySQL: " . mysqli_connect_error());
