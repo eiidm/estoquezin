@@ -1,6 +1,6 @@
 <?php
 
-$host = "mysql24-farm10.kighost.net"; //nome do servidor do MySQL
+$host = "mysql24-farm10.kinghost.net"; //nome do servidor do MySQL
 $port=3306; //numero da porta no banco
 $usuario = "efesonet08"; // nome do usuário do MySQL
 $password = "eq173b189"; // senha do MySQL
