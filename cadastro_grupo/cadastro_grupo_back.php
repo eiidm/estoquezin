@@ -9,7 +9,7 @@ $sql="INSERT INTO nometabelagrupo
            DEFAULT,
            '$nomegrupo');";
 
-$resultado_grupo=mysqli_query($conecta,$sql);
+$resultado_grupo=mysqli_query($conecta);
 $linhas=mysqli_affected_rows($resultado_grupo);
 
 if ($linhas > 0)

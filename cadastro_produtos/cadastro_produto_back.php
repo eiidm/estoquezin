@@ -28,7 +28,7 @@ $sql="INSERT INTO material
            $valor,
            '$excluido');";
 
-$resultado_produto=mysqli_query($conecta,$sql);
+$resultado_produto=mysqli_query($conecta);
 $linhas=mysqli_affected_rows($resultado_produto);
 
 if ($linhas > 0)

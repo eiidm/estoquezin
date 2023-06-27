@@ -27,7 +27,7 @@
                 valor = $valor
            WHERE id = $id;";
     
-    $resultado_alterado=mysqli_query($conecta,$sql);
+    $resultado_alterado=mysqli_query($conecta);
     $qtde=mysqli_affected_rows($resultado_alterado);
 
     if ($qtde > 0)
@@ -35,7 +35,7 @@
     else	
         echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=form_altera_produtos_front.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=pesquisar_produtos_front.php'>";
 
     // Fechando conexão com o Banco de Dados
     mysqli_close($conecta);

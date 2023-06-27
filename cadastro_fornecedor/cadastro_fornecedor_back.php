@@ -20,11 +20,9 @@ $sql="INSERT INTO nometabelafornecedor
            '$number');";
 
 
-$resultado_fornc=mysqli_query($conecta,$sql);
+$resultado_fornc=mysqli_query($conecta);
 $linhas=mysqli_affected_rows($resultado_fornc);
 
-$resultado=mysqli_query($conecta, $sql);
-$linhas=mysqli_affected_rows($resultado);
 
 
 if ($linhas > 0)

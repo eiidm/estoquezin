@@ -8,14 +8,9 @@ $cpf=$_POST['cpf'];
 $sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
         VALUES(DEFAULT, '$nome', '$cpf'); ";
 
-$resultado_colab=mysqli_query($conecta, $sql);
+$resultado_colab=mysqli_query($conecta);
 $linhas=mysqli_affected_rows($resultado_colab);
 
-$sql="INSERT INTO colaborador(id, nome, cnpj)
-        VALUES(DEFAULT, '$nome', '$cnpj'); ";
-
-$resultado_colaborador=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado_colaborador);
 
 if ($linhas > 0)
 {

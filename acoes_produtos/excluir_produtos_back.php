@@ -15,7 +15,7 @@
 
     //echo $sql;
 
-    $resultado_exclusao=pg_query($conecta,$sql);
+    $resultado_exclusao=pg_query($conecta);
     $qtde=mysqli_affected_rows($resultado_exclusao);
 
     if ($qtde > 0 )
