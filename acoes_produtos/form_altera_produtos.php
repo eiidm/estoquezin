@@ -53,12 +53,7 @@
         <div class="tela Um">
             <form class="form" action="./alterar_produtos_back.php" method="post" enctype="multipart/form-data">
                 <div class="row">
-                    <div class="colunaUm">
-                        Código do produto
-                        <label class="label-input">
-                            <input type="text" name="id" value="<?php echo $linha['id']; ?>" readonly>
-                        </label>
-       
+                    <div class="colunaUm">       
                         <br>Nome do material
                         <label class="label-input">
                             <input type="text" name="nomematerial" value="<?php echo $linha['nomematerial']; ?>" >
@@ -91,7 +86,7 @@
                     </div><!--coluna um-->
 
                     <div class="colunaDois">
-                        Estoque máximo
+                        <br>Estoque máximo
                         <label class="label-input">
                             <input type="number" name="estmax" value="<?php echo $linha['estmax']; ?>" >
                         </label>
