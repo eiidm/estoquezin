@@ -45,7 +45,7 @@
 
     <?php
        $id = $_GET["id"];
-       include "info_produtos_back.php"; 
+       include "cad_getinfo_produto_back.php"; 
     ?>   
 
     <div class="container">
