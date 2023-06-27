@@ -23,5 +23,5 @@
     else
         echo "<script type='text/javascript'>alert('Erro na exclusão !!!')</script>";
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=excluir_produtos_front.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=pesquisar_produtos_front.php'>";
 ?>

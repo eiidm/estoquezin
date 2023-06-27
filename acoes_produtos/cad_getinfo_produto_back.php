@@ -12,7 +12,7 @@
         echo '<script language="javascript">';
         echo "alert('Produto não encontrado!')";
         echo '</script>';	
-        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=form_altera_produtos_front.php'>";
+        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=pesquisar_produtos_front.php'>";
         exit;
     }
 
