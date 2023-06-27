@@ -47,64 +47,64 @@
         <h2 class="texto texto-um">Cadastro de Produtos</h2>
         <div class="tela Um">
             <form class="form" action="./cadastro_produto_back.php" method="post" enctype="multipart/form-data"> 
-            <div class="row">    
-                <div class="colunaUm">      
-                    <label class="label-input" for="">
-                        <input type="text" name="nomematerial" placeholder="   Nome do material" required>
-                    </label>
+                <div class="row">    
+                    <div class="colunaUm">      
+                        <label class="label-input" for="">
+                            <input type="text" name="nomematerial" placeholder="   Nome do material" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="nomegrupo" placeholder="   Nome do grupo" required> 
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="text" name="nomegrupo" placeholder="   Nome do grupo" required> 
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="number" name="unidade" placeholder="   Unidade" required> 
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="number" name="unidade" placeholder="   Unidade" required> 
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="local" placeholder="   Local" required>
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="text" name="local" placeholder="   Local" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="number" name="ncm" placeholder="   NCM (ID)" required>
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="number" name="ncm" placeholder="   NCM (ID)" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="obs" placeholder="   Observação" required>
-                    </label>
-                </div>  <!--coluna um -->
-            
-                <div class="colunaDois">                    
-                    <label class="label-input" for="">
-                        <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="number" name="estideal" placeholder="   Estoque ideal" required> 
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="text" name="valor" placeholder="   Valor de custo" required>
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <input type="file" name="img" placeholder="   Imagem do produto" required>
-                    </label>
-                </div>  <!--coluna dois-->
-            </div><!--coluna row-->
+                        <label class="label-input" for="">
+                            <input type="text" name="obs" placeholder="   Observação" required>
+                        </label>
+                    </div>  <!--coluna um -->
                 
-            <div class="lado">
-                <button class="btn btn-dois">Cadastrar produto</button></div>
+                    <div class="colunaDois">                    
+                        <label class="label-input" for="">
+                            <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
+                        </label>
+                        
+                        <label class="label-input" for="">
+                            <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
+                        </label>
+
+                        <label class="label-input" for="">
+                            <input type="number" name="estideal" placeholder="   Estoque ideal" required> 
+                        </label>
+
+                        <label class="label-input" for="">
+                            <input type="text" name="valor" placeholder="   Valor de custo" required>
+                        </label>
+
+                        <label class="label-input" for="">
+                            <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
+                        </label>
+                        
+                        <label class="label-input" for="">
+                            <input type="file" name="img" placeholder="   Imagem do produto" required>
+                        </label>
+                    </div>  <!--coluna dois-->
+                </div><!--coluna row-->
+                
+                <div class="lado">
+                    <button class="btn btn-dois">Cadastrar produto</button>
+                </div>
             </form>
-        
         </div>  <!--tela um-->
     </div><!--container-->
 
