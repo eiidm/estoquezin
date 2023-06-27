@@ -48,7 +48,7 @@
         <div class="tela Um">
             <form class="form" action="./cadastro_produto_back.php" method="post" enctype="multipart/form-data"> 
             <div class="row">    
-            <div class="colunaUm">      
+                <div class="colunaUm">      
                     <label class="label-input" for="">
                         <input type="text" name="nomematerial" placeholder="   Nome do material" required>
                     </label>
@@ -99,7 +99,7 @@
                         <input type="file" name="img" placeholder="   Imagem do produto" required>
                     </label>
                 </div>  <!--coluna dois-->
-            </div>
+            </div><!--coluna row-->
                 
             <div class="lado">
                 <button class="btn btn-dois">Cadastrar produto</button></div>

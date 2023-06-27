@@ -43,7 +43,91 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-          
+    <?php
+       $id = $_GET["id"];
+       include "alterar_produtos_back.php"; 
+    ?>   
 
+    <div class="container">
+        <h2 class="texto texto-um">Alteração de Produtos</h2>
+        <div class="tela Um">
+            <form class="form" action="./alterar_produtos_back.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="colunaUm">
+                        Código do produto
+                        <label class="label-input">
+                            <input type="text" name="id" value="<?php echo $linha['id']; ?>" readonly>
+                        </label>
+       
+                        <br><br>Nome do material
+                        <label class="label-input">
+                            <input type="text" name="nomematerial" value="<?php echo $linha['nomematerial']; ?>" >
+                        </label>
+        
+                        <br><br>Nome do grupo
+                        <label class="label-input">
+                            <input type="text" name="nomegrupo" value="<?php echo $linha['nomegrupo']; ?>" >
+                        </label>
+
+                        <br><br>Unidade
+                        <label class="label-input">
+                            <input type="number" name="unidade" value="<?php echo $linha['unidade']; ?>" >
+                        </label>
+        
+                        <br><br>Local
+                        <label class="label-input">
+                            <input type="text" name="local" value="<?php echo $linha['local']; ?>" >
+                        </label>
+
+                        <br><br>NCM (ID)
+                        <label class="label-input">
+                            <input type="number" name="ncm" value="<?php echo $linha['ncm']; ?>" >
+                        </label>
+
+                        <br><br>Observação
+                        <label class="label-input">
+                            <input type="text" name="obs" value="<?php echo $linha['obs']; ?>" >
+                        </label>
+                    </div><!--coluna um-->
+
+                    <div class="colunaDois">
+                        <br><br>Estoque máximo
+                        <label class="label-input">
+                            <input type="number" name="estmax" value="<?php echo $linha['estmax']; ?>" >
+                        </label>
+                        
+                        <br><br>Estoque mínimo
+                        <label class="label-input">
+                            <input type="number" name="estmin" value="<?php echo $linha['estmin']; ?>" >
+                        </label>
+                        
+                        <br><br>Estoque ideal
+                        <label class="label-input">
+                            <input type="number" name="estideal" value="<?php echo $linha['estideal']; ?>" >
+                        </label>
+
+                        <br><br>Valor
+                        <label class="label-input">
+                            <input type="text" name="valor" value="<?php echo $linha['valor']; ?>" >
+                        </label>
+
+                        <br><br>Excluido(s/n)
+                        <label class="label-input">
+                            <input type="text" name="excluido" value="<?php echo $linha['excluido']; ?>" >
+                        </label>
+
+                        <br><br>Imagem do produto
+                        <label class="label-input">
+                            <input type="file" name="img" value="<?php echo $linha['img']; ?>" >
+                        </label>
+                    </div><!--coluna dois-->
+                </div><!--row-->
+
+                <br><br>
+                <input type="submit" value="Gravar">
+                <input type="reset" value="Voltar" onclick="history.back()">
+            </form>
+        </div><!--tela um-->
+    </div><!--container-->
 </body>
 </html>
