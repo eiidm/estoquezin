@@ -22,8 +22,8 @@
 
                 <li><a class='menu_topico'>Empresas</a></li>
                     <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
@@ -32,8 +32,8 @@
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='./alterar_produtos_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='./excluir_produtos_front.php'>Exclusão</a></li>
                     <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
                     <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
@@ -55,7 +55,7 @@
         </div> 
 
         <div class="btn_ver">
-            <a class="texto_btn" href="./detalhes_produtos_front.php">Excluir Produto</a>
+            <a class="texto_btn" href="./excluir_produtos_back.php">Excluir Produto</a>
         </div>
     </div>       
 

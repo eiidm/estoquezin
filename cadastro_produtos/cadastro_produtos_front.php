@@ -22,8 +22,8 @@
 
                 <li><a class='menu_topico'>Empresas</a></li>
                     <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
@@ -55,7 +55,7 @@
                 <div class="row">    
                     <div class="colunaUm">      
                         <label class="label-input" for="">
-                            <input type="text" name="nomematerial" placeholder="   Nome do material" required>
+                            <input type="text" name="nomematerial" placeholder="   Nome do Produto" required>
                         </label>
 
                         <label class="label-input" for="">
