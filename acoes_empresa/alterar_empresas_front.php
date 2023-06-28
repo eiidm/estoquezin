@@ -7,7 +7,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Alterar Produtos</title>
+    <title>Alterar Empresas</title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
         </div> 
 
         <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_empresas.php">Alterar Dados</a>
+            <a class="texto_btn" href="./form_altera_empresas_front.php">Alterar Dados</a>
         </div>
     </div>       
 
