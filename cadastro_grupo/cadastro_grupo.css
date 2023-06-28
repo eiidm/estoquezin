@@ -21,21 +21,8 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 9px;
 }
-
-/*.texto-dois
-{    
-    color: #6a5be2;
-}
-
-.descricao
-{
-    font-size: 14px;
-    font-weight: 300;
-    color: #fff;
-    line-height: 30px;
-}*/
 
 .btn
 {
@@ -48,7 +35,7 @@ body
     cursor: pointer;
     align-self: center;
     border: none;
-    margin-top: 1rem;
+    margin-top: 25px;
 }
 
 .btn-um
@@ -100,24 +87,12 @@ body
     position: relative;
 }
 
-.tela::before
-{
-    content: "";
-    position: absolute;
-   /* background-color:#597FB1;*/
-    width: 40%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    left: 0;
-}
-
 /* tela para cadastro */
 .Um
 {
-    margin-top: 500px;
-    height: 400px;
-    width: 750px;
+    margin-top: 260px;
+    height: 310px;
+    width: 620px;
     border: 2px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
@@ -128,8 +103,8 @@ body
 /* tela das informações */
 .colunaDois
 {
-    width: 50%;
-    margin-left: -50px;
+    width: 100%;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,8 +133,8 @@ body
     align-items: center;
     margin: 8px;
     height: 45px;
-    width: 280px;
-    margin-left: -20px;
+    width: 275px;
+    margin-left: 40px;
 }
 
 
