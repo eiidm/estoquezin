@@ -1,5 +1,5 @@
 <?php
-include("../utils/conexao.php")
+include("../utils/conexao.php");
 
 $nomematerial=$_POST["nomematerial"];
 $nomegrupo=$_POST["nomegrupo"];
