@@ -40,8 +40,8 @@
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href='../cadastro_fornecedor/cadastro_fornecedor_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_fornecedor/excluir_fornecedores_front.php'>Exclusão</a></li>
             </ul>
         </div>
 
