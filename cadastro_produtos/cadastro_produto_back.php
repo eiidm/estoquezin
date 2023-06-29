@@ -13,16 +13,13 @@ $estideal=$_POST["estideal"];
 $valor=$_POST["valor"];
 $excluido='n';
 
-$sql="INSERT INTO material
-         (nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, excluido)
-         VALUES (
-           '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
-           '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}')";
+$sql=$conecta->query("INSERT INTO material
+(nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, excluido)
+VALUES (
+  '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
+  '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}')");
 
-$resultado_produto= $conecta->query($sql);
-$linhas=mysqli_affected_rows($resultado_produto);
-
-if ($linhas > 0)
+if ($sql==true)
 {
      echo '<script language="javascript">';
      echo "alert('Produto salvo com sucesso!')";

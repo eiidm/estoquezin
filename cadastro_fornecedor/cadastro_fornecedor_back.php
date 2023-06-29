@@ -8,18 +8,11 @@ $cnpj=$_POST["cnpj"];
 $inscricao=$_POST["inscricao"];
 $number=$_POST["number"];
 
-$sql="INSERT INTO nometabelafornecedor
-         (nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
-         VALUES (
-           '{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')";
+$sql= $conecta->query("INSERT INTO nometabelafornecedor(nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
+VALUES ('{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')");
 
 
-$resultado_fornc=$conecta->query($sql);
-$linhas=mysqli_affected_rows($resultado_fornc);
-
-
-
-if ($linhas > 0)
+if ($sql==true)
 {
     echo '<script language="javascript">';
     echo "alert('Empresa salvo com sucesso!')";

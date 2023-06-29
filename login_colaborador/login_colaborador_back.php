@@ -5,14 +5,10 @@ $nome=$_POST["nome"];
 $cpf=$_POST["cpf"];
 
 
-$sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
-        VALUES( '{$nome}', '{$cpf}') ";
+$sql=$conecta->query("INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
+VALUES( '{$nome}', '{$cpf}') ");
 
-$resultado_colab=$conecta->query($sql);
-$linhas=mysqli_affected_rows($resultado_colab);
-
-
-if ($linhas > 0)
+if ($sql==true)
 {
      echo '<script language="javascript">';
      echo "alert('Empresa salvo com sucesso!')";

@@ -3,12 +3,9 @@ include ("../utils/conexao.php");
 
 $nomegrupo=$_POST["nomegrupo"];
 
-$sql="INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')";
+$sql=$conecta->query("INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')");
 
-$resultado_grupo=$conecta->query($sql);
-$linhas=mysqli_affected_rows($resultado_grupo);
-
-if ($linhas > 0)
+if ($sql==true)
 {
     echo '<script language="javascript">';
     echo "alert('Empresa salvo com sucesso!')";
