@@ -21,11 +21,11 @@ body
     margin-left: 15px;
 }
 
-.nome_empresa
+.nome_fornecedor
 {
     font-weight: bold;
     text-align: center;
-    margin-top: 8px;
+    padding-top: 25px;
 }
 
 .dados
