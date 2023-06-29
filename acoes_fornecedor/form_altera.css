@@ -21,7 +21,13 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-top: -35px;
+    margin-left: 520px;
+    margin-top: 25px;
+}
+
+.texto-dois
+{    
+    color: #6a5be2;
 }
 
 .descricao
@@ -43,7 +49,6 @@ body
     cursor: pointer;
     align-self: center;
     border: none;
-    margin-top: 1rem;
 }
 
 .btn-um
@@ -65,6 +70,7 @@ body
     background-color:#597FB1;
     border: 1px solid #597FB1;
     transition: background-color .5s;
+    width: 219px;
 }
 
 .btn-dois:hover
@@ -76,41 +82,35 @@ body
 
 .container
 {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 65px;
+    flex-wrap: wrap;
+
+    padding-top: 50px;
 }
 
 .tela
 {
     border-radius: 15px;
     background-color: #fff;
-    width: 800px;
+    width: 960px;
     height: 60%;
-    justify-content: space-between;
-    display: flex;
+    justify-content: inherit;
     align-items: center;
     position: relative;
-
-    flex-flow: row wrap;
+    z-index: -1;
 }
 
 /* tela para cadastro */
 .Um
 {
-    margin-top: 375px;
-    height: 495px;
-    width: 650px;
+    margin-left: 300px;
+    height: 450px;
+    width: 730px;
     border: 2px solid#597FB1;
     position: absolute;
     display: flex;
     z-index: -1;
-}
-
-.Um .colunaDois
-{
-    z-index: 0;
 }
 
 /* tela para login */
@@ -124,38 +124,37 @@ body
 /* tela da mensagem */
 .colunaUm
 {
-    margin-top: 80px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: left;
+    flex: 1;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 55px;
+    margin-top: 30px;
 }
 
 /* tela das informações */
 .colunaDois
 {
-    margin-top: 50px;
-    margin-left: 193px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .form
 {
     display: flex;
     flex-direction: column;
+    width: 55%;
     text-align: center;
 }
 
 .form input
 {
     height: 45px;
-    width: 250px;
+    width: 280px;
     border: none;
-    background-color: #ecf0f1;  
+    background-color: #ecf0f1; 
 }
 
 .label-input
@@ -164,11 +163,65 @@ body
     display: flex;
     align-items: center;
     margin: 8px;
+    height: 45px;
+    width: 280px;
 }
 
 
 .lado
 {
-    padding-left: 5px;
-    margin-top: 5px;
+    padding-left: 255px;
+    margin-top: 25px;
+}
+
+#botoes
+{
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#botoes:link 
+{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+}
+
+#botoes:hover
+{
+    background-color: transparent;
+    text-decoration: underline 3px;
+    text-decoration-color: #597FB1;
+}
+
+.center
+{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.baixo
+{
+    padding-left: 63%;
+    margin-top: 12px;
+}
+
+.row
+{
+    width: 100%;
+    display: flex;
 }

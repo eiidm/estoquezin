@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #cde9ff;
+}
+
+.quadro
+{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin-left: 15px;
+}
+
+.nome_empresa
+{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.dados
+{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    line-height: 40px;
+}
+
+.btn_ver
+{
+    text-align: center;
+    width: 240px;
+    height: 30px;
+    background: #4F719D;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding-top: 7px;
+    margin-top: 20px;
+}
+
+.texto_btn
+{
+    padding-top: 5px;
+    text-align: center;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
