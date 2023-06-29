@@ -5,7 +5,7 @@ $nome=$_POST["nome"];
 $cpf=$_POST["cpf"];
 
 
-$sql=$conecta->query("INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
+$sql=$conecta->query("INSERT INTO nometabelacolaborador(nome, cpf)
 VALUES( '{$nome}', '{$cpf}') ");
 
 if ($sql==true)
