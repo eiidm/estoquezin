@@ -22,8 +22,8 @@ $resultado_empresa=$conecta->query($sql);
 $sql= $conecta->query("INSERT INTO nometabelaempresa(razaosocial, email, cnpj, endereco, telefone, senha) VALUES (
     '{$razaosocial}',  '{$email}', '{$cnpj}', '{$endereco}', '{$telefone}', '{$senha}')");
 
-/*
-if($resultado_empresa==true)
+
+if($sql==true)
 {
    echo '<script language="javascript">';
    echo "alert('Empresa salvo com sucesso!')";
@@ -40,5 +40,5 @@ else
  
    // Fecha a conexão com o MySQL
    mysqli_close($conecta);
-*/
+
 ?>
