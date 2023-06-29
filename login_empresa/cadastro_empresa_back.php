@@ -19,7 +19,7 @@ include ("../utils/conexao.php");
 $resultado_empresa=$conecta->query($sql);
 */
 
-$sql= MySQLi->query("INSERT INTO nometabelaempresa(razaosocial, email, cnpj, endereco, telefone, senha) VALUES (
+$sql= $conecta->query("INSERT INTO nometabelaempresa(razaosocial, email, cnpj, endereco, telefone, senha) VALUES (
     '{$razaosocial}',  '{$email}', '{$cnpj}', '{$endereco}', '{$telefone}', '{$senha}')");
 
 /*
