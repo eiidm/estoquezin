@@ -59,6 +59,10 @@
                         <input type="text" name="nomegrupo" placeholder="   Nome do grupo" required>
                     </label>
 
+                    <label class="label-input" for="">
+                        <input type="number" name="id_material" placeholder="   Id do material" required>
+                    </label>
+
                     <button type="submit" class="btn btn-dois">Cadastrar Grupo</button>
                 </form>
               
