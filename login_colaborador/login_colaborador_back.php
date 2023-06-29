@@ -1,14 +1,14 @@
 <?php
-include "../utils/conexao.php";
+include("../utils/conexao.php") ;
 
-$nome=$_POST['nome'];
-$cpf=$_POST['cpf'];
+$nome=$_POST["nome"];
+$cpf=$_POST["cpf"];
 
 
 $sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
-        VALUES(DEFAULT, '$nome', '$cpf'); ";
+        VALUES( '{$nome}', '{$cpf}') ";
 
-$resultado_colab=mysqli_query($conecta);
+$resultado_colab=$conecta->mysqli_query($sql);
 $linhas=mysqli_affected_rows($resultado_colab);
 
 

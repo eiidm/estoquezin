@@ -17,9 +17,9 @@ $sql="INSERT INTO material
          (nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, excluido)
          VALUES (
            '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
-           '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}');";
+           '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}')";
 
-$resultado_produto= $conecta->query($sql);
+$resultado_produto= $conecta->MySQLi_query($sql);
 $linhas=mysqli_affected_rows($resultado_produto);
 
 if ($linhas > 0)

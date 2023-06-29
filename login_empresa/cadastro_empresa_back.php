@@ -1,28 +1,22 @@
 <?php
-include "../utils/conexao.php"; 
+include ("../utils/conexao.php"); 
 
 // Recuperação de dados
-   $razaosocial=$_POST['razaosocial'];
-   $email=$_POST['email'];
-   $cnpj=$_POST['cnpj'];
-   $endereco=$_POST['endereco'];
-   $telefone=$_POST['telefone'];
-   $senha=$_POST['senha'];
+   $razaosocial=$_POST["razaosocial"];
+   $email=$_POST["email"];
+   $cnpj=$_POST["cnpj"];
+   $endereco=$_POST["endereco"];
+   $telefone=$_POST["telefone"];
+   $senha=$_POST["senha"];
   
 // Inserção
    $sql="INSERT INTO nometabelaempresa
-         (id_empresa, razaosocial, email, cnpj, endereco, telefone, senha)
+         (razaosocial, email, cnpj, endereco, telefone, senha)
          VALUES (
-           DEFAULT,
-           '$razaosocial',  
-           '$email', 
-           '$cnpj',
-           '$endereco',
-           '$telefone',
-           '$senha');";
+           '{$razaosocial}',  {'$email'}, {'$cnpj'}, {'$endereco'}, {'$telefone'}, {'$senha'})";
 
 // Execução
-   $resultado_empresa=mysqli_query($conecta);
+   $resultado_empresa=$conecta->MySQLi_query($sql);
    $linhas=mysqli_affected_rows($resultado_empresa);
 
 if ($linhas > 0)

@@ -1,26 +1,20 @@
 <?php
-include "../utils/conexao.php"; 
+include ("../utils/conexao.php"); 
 
-$nomefornecedor=$_POST['nomefornecedor'];
-$razaosocial=$_POST['razaosocial'];
-$contato=$_POST['contato'];
-$cnpj=$_POST['cnpj'];
-$inscricao=$_POST['inscricao'];
-$number=$_POST['number'];
+$nomefornecedor=$_POST["nomefornecedor"];
+$razaosocial=$_POST["razaosocial"];
+$contato=$_POST["contato"];
+$cnpj=$_POST["cnpj"];
+$inscricao=$_POST["inscricao"];
+$number=$_POST["number"];
 
 $sql="INSERT INTO nometabelafornecedor
-         (id_fornecedor, nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
+         (nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
          VALUES (
-           DEFAULT,
-           '$nomefornecedor',  
-           '$razaosocil', 
-           '$contato',
-           '$cnpj',
-           $inscricao,
-           '$number');";
+           '{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')";
 
 
-$resultado_fornc=mysqli_query($conecta);
+$resultado_fornc=$conecta->MySQLi_query($sql);
 $linhas=mysqli_affected_rows($resultado_fornc);
 
 
