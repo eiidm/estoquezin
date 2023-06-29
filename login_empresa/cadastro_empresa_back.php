@@ -10,14 +10,19 @@ include ("../utils/conexao.php");
    $senha=$_POST["senha"];
   
 // Inserção
-   $sql="INSERT INTO nometabelaempresa
+   /*$sql="INSERT INTO nometabelaempresa
          (razaosocial, email, cnpj, endereco, telefone, senha)
          VALUES (
            '{$razaosocial}',  {'$email'}, {'$cnpj'}, {'$endereco'}, {'$telefone'}, {'$senha'})";
 
 // Execução
 $resultado_empresa=$conecta->query($sql);
+*/
 
+mysqli->query("INSERT INTO nometabelaempresa(razaosocial, email, cnpj, endereco, telefone, senha) VALUES (
+    '{$razaosocial}',  '{$email}', '{$cnpj}', '{$endereco}', '{$telefone}', '{$senha}')");
+
+/*
 if($resultado_empresa==true)
 {
    echo '<script language="javascript">';
@@ -35,5 +40,5 @@ else
  
    // Fecha a conexão com o MySQL
    mysqli_close($conecta);
-
+*/
 ?>
