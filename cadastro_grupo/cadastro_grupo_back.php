@@ -1,10 +1,9 @@
 <?php
 include ("../utils/conexao.php");
 
-$id_material=$_POST["id_material"];
 $nomegrupo=$_POST["nomegrupo"];
 
-$sql="INSERT INTO nometabelagrupo (id_material, nomegrupo) VALUES ('{$id_material}', '{$nomegrupo}')";
+$sql="INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')";
 
 $resultado_grupo=$conecta->query($sql);
 $linhas=mysqli_affected_rows($resultado_grupo);
