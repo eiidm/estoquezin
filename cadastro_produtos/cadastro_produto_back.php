@@ -19,7 +19,7 @@ $sql="INSERT INTO material
            '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
            '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}');";
 
-$resultado_produto=$conecta->query($sql);
+$resultado_produto=mysqli_query($conecta, $sql);
 $linhas=mysqli_affected_rows($resultado_produto);
 
 if ($linhas > 0)
