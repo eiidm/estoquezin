@@ -14,7 +14,7 @@ $sql="INSERT INTO nometabelafornecedor
            '{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')";
 
 
-$resultado_fornc=$conecta->MySQLi_query($sql);
+$resultado_fornc=$conecta->query($sql);
 $linhas=mysqli_affected_rows($resultado_fornc);
 
 

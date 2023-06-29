@@ -8,7 +8,7 @@ $cpf=$_POST["cpf"];
 $sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
         VALUES( '{$nome}', '{$cpf}') ";
 
-$resultado_colab=$conecta->mysqli_query($sql);
+$resultado_colab=$conecta->query($sql);
 $linhas=mysqli_affected_rows($resultado_colab);
 
 
