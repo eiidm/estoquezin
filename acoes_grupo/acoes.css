@@ -16,8 +16,8 @@ body
 {
     background-color: #fff;
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin-left: 15px;
 }
 
@@ -26,26 +26,19 @@ body
     font-weight: bold;
     text-align: center;
     margin-top: 8px;
-}
-
-.dados
-{
-    text-align: left;
-    margin-left: 25px;
-    margin-top: 22px;
-    line-height: 40px;
+    line-height: 130px;
 }
 
 .btn_ver
 {
     text-align: center;
-    width: 240px;
-    height: 30px;
+    width: 140px;
+    height: 25px;
     background: #4F719D;
     margin-left: 5px;
     border-radius: 3px;
-    padding-top: 7px;
-    margin-top: 20px;
+    padding-top: 3px;
+    margin-top: -12px; 
 }
 
 .texto_btn
@@ -54,5 +47,4 @@ body
     text-align: center;
     color:#fff;
     text-decoration: none;
-    font-weight: bold;
 }

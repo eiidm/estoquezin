@@ -21,12 +21,7 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-left: 30px;
-}
-
-.texto-dois
-{    
-    color: #6a5be2;
+    margin-top: -35px;
 }
 
 .descricao
@@ -84,8 +79,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
-   /* background-color: lightgray;*/
+    margin-top: 65px;
 }
 
 .tela
@@ -105,8 +99,9 @@ body
 /* tela para cadastro */
 .Um
 {
-    margin-top: 400px;
-    height: 530px;
+    margin-top: 375px;
+    height: 495px;
+    width: 650px;
     border: 2px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
@@ -128,18 +123,6 @@ body
     display: flex;
 }
 
-.Dois .colunaUm
-{
-    order: 2;
-    z-index: -1;
-}
-
-.Dois .colunaDois
-{
-    order: 1;
-    z-index: -1;
-}
-
 /* tela da mensagem */
 .colunaUm
 {
@@ -154,20 +137,18 @@ body
 /* tela das informações */
 .colunaDois
 {
-    margin-top: 80px;
-    margin-left: 280px;
+    margin-top: 50px;
+    margin-left: 193px;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*float: right;*/
 }
 
 .form
 {
     display: flex;
     flex-direction: column;
-    width: 55%;
     text-align: center;
 }
 
@@ -185,8 +166,6 @@ body
     display: flex;
     align-items: center;
     margin: 8px;
-    /*height: 45px;
-    width: 280px;*/
 }
 
 
@@ -194,59 +173,4 @@ body
 {
     padding-left: 5px;
     margin-top: 5px;
-}
-
-#botoes
-{
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    cursor: pointer;
-   /* transition: 0.4s;*/
-    
-}
-
-#botoes:link 
-{
-    /*background-color: blueviolet;*/
-    color: black;
-    /*padding-bottom: 1px 15px;*/
-    text-align: center;
-    text-decoration: none;
-    /*border-radius: 40px ;*/
-
-    /*text-transform: uppercase;*/
-    font-size: 14px;
-    font-weight: bold;
-    align-self: center;
-    border: none;
-    /*border: 2px solid #fff;*/
-    padding-bottom: 5px;
-    border-bottom: 5px;
-    
-}
-
-#botoes:hover
-{
-    background-color: transparent;
-    text-decoration: underline 3px;
-    text-decoration-color: #597FB1;
-}
-
-.center
-{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.baixo
-{
-    padding-left: 63%;
-    margin-top: 12px;
 }
