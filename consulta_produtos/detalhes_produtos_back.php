@@ -6,7 +6,7 @@ include "../utils/conexao.php";
        para esse arquivo */
     $sql="SELECT * FROM material WHERE id = $id;";
 
-    $resultado=mysqli_query($conecta,$sql);
+    $resultado=mysqli_query($conecta);
     $qtde=mysqli_num_rows($resultado);
 
     if ( $qtde == 0 )

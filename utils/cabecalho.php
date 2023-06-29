@@ -5,7 +5,7 @@
 
 <div style="border: 1px">
     <a href="../index.php" target="_parent">Home</a>&nbsp;| &nbsp;
-    <a href="../venda/selecao_produtos_front.php" target="_parent">Lista de Produtos</a>&nbsp;|&nbsp;
+    <a href="../consulta_produtos/consulta_produtos_front.php" target="_parent">Produtos Cadastrados</a>&nbsp;|&nbsp;
     
     <?php
         // Usuário é um ADM???
@@ -13,7 +13,7 @@
             echo "<a href='../consulta_produtos/consulta_produtos_front.php' target='_parent'>Consulta Produtos</a>&nbsp;|&nbsp;";
     ?>
 
-    <a href="../cadastro_produtos/cadastro_produtos_front.php" target="_parent">Cadastro</a>
+    <a href="../cadastro_produtos/cadastro_produtos_front.php" target="_parent">Cadastro de Produtos</a>
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 

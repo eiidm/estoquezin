@@ -22,7 +22,7 @@ include "../utils/conexao.php";
            '$senha');";
 
 // Execução
-   $resultado_empresa=mysqli_query($conecta,$sql);
+   $resultado_empresa=mysqli_query($conecta);
    $linhas=mysqli_affected_rows($resultado_empresa);
 
 if ($linhas > 0)
