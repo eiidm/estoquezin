@@ -1,5 +1,5 @@
 <?php
-include "../utils/conexao.php"; 
+include("../utils/conexao.php");
 
 $nomematerial=$_POST["nomematerial"];
 $nomegrupo=$_POST["nomegrupo"];
@@ -19,7 +19,7 @@ $sql="INSERT INTO material
            '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
            '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}');";
 
-$resultado_produto=mysqli_query($conecta, $sql);
+$resultado_produto= $conecta->query($sql);
 $linhas=mysqli_affected_rows($resultado_produto);
 
 if ($linhas > 0)
