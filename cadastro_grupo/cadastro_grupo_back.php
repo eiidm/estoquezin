@@ -5,7 +5,7 @@ $nomegrupo=$_POST["nomegrupo"];
 
 $sql="INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')";
 
-$resultado_grupo=$conecta->MySQLi_query($sql);
+$resultado_grupo=$conecta->query($sql);
 $linhas=mysqli_affected_rows($resultado_grupo);
 
 if ($linhas > 0)
