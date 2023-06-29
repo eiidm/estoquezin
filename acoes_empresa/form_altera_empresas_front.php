@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./detalhes_produtos.css">
+    <link rel="stylesheet" href="./form_altera.css">
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Detalhes do Produto</title>
+    <title>Alterando Empresa</title>
 </head>
 
 <body>
@@ -22,8 +22,8 @@
 
                 <li><a class='menu_topico'>Empresas</a></li>
                     <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
-                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
+                    <li><a class='menu_item' href='./alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='./excluir_empresas_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
@@ -48,30 +48,56 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="center">
-        <div class="quadro">
-            <div class="colunaUm">
-                <img src=""> <!-- colocar imagem através do php -->
-                <div class="nome_produto">
-                    aaaaaaaa<!-- colocar nome do produto através do php -->
-                </div>
-            </div><!--coluna um-->
+    <?php
+       $cnpj = $_GET["cnpj"];
+       include "cad_getinfo_empresas_back.php"; 
+    ?>   
 
-            <div class="colunaDois">
-                <div class="texto">
-                    <br><br>NCM:
-                    <br><br>Nome do material:
-                    <br><br>Local:
-                    <br><br>Quantidade:
-                    <br><br>Valor de custo:
-                    <br><br>Observação:
-                    <br><br>Estoque máximo:
-                    <br><br>Estoque mínimo:
-                    <br><br>Estoque ideal:
-                </div>
-            </div><!--coluna dois-->
-        </div><!--quadro-->
-    </div><!--center-->
+    <div class="container">
+        <h2 class="texto texto-um">Alteração de Empresa</h2>
+        <div class="tela Um">
+            <form class="form" action="./alterar_empresas_back.php" method="post">
+                <div class="row">
+                    <div class="colunaUm">       
+                        <br>Razão Social
+                        <label class="label-input">
+                            <input type="text" name="razaosocial" value="<?php echo $linha['razaosocial']; ?>" >
+                        </label>
+        
+                        <br>E-mail
+                        <label class="label-input">
+                            <input type="text" name="email" value="<?php echo $linha['email']; ?>" >
+                        </label>
 
+                        <br>CNPJ
+                        <label class="label-input">
+                            <input type="text" name="cnpj" value="<?php echo $linha['cnpj']; ?>" >
+                        </label>
+                    </div><!--coluna um-->
+        
+                    <div class="colunaDois">
+                        <br>Endereço
+                        <label class="label-input">
+                            <input type="text" name="endereco" value="<?php echo $linha['endereco']; ?>" >
+                        </label>
+
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="text" name="telefone" value="<?php echo $linha['telefone']; ?>" >
+                        </label>
+
+                        <br>Senha
+                        <label class="label-input">
+                            <input type="password" name="senha" value="<?php echo $linha['senha']; ?>" >
+                        </label>
+                    </div><!--coluna dois-->
+                </div><!--row-->
+
+                <div class="lado">
+                    <button class="btn btn-dois">Alterar</button>
+                </div>
+            </form>
+        </div><!--tela um-->
+    </div><!--container-->
 </body>
 </html>

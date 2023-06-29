@@ -20,10 +20,15 @@
                 <li><a class='menu_item' href=''>Home</a></li>
                 <li><a class='menu_item' href="../login_colaborador/login_colaborador_front.php">Colaborador</a></li>
 
+                <li><a class='menu_topico'>Empresas</a></li>
+                    <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
+
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
@@ -45,7 +50,7 @@
 
     <?php
        $id = $_GET["id"];
-       include "info_produtos_back.php"; 
+       include "cad_getinfo_produto_back.php"; 
     ?>   
 
     <div class="container">
@@ -53,12 +58,7 @@
         <div class="tela Um">
             <form class="form" action="./alterar_produtos_back.php" method="post" enctype="multipart/form-data">
                 <div class="row">
-                    <div class="colunaUm">
-                        Código do produto
-                        <label class="label-input">
-                            <input type="text" name="id" value="<?php echo $linha['id']; ?>" readonly>
-                        </label>
-       
+                    <div class="colunaUm">       
                         <br>Nome do material
                         <label class="label-input">
                             <input type="text" name="nomematerial" value="<?php echo $linha['nomematerial']; ?>" >
@@ -91,7 +91,7 @@
                     </div><!--coluna um-->
 
                     <div class="colunaDois">
-                        Estoque máximo
+                        <br>Estoque máximo
                         <label class="label-input">
                             <input type="number" name="estmax" value="<?php echo $linha['estmax']; ?>" >
                         </label>

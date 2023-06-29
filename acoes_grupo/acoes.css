@@ -16,26 +16,36 @@ body
 {
     background-color: #fff;
     border-radius: 10px;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin-left: 15px;
 }
 
-.nome_produto
+.nome_grupo
 {
     font-weight: bold;
     text-align: center;
+    margin-top: 8px;
+}
+
+.dados
+{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    line-height: 40px;
 }
 
 .btn_ver
 {
     text-align: center;
-    width: 340px;
+    width: 240px;
     height: 30px;
     background: #4F719D;
     margin-left: 5px;
     border-radius: 3px;
     padding-top: 7px;
+    margin-top: 20px;
 }
 
 .texto_btn

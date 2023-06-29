@@ -21,7 +21,21 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-left: 9px;
+    margin-left: 520px;
+    margin-top: 25px;
+}
+
+.texto-dois
+{    
+    color: #6a5be2;
+}
+
+.descricao
+{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
 }
 
 .btn
@@ -35,7 +49,6 @@ body
     cursor: pointer;
     align-self: center;
     border: none;
-    margin-top: 25px;
 }
 
 .btn-um
@@ -57,6 +70,7 @@ body
     background-color:#597FB1;
     border: 1px solid #597FB1;
     transition: background-color .5s;
+    width: 219px;
 }
 
 .btn-dois:hover
@@ -68,12 +82,11 @@ body
 
 .container
 {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    flex-wrap: wrap;
+
     padding-top: 50px;
-   /* background-color: lightgray;*/
 }
 
 .tela
@@ -85,29 +98,47 @@ body
     justify-content: inherit;
     align-items: center;
     position: relative;
+    z-index: -1;
 }
 
 /* tela para cadastro */
 .Um
 {
-    margin-top: 260px;
-    height: 310px;
-    width: 620px;
+    margin-left: 300px;
+    height: 450px;
+    width: 730px;
     border: 2px solid#597FB1;
-   /* border-style: 2px solid;
-    border-color: blueviolet;*/
     position: absolute;
     display: flex;
+    z-index: -1;
+}
+
+/* tela para login */
+.Dois
+{
+    height: 500px;
+    position: absolute;
+    display: flex;
+}
+
+/* tela da mensagem */
+.colunaUm
+{
+    flex: 1;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 55px;
+    margin-top: 30px;
 }
 
 /* tela das informações */
 .colunaDois
 {
-    width: 100%;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .form
@@ -123,7 +154,7 @@ body
     height: 45px;
     width: 280px;
     border: none;
-    background-color: #ecf0f1;  
+    background-color: #ecf0f1; 
 }
 
 .label-input
@@ -133,15 +164,14 @@ body
     align-items: center;
     margin: 8px;
     height: 45px;
-    width: 275px;
-    margin-left: 40px;
+    width: 280px;
 }
 
 
 .lado
 {
-    padding-left: 5px;
-    margin-top: 5px;
+    padding-left: 255px;
+    margin-top: 25px;
 }
 
 #botoes
@@ -154,29 +184,19 @@ body
     color: black;
     text-transform: uppercase;
     cursor: pointer;
-   /* transition: 0.4s;*/
-   
-    
 }
 
 #botoes:link 
 {
-    /*background-color: blueviolet;*/
     color: black;
-    /*padding-bottom: 1px 15px;*/
     text-align: center;
     text-decoration: none;
-    /*border-radius: 40px ;*/
-
-    /*text-transform: uppercase;*/
     font-size: 14px;
     font-weight: bold;
     align-self: center;
     border: none;
-    /*border: 2px solid #fff;*/
     padding-bottom: 5px;
     border-bottom: 5px;
-    
 }
 
 #botoes:hover
@@ -198,4 +218,10 @@ body
 {
     padding-left: 63%;
     margin-top: 12px;
+}
+
+.row
+{
+    width: 100%;
+    display: flex;
 }

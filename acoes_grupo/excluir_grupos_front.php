@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./detalhes_produtos.css">
+    <link rel="stylesheet" href="./acoes.css">
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Detalhes do Produto</title>
+    <title>Excluir Grupos</title>
 </head>
 
 <body>
@@ -22,13 +22,13 @@
 
                 <li><a class='menu_topico'>Empresas</a></li>
                     <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
-                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
+                    <li><a class='menu_item' href='./alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='./excluir_empresas_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
-                    <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
@@ -48,30 +48,15 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="center">
-        <div class="quadro">
-            <div class="colunaUm">
-                <img src=""> <!-- colocar imagem através do php -->
-                <div class="nome_produto">
-                    aaaaaaaa<!-- colocar nome do produto através do php -->
-                </div>
-            </div><!--coluna um-->
+    <div class="quadro">
+        <div class="nome_grupo">
+            grupo xxxx<!-- colocar nome da empresa através do php -->
+        </div> 
 
-            <div class="colunaDois">
-                <div class="texto">
-                    <br><br>NCM:
-                    <br><br>Nome do material:
-                    <br><br>Local:
-                    <br><br>Quantidade:
-                    <br><br>Valor de custo:
-                    <br><br>Observação:
-                    <br><br>Estoque máximo:
-                    <br><br>Estoque mínimo:
-                    <br><br>Estoque ideal:
-                </div>
-            </div><!--coluna dois-->
-        </div><!--quadro-->
-    </div><!--center-->
+        <div class="btn_ver">
+            <a class="texto_btn" href="./excluir_grupos_back.php">Excluir Grupo</a>
+        </div>
+    </div>      
 
 </body>
 </html>

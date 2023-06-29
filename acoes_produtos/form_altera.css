@@ -105,7 +105,7 @@ body
 .Um
 {
     margin-left: 300px;
-    height: 480px;
+    height: 700px;
     width: 850px;
     border: 2px solid#597FB1;
     position: absolute;
@@ -128,7 +128,7 @@ body
     padding: 10px;
     box-sizing: border-box;
     margin-left: 80px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* tela das informações */
@@ -138,7 +138,7 @@ body
     padding: 10px;
     box-sizing: border-box;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .form
@@ -170,7 +170,7 @@ body
 
 .lado
 {
-    padding-left: 310px;
+    padding-left: 330px;
 }
 
 #botoes

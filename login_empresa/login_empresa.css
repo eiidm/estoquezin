@@ -8,6 +8,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    background-color: #cde9ff;
 }
 
 .texto
@@ -81,7 +82,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: -1;
     padding-top: 50px;
    /* background-color: lightgray;*/
 }
@@ -95,6 +96,8 @@ body
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    z-index: -1;
 }
 
 .tela::before
@@ -118,6 +121,8 @@ body
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     display: flex;
+
+    z-index: -1;
 }
 
 .Um .colunaDois
