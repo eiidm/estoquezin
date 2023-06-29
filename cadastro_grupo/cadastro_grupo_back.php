@@ -1,15 +1,11 @@
 <?php
-include "../utils/conexao.php";
+include ("../utils/conexao.php");
 
-$nomegrupo=$_POST['nomegrupo'];
+$nomegrupo=$_POST["nomegrupo"];
 
-$sql="INSERT INTO nometabelagrupo
-         (id_grupo, id_material, nomegrupo)
-         VALUES (
-           DEFAULT,
-           '$nomegrupo');";
+$sql="INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')";
 
-$resultado_grupo=mysqli_query($conecta);
+$resultado_grupo=$conecta->MySQLi_query($sql);
 $linhas=mysqli_affected_rows($resultado_grupo);
 
 if ($linhas > 0)
