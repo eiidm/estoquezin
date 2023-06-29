@@ -7,7 +7,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Excluir Empresas</title>
+    <title>Excluir Grupos</title>
 </head>
 
 <body>
@@ -27,9 +27,8 @@
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
-                    <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
-                  
+                    <li><a class='menu_item' href=''>Alteração</a></li>
+                    <li><a class='menu_item' href=''>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
@@ -50,20 +49,14 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="quadro">
-        <div class="nome_empresa">
-            empresa xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
-
-        <div class="dados">
-            empresa@gmail.com<!-- colocar nome da empresa através do php -->
-            <br>cnpj
-            <br>telefone
+        <div class="nome_grupo">
+            grupo xxxx<!-- colocar nome da empresa através do php -->
         </div> 
 
         <div class="btn_ver">
-            <a class="texto_btn" href="./excluir_empresas_back.php">Excluir Empresa</a>
+            <a class="texto_btn" href="./excluir_grupos_back.php">Excluir Grupo</a>
         </div>
-    </div>       
+    </div>      
 
 </body>
 </html>

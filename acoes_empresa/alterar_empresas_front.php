@@ -27,8 +27,8 @@
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
-                    <li><a class='menu_item' href=''>Alteração</a></li>
-                    <li><a class='menu_item' href=''>Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
@@ -49,7 +49,6 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="quadro">
-        <img src=""> <!-- colocar imagem através do php -->
         <div class="nome_empresa">
             empresa xxxx<!-- colocar nome da empresa através do php -->
         </div> 
