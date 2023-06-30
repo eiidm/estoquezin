@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../login_empresa/login_empresa.css">
     <link rel="stylesheet" href="./menu.css">
-    <script src="validadorsenha/validadorsenha.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
     <title>Cadastro de Empresas</title>
 </head>
