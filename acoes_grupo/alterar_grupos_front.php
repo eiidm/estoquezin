@@ -48,15 +48,25 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="quadro">
-        <div class="nome_grupo">
-            grupo xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
+    <?php
+        include "../utils/conexao.php"; 
+        include "./cad_getinfo_grupo_back.php";
 
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_grupos_front.php">Alterar Dados</a>
-        </div>
-    </div>       
+        if($resultado_lista)
+        foreach($resultado_lista as $linha)
+        {
+            echo
+            "<div class='quadro'>
+                <div class='nome_grupo'>
+                    <b>".$linha['nomegrupo']."</b>
+                </div>
+            </div>
+        
+            <div class='btn_ver'>
+                <a class='texto_btn' href='./form_altera_grupos_front.php'>Alterar Dados</a>
+            </div>";
+        }
+    ?>       
 
 </body>
 </html>
