@@ -59,37 +59,56 @@
             <form class="form" action="./alterar_empresas_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">       
-                        <br>Razão Social
-                        <label class="label-input">
-                            <input type="text" name="razaosocial" value="<?php echo $linha['razaosocial']; ?>" >
-                        </label>
-        
-                        <br>E-mail
-                        <label class="label-input">
-                            <input type="text" name="email" value="<?php echo $linha['email']; ?>" >
-                        </label>
+                        <?php
+                            include ("../utils/conexao.php"); 
 
-                        <br>CNPJ
-                        <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php echo $linha['cnpj']; ?>" >
-                        </label>
+                            $sql= $conecta->query("SELECT * FROM nometabelaempresa");
+
+                            $qtd= $sql->num_rows(); 
+
+                            if($qtd > 0)
+                            {
+                                print "<table>";
+                                while($row = $sql->fetch_object())
+                                {
+                                    print "<tr>";
+                                    print "<td>".$row->id_empresa."</td>";
+                                    print "<td>".$row->razaosocial."</td>";
+                                    print "<td>".$row->email."</td>";
+                                    print "<td>".$row->cnpj."</td>"; 
+                                    print "</tr>";                                 
+                                }
+                                print "</table>";
+                            }else{
+                                print "<p>Não encontrou resultados</p>";
+                            }
+                        ?>
                     </div><!--coluna um-->
         
                     <div class="colunaDois">
-                        <br>Endereço
-                        <label class="label-input">
-                            <input type="text" name="endereco" value="<?php echo $linha['endereco']; ?>" >
-                        </label>
+                        <?php
+                            include ("../utils/conexao.php"); 
 
-                        <br>Telefone
-                        <label class="label-input">
-                            <input type="text" name="telefone" value="<?php echo $linha['telefone']; ?>" >
-                        </label>
+                            $sql= $conecta->query("SELECT * FROM nometabelaempresa");
 
-                        <br>Senha
-                        <label class="label-input">
-                            <input type="password" name="senha" value="<?php echo $linha['senha']; ?>" >
-                        </label>
+                            $qtd= $sql->num_rows(); 
+
+                            if($qtd > 0)
+                            {
+                                print "<table>";
+                                while($row = $sql->fetch_object())
+                                {
+                                    print "<tr>";
+                                    print "<td>".$row->endereco."</td>";
+                                    print "<td>".$row->telefone."</td>";
+                                    print "<td>".$row->senha."</td>";   
+                                    print "</tr>";                              
+                                }
+                                print "</table>";
+                            }else{
+                                print "<p>Não encontrou resultados</p>";
+                            }
+                        ?>
                     </div><!--coluna dois-->
                 </div><!--row-->
 
