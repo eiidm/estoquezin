@@ -48,6 +48,17 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
+    <div class="quadro">
+        <div class="nome_grupo">
+            grupo xxxx<!-- colocar nome da empresa através do php -->
+        </div> 
+
+        <div class="btn_ver">
+            <a class="texto_btn" href="./form_altera_grupos_front.php">Alterar Dados</a>
+        </div>
+    </div>       
+
+
 
 </body>
 </html>
