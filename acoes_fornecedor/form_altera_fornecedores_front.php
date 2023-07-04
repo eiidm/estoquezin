@@ -46,12 +46,7 @@
 
     <div class='home'>
         <img scr=''>
-    </div> <!-- ------ MENU ------ -->
-
-    <?php
-       $cnpj = $_GET["cnpj"];
-       include "cad_getinfo_fornecedores_back.php"; 
-    ?>   
+    </div> <!-- ------ MENU ------ -->  
 
     <div class="container">
         <h2 class="texto texto-um">Alteração de Fornecedor</h2>
@@ -59,38 +54,38 @@
             <form class="form" action="./alterar_fornecedores_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">       
-                        <br>Nome do Fornecedor
-                        <label class="label-input">
-                            <input type="text" name="nomefornecedor" value="<?php echo $linha['nomefornecedor']; ?>" >
-                        </label>
-        
-                        <br>Razão Social
-                        <label class="label-input">
-                            <input type="text" name="razaosocial" value="<?php echo $linha['razaosocial']; ?>" >
-                        </label>
+                    <?php
+                        include ("../utils/conexao.php"); 
 
-                        <br>Nome para Contato
-                        <label class="label-input">
-                            <input type="text" name="contato" value="<?php echo $linha['contato']; ?>" >
-                        </label>
+                        $sql= $conecta->query("SELECT * FROM nometabelafornecedor");
+
+                        $qtd= $sql->num_rows; 
+
+                        if($qtd > 0)
+                        {
+                             print "<table>";
+                            while($row = $sql->fetch_object())
+                            {
+                                print "<tr>";
+                                print "<td>".$row->id_fornecedor."</td>";
+                                print "<td>".$row->nomefornecedor."</td>";
+                                print "<td>".$row->razaosocial."</td>";
+                                print "<td>".$row->contato."</td>";
+                                print "<td>".$row->cnpj."</td>";
+                                print "<td>".$row->inscricao."</td>";
+                                print "<td>".$row->number."</td>";
+                                print "</tr>";                                 
+                            }
+                            print "</table>";
+                        }else{
+                                print "<p>Não encontrou resultados</p>";
+                        }
+
+                        mysqli_close($conecta); 
+                    ?>       
                     </div><!--coluna um-->
         
-                    <div class="colunaDois">
-                        <br>CNPJ
-                        <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php echo $linha['cnpj']; ?>" >
-                        </label>
-
-                        <br>Inscrição Estadual
-                        <label class="label-input">
-                            <input type="number" name="inscricao" value="<?php echo $linha['inscricao']; ?>" >
-                        </label>
-
-                        <br>Telefone
-                        <label class="label-input">
-                            <input type="tel" name="phone" value="<?php echo $linha['phone']; ?>" >
-                        </label>
-                    </div><!--coluna dois-->
+                   
                 </div><!--row-->
 
                 <div class="lado">

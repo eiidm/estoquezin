@@ -89,7 +89,7 @@
         
                     <div class="colunaDois">
 
-                        ?>
+                        
                     </div><!--coluna dois-->
                 </div><!--row-->
 

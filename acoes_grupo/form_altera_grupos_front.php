@@ -47,21 +47,37 @@
     <div class='home'>
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
-
-    <?php
-       $nomegrupo = $_GET["nomegrupo"];
-       include "cad_getinfo_grupo_back.php"; 
-    ?>   
+ 
 
     <div class="container">
         <h2 class="texto texto-um">Alteração de Grupo</h2>
         <div class="tela Um">
             <form class="form" action="./alterar_grupos_back.php" method="post">
                 <div class="colunaUm">       
-                    <p>Nome do Grupo</p>
-                    <label class="label-input">
-                        <input type="text" name="nomegrupo" value="<?php echo $linha['nomegrupo']; ?>" >
-                    </label>                      
+                    <?php
+                        include ("../utils/conexao.php"); 
+
+                        $sql= $conecta->query("SELECT * FROM nometabelagrupo");
+
+                        $qtd= $sql->num_rows; 
+
+                        if($qtd > 0)
+                        {
+                             print "<table>";
+                            while($row = $sql->fetch_object())
+                            {
+                                print "<tr>";
+                                print "<td>".$row->id_grupo."</td>";
+                                print "<td>".$row->nomegrupo."</td>";
+                                print "</tr>";                                 
+                            }
+                            print "</table>";
+                        }else{
+                                print "<p>Não encontrou resultados</p>";
+                        }
+
+                        mysqli_close($conecta); 
+                    ?>                   
                 </div><!--coluna um-->
 
                 <div class="lado">
