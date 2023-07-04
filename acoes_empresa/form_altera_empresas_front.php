@@ -72,6 +72,9 @@
                                     print "<td>".$row->razaosocial."</td>";
                                     print "<td>".$row->email."</td>";
                                     print "<td>".$row->cnpj."</td>"; 
+                                    print "<td>".$row->endereco."</td>";
+                                    print "<td>".$row->telefone."</td>";
+                                    print "<td>".$row->senha."</td>"; 
                                     print "</tr>";                                 
                                 }
                                 print "</table>";
@@ -85,30 +88,6 @@
                     </div><!--coluna um-->
         
                     <div class="colunaDois">
-                        <?php
-                            include ("../utils/conexao.php"); 
-
-                            $sql= $conecta->query("SELECT * FROM nometabelaempresa");
-
-                            $qtd= $sql->num_rows; 
-
-                            if($qtd > 0)
-                            {
-                                print "<table>";
-                                while($row = $sql->fetch_object())
-                                {
-                                    print "<tr>";
-                                    print "<td>".$row->endereco."</td>";
-                                    print "<td>".$row->telefone."</td>";
-                                    print "<td>".$row->senha."</td>";   
-                                    print "</tr>";                              
-                                }
-                                print "</table>";
-                            }else{
-                                print "<p>Não encontrou resultados</p>";
-                            }
-
-                            mysqli_close($conecta);
 
                         ?>
                     </div><!--coluna dois-->
