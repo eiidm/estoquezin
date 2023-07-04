@@ -47,11 +47,7 @@
     <div class='home'>
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
-
-    <?php
-       $cnpj = $_GET["cnpj"];
-       include "cad_getinfo_empresas_back.php"; 
-    ?>   
+ 
 
     <div class="container">
         <h2 class="texto texto-um">Alteração de Empresa</h2>
@@ -64,7 +60,7 @@
 
                             $sql= $conecta->query("SELECT * FROM nometabelaempresa");
 
-                            $qtd= $sql->num_rows(); 
+                            $qtd= $sql->num_rows; 
 
                             if($qtd > 0)
                             {
