@@ -78,6 +78,9 @@
                             }else{
                                 print "<p>Não encontrou resultados</p>";
                             }
+
+                            mysqli_close($conecta);
+
                         ?>
                     </div><!--coluna um-->
         
@@ -104,6 +107,9 @@
                             }else{
                                 print "<p>Não encontrou resultados</p>";
                             }
+
+                            mysqli_close($conecta);
+
                         ?>
                     </div><!--coluna dois-->
                 </div><!--row-->
