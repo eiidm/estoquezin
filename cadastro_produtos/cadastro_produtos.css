@@ -173,38 +173,6 @@ body
     padding-left: 310px;
 }
 
-#botoes
-{
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-#botoes:link 
-{
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    align-self: center;
-    border: none;
-    padding-bottom: 5px;
-    border-bottom: 5px;
-}
-
-#botoes:hover
-{
-    background-color: transparent;
-    text-decoration: underline 3px;
-    text-decoration-color: #597FB1;
-}
-
 .center
 {
     align-items: center;
