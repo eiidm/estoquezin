@@ -87,7 +87,7 @@
 
                             $sql= $conecta->query("SELECT * FROM nometabelaempresa");
 
-                            $qtd= $sql->num_rows(); 
+                            $qtd= $sql->num_rows; 
 
                             if($qtd > 0)
                             {
