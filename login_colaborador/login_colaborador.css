@@ -8,6 +8,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    background-color: #cde9ff;
 }
 
 .texto
@@ -58,7 +59,7 @@ body
 .btn-um:hover
 {
     background-color: #fff;
-    color: #6a5be2
+    color: #6a5be2;
     /*color:blueviolet;*/
 }
 
@@ -107,19 +108,21 @@ body
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
     left: 0;
 }
 
 /* tela para cadastro */
 .Um
 {
-    height: 550px;
+    margin-top: 500px;
+    height: 500px;
     border: 1px solid#597FB1;
    /* border-style: 2px solid;
     border-color: blueviolet;*/
     display: flex;
     z-index: -1;
+
+    position: absolute;
 }
 
 .Um .colunaDois
@@ -198,47 +201,6 @@ body
 {
     padding-left: 5px;
     margin-top: 5px;
-}
-
-#botoes
-{
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    cursor: pointer;
-   /* transition: 0.4s;*/
-    
-}
-
-#botoes:link 
-{
-    /*background-color: blueviolet;*/
-    color: black;
-    /*padding-bottom: 1px 15px;*/
-    text-align: center;
-    text-decoration: none;
-    /*border-radius: 40px ;*/
-
-    /*text-transform: uppercase;*/
-    font-size: 14px;
-    font-weight: bold;
-    align-self: center;
-    border: none;
-    /*border: 2px solid #fff;*/
-    padding-bottom: 5px;
-    border-bottom: 5px;
-    
-}
-
-#botoes:hover
-{
-    background-color: transparent;
-    text-decoration: underline 3px;
-    text-decoration-color: #597FB1;
 }
 
 .center

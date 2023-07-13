@@ -1,28 +1,18 @@
 <?php
-include "../utils/conexao.php"; 
+include ("../utils/conexao.php"); 
 
-$nomefornecedor=$_POST['nomefornecedor'];
-$razaosocial=$_POST['razaosocial'];
-$contato=$_POST['contato'];
-$cnpj=$_POST['cnpj'];
-$inscricao=$_POST['inscricao'];
-$number=$_POST['number'];
+$nomefornecedor=$_POST["nomefornecedor"];
+$razaosocial=$_POST["razaosocial"];
+$contato=$_POST["contato"];
+$cnpj=$_POST["cnpj"];
+$inscricao=$_POST["inscricao"];
+$number=$_POST["number"];
 
-$sql="INSERT INTO nometabelafornecedor
-         (id_fornecedor, nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
-         VALUES (
-           DEFAULT,
-           '$nomefornecedor',  
-           '$razaosocil', 
-           '$contato',
-           '$cnpj',
-           $inscricao,
-           '$number');";
+$sql= $conecta->query("INSERT INTO nometabelafornecedor(nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
+VALUES ('{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')");
 
-$resultado_fornc=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado_fornc);
 
-if ($linhas > 0)
+if ($sql==true)
 {
     echo '<script language="javascript">';
     echo "alert('Empresa salvo com sucesso!')";

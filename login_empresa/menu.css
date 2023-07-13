@@ -83,6 +83,7 @@ padding-top: 51px;
     background: #4F719D;
     box-shadow: 2px 2px 6px rgba(0,0,0,.4);
     transition: .25s;
+    overflow: scroll;
 }
 
 .menu_item{
@@ -99,7 +100,6 @@ padding-top: 51px;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
-
 }
 
 .menu_topico

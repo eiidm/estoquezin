@@ -4,7 +4,7 @@
 
     $sql="SELECT * FROM material WHERE id = $id;";
 
-    $resultado_consulta=mysqli_query($conecta,$sql);
+    $resultado_consulta=mysqli_query($conecta);
     $qtde=mysqli_num_rows($resultado);
 
     if ( $qtde == 0 )

@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #cde9ff;
+}
+
+.texto
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.texto-um
+{
+    color: #6a5be2;
+    text-align: center;
+    margin-left: 553px;
+    margin-top: 40px;
+}
+
+.btn
+{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+}
+
+.btn-um
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+
+.btn-um:hover
+{
+    background-color: #fff;
+    color: #6a5be2
+    /*color:blueviolet;*/
+}
+
+.btn-dois
+{
+    background-color:#597FB1;
+    border: 1px solid #597FB1;
+    transition: background-color .5s;
+    width: 200px;
+}
+
+.btn-dois:hover
+{
+    background-color: #fff;
+    border: 1px solid #597FB1;
+    color: #597FB1;
+}
+
+.container
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.tela
+{
+    border-radius: 15px;
+    background-color: #fff;
+    width: 960px;
+    height: 60%;
+    justify-content: inherit;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+/* tela para cadastro */
+.Um
+{
+    margin-left: 385px;
+    height: 285px;
+    width: 590px;
+    border: 2px solid#597FB1;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+/* tela da mensagem */
+.colunaUm
+{
+    flex: 1;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 145px;
+    margin-top: 55px;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.form input
+{
+    height: 45px;
+    width: 280px;
+    border: none;
+    background-color: #ecf0f1; 
+}
+
+.label-input
+{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    height: 45px;
+    width: 280px;
+}
+
+.lado
+{
+    padding-left: 155px;
+    margin-top: 25px;
+}
+
+.row
+{
+    width: 100%;
+    display: flex;
+}

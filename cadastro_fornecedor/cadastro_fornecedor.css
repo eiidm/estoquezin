@@ -21,12 +21,7 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-left: 30px;
-}
-
-.texto-dois
-{    
-    color: #6a5be2;
+    margin-top: -35px;
 }
 
 .descricao
@@ -84,42 +79,30 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding-top: 50px;
-   /* background-color: lightgray;*/
+    margin-top: 65px;
 }
 
 .tela
 {
     border-radius: 15px;
     background-color: #fff;
-    width: 960px;
+    width: 800px;
     height: 60%;
-    justify-content: inherit;
+    justify-content: space-between;
+    display: flex;
     align-items: center;
     position: relative;
-}
 
-.tela::before
-{
-    content: "";
-    position: absolute;
-   /* background-color:#597FB1;*/
-    width: 40%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    left: 0;
+    flex-flow: row wrap;
 }
 
 /* tela para cadastro */
 .Um
 {
-    margin-top: 500px;
-    height: 500px;
+    margin-top: 375px;
+    height: 495px;
+    width: 650px;
     border: 2px solid#597FB1;
-   /* border-style: 2px solid;
-    border-color: blueviolet;*/
     position: absolute;
     display: flex;
     z-index: -1;
@@ -138,37 +121,23 @@ body
     display: flex;
 }
 
-.Dois .colunaUm
-{
-    order: 2;
-    z-index: -1;
-}
-
-.Dois .colunaDois
-{
-    order: 1;
-    z-index: -1;
-}
-
 /* tela da mensagem */
 .colunaUm
 {
+    margin-top: 80px;
     width: 50%;
-    margin-left: -50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: -100px;
-    /*text-align: center;
-    width: 40%;
-    z-index: 10;*/
+    justify-content: space-between;
+    float: left;
 }
 
 /* tela das informações */
 .colunaDois
 {
-    width: 50%;
-    margin-left: -50px;
+    margin-top: 50px;
+    margin-left: 193px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,14 +147,13 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 55%;
     text-align: center;
 }
 
 .form input
 {
     height: 45px;
-    width: 280px;
+    width: 250px;
     border: none;
     background-color: #ecf0f1;  
 }
@@ -196,8 +164,6 @@ body
     display: flex;
     align-items: center;
     margin: 8px;
-    height: 45px;
-    width: 280px;
 }
 
 
@@ -205,59 +171,4 @@ body
 {
     padding-left: 5px;
     margin-top: 5px;
-}
-
-#botoes
-{
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    cursor: pointer;
-   /* transition: 0.4s;*/
-    
-}
-
-#botoes:link 
-{
-    /*background-color: blueviolet;*/
-    color: black;
-    /*padding-bottom: 1px 15px;*/
-    text-align: center;
-    text-decoration: none;
-    /*border-radius: 40px ;*/
-
-    /*text-transform: uppercase;*/
-    font-size: 14px;
-    font-weight: bold;
-    align-self: center;
-    border: none;
-    /*border: 2px solid #fff;*/
-    padding-bottom: 5px;
-    border-bottom: 5px;
-    
-}
-
-#botoes:hover
-{
-    background-color: transparent;
-    text-decoration: underline 3px;
-    text-decoration-color: #597FB1;
-}
-
-.center
-{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.baixo
-{
-    padding-left: 63%;
-    margin-top: 12px;
 }

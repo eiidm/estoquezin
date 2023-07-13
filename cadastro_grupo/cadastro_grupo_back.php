@@ -1,18 +1,11 @@
 <?php
-include "../utils/conexao.php";
+include ("../utils/conexao.php");
 
-$nomegrupo=$_POST['nomegrupo'];
+$nomegrupo=$_POST["nomegrupo"];
 
-$sql="INSERT INTO nometabelagrupo
-         (id_grupo, id_material, nomegrupo)
-         VALUES (
-           DEFAULT,
-           '$nomegrupo');";
+$sql=$conecta->query("INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegrupo}')");
 
-$resultado_grupo=mysqli_query($conecta,$sql);
-$linhas=mysqli_affected_rows($resultado_grupo);
-
-if ($linhas > 0)
+if ($sql==true)
 {
     echo '<script language="javascript">';
     echo "alert('Empresa salvo com sucesso!')";

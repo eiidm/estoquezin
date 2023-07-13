@@ -9,7 +9,7 @@
 
 	$sql = "select * from nometabelaempresa where cnpj = '$cnpj' and senha = '$senha' ";
 
-	$res = mysqli_query($conecta, $sql);
+	$res = mysqli_query($conecta);
       if (mysqli_num_rows($res) > 0)
       {
         $linha = mysqli_fetch_array($res);

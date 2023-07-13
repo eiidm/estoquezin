@@ -1,16 +1,14 @@
 <?php
-include "../utils/conexao.php";
+include("../utils/conexao.php") ;
 
-$nome=$_POST['nome'];
-$cpf=$_POST['cpf'];
+$nome=$_POST["nome"];
+$cpf=$_POST["cpf"];
 
-$sql="INSERT INTO nometabelacolaborador(id_colaborador, nome, cpf)
-        VALUES(DEFAULT, '$nome', '$cpf'); ";
 
-$resultado_colab=mysqli_query($conecta, $sql);
-$linhas=mysqli_affected_rows($resultado_colab);
+$sql=$conecta->query("INSERT INTO nometabelacolaborador(nome, cpf)
+VALUES( '{$nome}', '{$cpf}') ");
 
-if ($linhas > 0)
+if ($sql==true)
 {
      echo '<script language="javascript">';
      echo "alert('Empresa salvo com sucesso!')";
