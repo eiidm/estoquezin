@@ -85,8 +85,10 @@
                     print "<td>".$row->cnpj."</td>";
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
-                    print "<td> <div class='btn_ver'><button onclick=\"location.href='?page=form_altera_fornecedores_front&id_fornecedor=".$row->id_fornecedor."';\"
-                                class= 'texto-btn>Alterar dados</button></div>
+                    print "<td>
+                            <div class='btn_ver'>
+                                <a class='texto_btn' href='./form_altera_fornecedores_front.php'>Alterar Dados</a>
+                            </div>
                             </td>";
                     print "</tr>";                                 
                 }
