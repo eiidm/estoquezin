@@ -81,7 +81,7 @@
 
                     <label class="label-input" for="">
                         <i class="fa-solid fa-phone icon"></i>
-                        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="Telefone" required>
+                        <input type="text" name="telefone" id="telefone" maxlength="14" placeholder="Telefone" required>
                     </label>
 
                     <label class="label-input" for="">
@@ -91,6 +91,32 @@
 
                 <button class="btn btn-dois">Cadastrar-se</button>
                 </form>
+
+              
+
+                <script> //mascara de dados cnpj
+                    document.getElementById('cnpj').addEventListener('input', function (e) 
+                    {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                        value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                        value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        e.target.value = value;
+                    });
+                </script>
+
+                <script> //mascara de dados telefone
+                    document.getElementById('telefone').addEventListener('input', function (e) 
+                    {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        e.target.value = value;
+                    });
+                </script>
             </div>  <!--coluna dois-->
         </div>  <!--tela um-->
     </div><!--container-->

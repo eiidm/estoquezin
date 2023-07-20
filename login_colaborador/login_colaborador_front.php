@@ -64,11 +64,24 @@
 
                     <label class="label-input" for="">
                         <i class="fa-solid fa-id-card icon"></i>
-                        <input type="text" name="cpf" maxlength="18" placeholder="CPF" required>
+                        <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="CPF" required>
                     </label>
 
                     <button type="submit" class="btn btn-dois">Cadastrar</button>
                 </form>
+
+                <script> //mascara de dados cpf
+                    document.getElementById('cpf').addEventListener('input', function (e) 
+                    {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                        value = value.replace(/(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
+                        value = value.replace(/(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
+                        e.target.value = value;
+                    });
+                </script>
+                
             </div>  <!--coluna dois-->
         </div><!--tela um-->
     </div>  <!--container-->

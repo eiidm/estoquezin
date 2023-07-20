@@ -9,6 +9,15 @@
 
 	$sql = "select * from nometabelaempresa where cnpj = '$cnpj' and senha = '$senha' ";
 
+    //mascara de dados cnpj
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    {
+        $cnpj = $_POST["cnpj"];
+
+        // Remove caracteres não numéricos do CNPJ
+        $cnpj = preg_replace('/[^0-9]/', '', $cnpj);
+    }
+
 	$res = mysqli_query($conecta);
       if (mysqli_num_rows($res) > 0)
       {
