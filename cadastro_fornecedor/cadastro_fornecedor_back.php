@@ -12,6 +12,33 @@ $sql= $conecta->query("INSERT INTO nometabelafornecedor(nomefornecedor, razaosoc
 VALUES ('{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')");
 
 
+//mascara de dados cnpj
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+   $cnpj = $_POST["cnpj"];
+
+   // Remove caracteres não numéricos do CNPJ
+   $cnpj = preg_replace('/[^0-9]/', '', $cnpj);
+}
+
+//mascara de dados telefone
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+   $phone = $_POST["phone"];
+
+   // Remove caracteres não numéricos do telefone
+   $phone = preg_replace('/[^0-9]/', '', $phone);
+}
+
+//mascara de dados inscricao estadual - sp
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $inscricao = $_POST["inscricao"];
+
+    // Remove caracteres não numéricos da Inscrição Estadual
+    $inscricao = preg_replace('/[^0-9]/', '', $inscricao);
+}
+
+
 if ($sql==true)
 {
     echo '<script language="javascript">';
