@@ -50,7 +50,7 @@
 
     <?php
         include ("../utils/conexao.php"); 
-       $sql= $conecta->query("SELECT * FROM nometabelafornecedor WHERE  id_fornecedor=".$_REQUEST["id_fornecedor"]);
+       $sql= $conecta->query("SELECT * FROM nometabelafornecedor WHERE id_fornecedor=".$_REQUEST["id_fornecedor"]);
        $row = $sql->fetch_object();
     ?>   
 
@@ -59,7 +59,8 @@
         <div class="tela Um">
             <form class="form" action="./alterar_fornecedores_back.php" method="post">
                 <div class="row">
-                    <div class="colunaUm">       
+                    <div class="colunaUm">    
+                    <input type="text" name="id_fornecedor" value="<?php print $row->id_fornecedor; ?>" >   
                         <br>Nome do Fornecedor
                         <label class="label-input">
                             <input type="text" name="nomefornecedor" value="<?php print $row->nomefornecedor; ?>" >
