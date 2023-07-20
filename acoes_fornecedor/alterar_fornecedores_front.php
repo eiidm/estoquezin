@@ -101,12 +101,6 @@
 
             mysqli_close($conecta); 
         ?>       
-        
-
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_fornecedores_front.php">Alterar Dados</a>
-        </div>
-    </div>
    
 
 </body>
