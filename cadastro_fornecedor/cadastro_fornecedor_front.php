@@ -69,16 +69,52 @@
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="number" name="inscricao" placeholder="   Inscrição Estadual" required>
+                        <input type="text" name="inscricao" id="inscricao" maxlength="15" placeholder="   Inscrição Estadual" required>
                     </label>
                         
                     <label class="label-input" for="">
-                        <input type="tel" id="phone" name="phone" placeholder="   Telefone" required>
+                        <input type="text" id="phone" name="phone" maxlength="14" placeholder="   Telefone" required>
                     </label>
                     
                     <button class="btn btn-dois">Cadastrar fornecedor</button>
                 </div>  <!--coluna dois-->
-            </form>            
+            </form>   
+            
+            <script> //mascara de dados cnpj
+                document.getElementById('cnpj').addEventListener('input', function (e) 
+                {
+                    let value = e.target.value;
+                    value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                    value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                    value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                    e.target.value = value;
+                });
+            </script>
+
+            <script> //mascara de dados telefone
+                document.getElementById('phone').addEventListener('input', function (e) 
+                {
+                    let value = e.target.value;
+                    value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                    e.target.value = value;
+                });
+            </script>
+
+            <script>
+                document.getElementById('inscricao').addEventListener('input', function (e) 
+                {
+                    let value = e.target.value;
+                    value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                    value = value.replace(/^(\d{3})(\d)/g, '$1.$2');
+                    value = value.replace(/^(\d{3})\.(\d{3})(\d)/g, '$1.$2.$3');
+                    value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d)/g, '$1.$2.$3.$4');
+                    e.target.value = value;
+                });
+            </script>
         </div>  <!--tela um-->
     </div><!--container-->
 
