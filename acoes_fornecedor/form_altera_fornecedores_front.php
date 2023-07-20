@@ -49,8 +49,9 @@
     </div> <!-- ------ MENU ------ -->
 
     <?php
-       $cnpj = $_GET["cnpj"];
-       include "cad_getinfo_fornecedores_back.php"; 
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM nometabelafornecedor WHERE  id_fornecedor=".$_REQUEST["id_fornecedor"]);
+       $row = $sql->fetch_object();
     ?>   
 
     <div class="container">
@@ -61,41 +62,47 @@
                     <div class="colunaUm">       
                         <br>Nome do Fornecedor
                         <label class="label-input">
-                            <input type="text" name="nomefornecedor" value="<?php echo $linha['nomefornecedor']; ?>" >
+                            <input type="text" name="nomefornecedor" value="<?php print $row->nomefornecedor; ?>" >
                         </label>
         
                         <br>Razão Social
                         <label class="label-input">
-                            <input type="text" name="razaosocial" value="<?php echo $linha['razaosocial']; ?>" >
+                            <input type="text" name="razaosocial" value="<?php print $row->razaosocial; ?>" >
                         </label>
 
                         <br>Nome para Contato
                         <label class="label-input">
-                            <input type="text" name="contato" value="<?php echo $linha['contato']; ?>" >
+                            <input type="text" name="contato" value="<?php print $row->contato; ?>" >
                         </label>
                     </div><!--coluna um-->
         
                     <div class="colunaDois">
                         <br>CNPJ
                         <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php echo $linha['cnpj']; ?>" >
+                            <input type="text" name="cnpj" value="<?php print $row->cnpj; ?>" >
                         </label>
 
                         <br>Inscrição Estadual
                         <label class="label-input">
-                            <input type="number" name="inscricao" value="<?php echo $linha['inscricao']; ?>" >
+                            <input type="number" name="inscricao" value="<?php print $row->inscricao; ?>" >
                         </label>
 
                         <br>Telefone
                         <label class="label-input">
-                            <input type="tel" name="phone" value="<?php echo $linha['phone']; ?>" >
+                            <input type="tel" name="number" value="<?php print $row->number; ?>" >
                         </label>
                     </div><!--coluna dois-->
                 </div><!--row-->
 
+                <?php
+                    mysqli_close($conecta);
+                ?>
+
                 <div class="lado">
                     <button class="btn btn-dois">Alterar</button>
                 </div>
+
+                
             </form>
         </div><!--tela um-->
     </div><!--container-->
