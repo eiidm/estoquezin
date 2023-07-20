@@ -15,7 +15,7 @@
             <span></span>
         </label>
             <ul class='menu_box'>
-                <li><a class='menu_item' href=''>Home</a></li>
+                <li><a class='menu_item' href='../home/home_front.php'>Home</a></li>
                 <li><a class='menu_item' href='../login_colaborador/login_colaborador_front.php'>Colaborador</a></li>
 
                 <li><a class='menu_topico'>Empresas</a></li>
