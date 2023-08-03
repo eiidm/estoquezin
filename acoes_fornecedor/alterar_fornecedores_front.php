@@ -87,7 +87,7 @@
                     print "<td>".$row->number."</td>";
                     print "<td>
                             <div class='btn_ver'>
-                                <a class='texto_btn' location.href='?page=editar&id_fornecedor=".$row->id_fornecedor">Alterar Dados</a>
+                                <a class='texto_btn' location.href='?page=editar&id_fornecedor='.$row->id_fornecedor'>Alterar Dados</a>
                             </div>
                             </td>";
                     print "</tr>";                                 
