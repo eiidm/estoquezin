@@ -57,8 +57,9 @@
                     <p class="desc_txt1">No mercado atual, as empresas necessitam se manter competitivas, frente aos seus concorrentes.
                         Assim, a gestão de materiais promove um equilíbrio que contribui para a sustentabilidade organizacional.</p>
 
-                    <div class="desc_btn"><a href="">Faça o cadastro</a></div>
-        
+                    <div class="btn_ver">
+                        <a class="texto_btn" href="../login_empresa/cadastro_empresa_front.php">Faça o cadastro</a>
+                    </div>        
              </div>
         </div>
 
@@ -67,27 +68,32 @@
 
 <div class="prod1">
     <div class="prod_txt1">
-        <p class="prod_txt">
-        Eficiência: Um estoque organizado permite localizar e acessar os produtos de forma rápida e precisa, otimizando os processos operacionais e economizando tempo.
-        </p>
+        <div class="center1">
+            <p class="prod_txt">
+            Eficiência: Permite localizar e acessar os produtos de forma rápida e precisa, otimizando processos operacionais e economizando tempo.
+            </p>
+        </div>
     </div>
 </div>
 
 <div class="prod2">
 
     <div class="prod_txt1">
-        <p class="prod_txt">
-        Controle: A organização do estoque possibilita um controle efetivo do inventário, permitindo identificar discrepâncias e agir prontamente para corrigi-las, evitando faltas ou excessos de produtos.
-        </p>
-    
+        <div class="center2">
+            <p class="prod_txt">
+            Controle: Possibilita um controle efetivo do inventário, permitindo identificar discrepâncias e corrigi-las, evitando faltas ou excessos de produtos.
+            </p>
+        </div>    
     </div>
 </div>
 <div class="prod3">
 
     <div class="prod_txt1">
-        <p class="prod_txt">
-        Satisfação do cliente: Um estoque organizado contribui para cumprir prazos de entrega, evitar erros de envio e garantir a disponibilidade dos produtos desejados pelos clientes, o que resulta em maior satisfação e fidelização dos mesmos.
-         </p>
+        <div class="center3">
+            <p class="prod_txt">
+            Satisfação do cliente: Um estoque organizado contribui para cumprir prazos de entrega, evitar erros de envio e garantir a disponibilidade dos produtos desejados pelos clientes.
+            </p>
+        </div>
     </div>
 </div>
 </div>
