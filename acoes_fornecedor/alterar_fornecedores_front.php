@@ -43,27 +43,6 @@
                     <li><a class='menu_item' href='./excluir_fornecedores_front.php'>Exclusão</a></li>
             </ul>
         </div>
-
-    <div class='home'>
-        <img scr=''>
-    </div> <!-- ------ MENU ------ -->
-
-    <div class="quadro">
-        <div class="nome_fornecedor">
-            fornecedor xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
-
-        <div class="dados">
-            razao social<!-- colocar nome da empresa através do php -->
-            <br>cnpj
-            <br>telefone
-        </div> 
-
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_fornecedores_front.php">Alterar Dados</a>
-        </div>
-    </div>
-    
     
     <div class="quadro">
         <?php
