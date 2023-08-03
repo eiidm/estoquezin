@@ -7,7 +7,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Excluir Fornecedores</title>
+    <title>Alterar Fornecedores</title>
 </head>
 
 <body>
@@ -29,7 +29,6 @@
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
                     <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
-                  
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
@@ -61,9 +60,48 @@
         </div> 
 
         <div class="btn_ver">
-            <a class="texto_btn" href="./excluir_empresas_back.php">Excluir Fornecedor</a>
+            <a class="texto_btn" href="./form_altera_fornecedores_front.php">Alterar Dados</a>
         </div>
-    </div>       
+    </div>
+    
+    
+    <div class="quadro">
+        <?php
+            include ("../utils/conexao.php"); 
+
+            $sql= $conecta->query("SELECT * FROM nometabelafornecedor");
+            $qtd= $sql->num_rows; 
+
+            if($qtd > 0)
+            {
+                print "<table>";
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id_fornecedor."</td>";
+                    print "<td>".$row->nomefornecedor."</td>";
+                    print "<td>".$row->razaosocial."</td>";
+                    print "<td>".$row->contato."</td>";
+                    print "<td>".$row->cnpj."</td>";
+                    print "<td>".$row->inscricao."</td>";
+                    print "<td>".$row->number."</td>";
+                    print "<td>
+                            <div class='btn_ver'>
+                                <a class='texto_btn' href='excluir_fornecedores_back.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Excluir Dados</a>
+                            </div>
+                            </td>";
+                    print "</tr>";                                 
+                }
+                print "</table>";
+            }
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
+
+            mysqli_close($conecta); 
+        ?>       
+   
 
 </body>
 </html>
