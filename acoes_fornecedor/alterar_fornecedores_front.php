@@ -86,8 +86,10 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                        <button onclick=\"location.href='?editar&id_fornecedor=".$row->id_fornecedor"';\">Alterar</button>
-                     </td>";
+                            <div class='btn_ver'>
+                                <a class='texto_btn' location.href='?page=editar&id_fornecedor=".$row->id_fornecedor">Alterar Dados</a>
+                            </div>
+                            </td>";
                     print "</tr>";                                 
                 }
                 print "</table>";
