@@ -87,7 +87,7 @@
                     print "<td>".$row->number."</td>";
                     print "<td>
                             <div class='btn_ver'>
-                                <a class='texto_btn' href='editar.php'>Alterar Dados</a>
+                                <a class='texto_btn' href='editar.php'&'id_fornecedor='.$row->id_fornecedor'>Alterar Dados</a>
                             </div>
                             </td>";
                     print "</tr>";                                 
