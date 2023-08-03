@@ -158,7 +158,7 @@ ul{
     padding-left: 13px;
     padding-right: 13px;
     width: 30%;
-    background-color: #BBD2EC;
+    background-color: #211b51;
     border-radius: 8px;
     height:220px;
     margin-bottom: 40px;
@@ -169,10 +169,9 @@ ul{
     font-size: 22px;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #3b3347;
+    color:#fff;
     margin-left: 5%;
     margin-right: 5%;
-    /* background-color: #f0ffff94; */
 }
 
 .center1
