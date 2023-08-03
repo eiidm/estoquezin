@@ -48,7 +48,7 @@
     <div class="corpo">
         
     <div class='colunadois'>
-        <img src="imghome.jpg" alt='imagem da home' class='imghome'>
+        <img src="imghomegabi.png" alt='imagem da home' class='imghome'>
     </div>
             <a name="topo"></a>
             <div class="Colunaum">
