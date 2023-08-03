@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #cde9ff;
+}
+
+h1
+{
+    padding-top: 80px;
+}
+
 ul{
     margin-left: -40px;
 }
@@ -13,8 +24,6 @@ ul{
     margin-left: auto;
     margin-right: auto;
     margin: 0px auto;
-  
-
 }
 .corpo{
     display: flex;
@@ -124,8 +133,9 @@ color: #597FB1;
     letter-spacing: -0.015em;
     color: #000000;
     margin-left: 120px;
-    width: 30%;
+    width: 50%;
 }
+
 .desc_txt2{
     
         font-family: 'Raleway';
