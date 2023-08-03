@@ -21,10 +21,10 @@
     if ($sql==true)
     {
         echo '<script language="javascript">';
-        echo "alert('Forncedor salvo com sucesso!')";
+        echo "alert('Forncedor edidato com sucesso!')";
         echo '</script>';	
 
-        header("Location: form_altera_fornecedores_front.php");
+        header("Location: editar.php");
     }   
     else
     {
