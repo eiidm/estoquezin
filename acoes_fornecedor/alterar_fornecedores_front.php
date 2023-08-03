@@ -86,10 +86,8 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                            <div class='btn_ver'>
-                                <a class='texto_btn' href='./form_altera_fornecedores_front.php'>Alterar Dados</a>
-                            </div>
-                            </td>";
+                        <button onclick=\"location.href='?editar&id_fornecedor=".$row->id_fornecedor"';\">Alterar</button>
+                     </td>";
                     print "</tr>";                                 
                 }
                 print "</table>";
