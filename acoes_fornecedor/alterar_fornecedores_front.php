@@ -72,10 +72,10 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                            <div class='btn_ver'>
-                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Editar</a>
-                            </div>
-                            </td>";
+                        <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Editar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class='texto_btn' href='excluir_fornecedores_front.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Excluir</a>
+                    </td>";
                     
                     print "</tr>";                                 
                 }

@@ -52,8 +52,10 @@ body
 {
     padding-top: 5px;
     text-align: center;
-    color:#fff;
+    color:#4F719D;
+    font-weight: bold;
     text-decoration: none;
+    margin-left: 3px;
 }
 
 /*-----------------------------------------------------*/
@@ -71,13 +73,13 @@ body
     color: #ffffff;
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 5px;
+    padding: 12px;
   }
   /* Estilo para células de dados */
   td {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 5px;
+    padding: 15px;
   }
 
   /* Estilo para linhas ímpares */
