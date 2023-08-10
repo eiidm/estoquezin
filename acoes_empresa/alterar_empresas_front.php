@@ -49,19 +49,41 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="quadro">
-        <div class="nome_empresa">
-            empresa xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
+        <?php
+            include ("../utils/conexao.php"); 
 
-        <div class="dados">
-            empresa@gmail.com<!-- colocar nome da empresa através do php -->
-            <br>cnpj
-            <br>telefone
-        </div> 
+            $sql= $conecta->query("SELECT * FROM nometabelaempresa");
+            $qtd= $sql->num_rows; 
 
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_empresas_front.php">Alterar Dados</a>
-        </div>
+            if($qtd > 0)
+            {
+                print "<table>";
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id_empresa."</td>";
+                    print "<td>".$row->razaosocial."</td>";
+                    print "<td>".$row->email."</td>";
+                    print "<td>".$row->cnpj."</td>";
+                    print "<td>".$row->endereco."</td>";
+                    print "<td>".$row->telefone."</td>";
+                    print "<td>".$row->senha."</td>";
+                    print "<td>
+                             <div class='btn_ver'>
+                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo' .$row->id_empresa.'; ?>'>Alterar empresa</a>
+                            </div>
+                        </td>";
+                    print "</tr>";                                 
+    }
+    print "</table>";
+}
+else
+{
+    print "<p>Não encontrou resultados</p>";
+}
+
+mysqli_close($conecta); 
+?>       
     </div>       
 
 </body>

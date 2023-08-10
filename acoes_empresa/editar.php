@@ -47,6 +47,13 @@
     <div class='home'>
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
+
+    
+    <?php
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM nometabelaempresa WHERE id_empresa=".$_REQUEST["id_empresa"]);
+       $row = $sql->fetch_object();
+    ?> 
  
 
     <div class="container">
@@ -55,44 +62,48 @@
             <form class="form" action="./alterar_empresas_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">       
-                        <?php
-                            include ("../utils/conexao.php"); 
+                    <input type="text" name="id_empresa" value="<?php print $row->id_empresa; ?>" >   
+                        <br>Razao Social
+                        <label class="label-input">
+                            <input type="text" name="razaosocial" value="<?php print $row->razaosocial; ?>" >
+                        </label>
+        
+                        <br>Email
+                        <label class="label-input">
+                            <input type="text" name="email" value="<?php print $row->email; ?>" >
+                        </label>
 
-                            $sql= $conecta->query("SELECT * FROM nometabelaempresa");
-
-                            $qtd= $sql->num_rows; 
-
-                            if($qtd > 0)
-                            {
-                                print "<table>";
-                                while($row = $sql->fetch_object())
-                                {
-                                    print "<tr>";
-                                    print "<td>".$row->id_empresa."</td>";
-                                    print "<td>".$row->razaosocial."</td>";
-                                    print "<td>".$row->email."</td>";
-                                    print "<td>".$row->cnpj."</td>"; 
-                                    print "<td>".$row->endereco."</td>";
-                                    print "<td>".$row->telefone."</td>";
-                                    print "<td>".$row->senha."</td>"; 
-                                    print "</tr>";                                 
-                                }
-                                print "</table>";
-                            }else{
-                                print "<p>Não encontrou resultados</p>";
-                            }
-
-                            mysqli_close($conecta);
-
-                        ?>
+                        <br>Cnpj
+                        <label class="label-input">
+                            <input type="text" name="cnpj" value="<?php print $row->cnpj; ?>" >
+                        </label>
                     </div><!--coluna um-->
         
                     <div class="colunaDois">
+
+                    <br>Endereço
+                        <label class="label-input">
+                            <input type="text" name="endereco" value="<?php print $row->endereco; ?>" >
+                        </label>
+
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="number" name="telefone" value="<?php print $row->telefone; ?>" >
+                        </label>
+
+                        <br>senha
+                        <label class="label-input">
+                            <input type="tel" name="senha" value="<?php print $row->senha; ?>" >
+                        </label>
 
                         
                     </div><!--coluna dois-->
                 </div><!--row-->
 
+                <?php
+                    mysqli_close($conecta);
+                ?>
+                
                 <div class="lado">
                     <button class="btn btn-dois">Alterar</button>
                 </div>
