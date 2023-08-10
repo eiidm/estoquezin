@@ -65,10 +65,10 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                            <div class='btn_ver'>
-                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Alterar Dados</a>
-                            </div>
-                            </td>";
+                    <div class='btn_ver'>
+                        <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo' .$row->id_fornecedor.'; ?>'>Alterar Dados</a>
+                     </div>
+                         </td>";
                     print "</tr>";                                 
                 }
                 print "</table>";
@@ -84,3 +84,7 @@
 
 </body>
 </html>
+
+<!--<div class='btn_ver'>
+                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Alterar Dados</a>
+                            </div>-->
