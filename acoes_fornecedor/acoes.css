@@ -39,7 +39,7 @@ body
 .btn_ver
 {
     text-align: center;
-    width: 240px;
+    width: 70px;
     height: 30px;
     background: #4F719D;
     margin-left: 5px;
@@ -55,3 +55,32 @@ body
     color:#fff;
     text-decoration: none;
 }
+
+/*-----------------------------------------------------*/
+  /* Estilo para a tabela */
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 135px;
+  }
+
+  th
+  {
+    background-color: #4F719D;
+    color: #ffffff;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+  }
+  /* Estilo para células de dados */
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+
+  /* Estilo para linhas ímpares */
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }

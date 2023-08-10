@@ -48,16 +48,7 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="quadro">
-        <div class="nome_empresa">
-            empresa xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
-
-        <div class="dados">
-            empresa@gmail.com<!-- colocar nome da empresa através do php -->
-            <br>cnpj
-            <br>telefone
-        </div> 
+    
 
         <div class="btn_ver">
             <a class="texto_btn" href="./form_altera_empresas_front.php">Alterar Dados</a>
