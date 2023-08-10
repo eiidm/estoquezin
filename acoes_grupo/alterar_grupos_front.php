@@ -49,13 +49,37 @@
     </div> <!-- ------ MENU ------ -->
 
     <div class="quadro">
-        <div class="nome_grupo">
-            grupo xxxx<!-- colocar nome da empresa através do php -->
-        </div> 
+    <?php
+            include ("../utils/conexao.php"); 
 
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_grupos_front.php">Alterar Dados</a>
-        </div>
+            $sql= $conecta->query("SELECT * FROM nometabelagrupo");
+            $qtd= $sql->num_rows; 
+
+            if($qtd > 0)
+            {
+                print "<table>";
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id_grupo."</td>";
+                    print "<td>".$row->nomegrupo."</td>";
+                    print "<td>
+                    <div class='btn_ver'>
+                        <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo' .$row->id_grupo.'; ?>'>Alterar Grupos</a>
+                     </div>
+                         </td>";
+                    print "</tr>";                                 
+                }
+                print "</table>";
+            }
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
+
+            mysqli_close($conecta); 
+        ?>       
+   
     </div>       
 
 

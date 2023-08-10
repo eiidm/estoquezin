@@ -57,7 +57,7 @@
                     <?php
                         include ("../utils/conexao.php"); 
 
-                        $sql= $conecta->query("SELECT * FROM nometabelagrupo");
+                        $sql= $conecta->query("SELECT * FROM nometabelagrupo WHERE id_fornecedor=".$_REQUEST["id_grupo"]);
 
                         $qtd= $sql->num_rows; 
 

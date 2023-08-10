@@ -80,6 +80,7 @@
                                 <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Alterar</a>
                             </div>
                             </td>";
+                    
                     print "</tr>";                                 
                 }
                 print "</table>";
@@ -91,6 +92,5 @@
 
             mysqli_close($conecta); 
         ?>       
-   
 </body>
 </html>
