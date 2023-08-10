@@ -48,7 +48,6 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="quadro">
         <?php
             include ("../utils/conexao.php"); 
 
@@ -74,17 +73,16 @@
                             </div>
                         </td>";
                     print "</tr>";                                 
-    }
-    print "</table>";
-}
-else
-{
-    print "<p>Não encontrou resultados</p>";
-}
+                }
+                print "</table>";
+            }
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
 
-mysqli_close($conecta); 
-?>       
-    </div>       
+            mysqli_close($conecta); 
+        ?>            
 
 </body>
 </html>

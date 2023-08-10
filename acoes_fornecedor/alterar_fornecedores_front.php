@@ -44,7 +44,6 @@
             </ul>
         </div>
     
-    <div class="quadro">
         <?php
             include ("../utils/conexao.php"); 
 
@@ -54,6 +53,18 @@
             if($qtd > 0)
             {
                 print "<table>";
+
+                print "<tr>";
+                    print "<th>ID</td>";
+                    print "<th>Nome</td>";
+                    print "<th>Razão Social</td>";
+                    print "<th>Contato</td>";
+                    print "<th>CNPJ</td>";
+                    print "<th>Inscrição Estadual</td>";
+                    print "<th>Telefone</td>";
+                    print "<th>Editar</td>";
+                print "</tr>";
+
                 while($row = $sql->fetch_object())
                 {
                     print "<tr>";
@@ -65,10 +76,11 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                    <div class='btn_ver'>
-                        <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo' .$row->id_fornecedor.'; ?>'>Alterar Dados</a>
-                     </div>
-                         </td>";
+                            <div class='btn_ver'>
+                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Alterar</a>
+                            </div>
+                            </td>";
+                    
                     print "</tr>";                                 
                 }
                 print "</table>";
@@ -80,11 +92,5 @@
 
             mysqli_close($conecta); 
         ?>       
-   
-        </div>
 </body>
 </html>
-
-<!--<div class='btn_ver'>
-                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id_fornecedor; ?>'>Alterar Dados</a>
-                            </div>-->
