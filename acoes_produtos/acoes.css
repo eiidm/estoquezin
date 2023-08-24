@@ -42,6 +42,39 @@ body
 {
     padding-top: 5px;
     text-align: center;
-    color:#fff;
+    color:#4F719D;
+    font-weight: bold;
     text-decoration: none;
+    margin-left: 3px;
 }
+
+/*-----------------------------------------------------*/
+  /* Estilo para a tabela */
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 135px;
+  }
+
+  th
+  {
+    background-color: #4F719D;
+    color: #ffffff;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px;
+  }
+  /* Estilo para células de dados */
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Estilo para linhas ímpares */
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }

@@ -53,6 +53,18 @@
             if($qtd > 0)
             {
                 print "<table>";
+
+                print "<tr>";
+                    print "<th>ID</td>";
+                    print "<th>Razão Social</td>";
+                    print "<th>Email</td>";
+                    print "<th>CNPJ</td>";
+                    print "<th>Endereço</td>";
+                    print "<th>Telefone</td>";
+                    print "<th>Senha</td>";
+                    print "<th>Ações</td>";
+                print "</tr>";
+
                 while($row = $sql->fetch_object())
                 {
                     print "<tr>";
@@ -64,19 +76,20 @@
                     print "<td>".$row->telefone."</td>";
                     print "<td>".$row->senha."</td>";
                     print "<td>
-                             <div class='btn_ver'>
-                                <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo' .$row->id_empresa.'; ?>'>Alterar empresa</a>
-                            </div>
-                        </td>";
+                        <a class='texto_btn' href='editar.php?id_empresa=<?php echo $row->id_empresa; ?>'>Editar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class='texto_btn' href='excluir_empresas_front.php?id_empresa=<?php echo $row->id_empresa;  ?>'>Excluir</a>
+                    </td>";
+                    
                     print "</tr>";                                 
                 }
                 print "</table>";
             }
+            
             else
             {
                 print "<p>Não encontrou resultados</p>";
             }
-
             mysqli_close($conecta); 
         ?>            
 

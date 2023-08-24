@@ -79,7 +79,9 @@ body
   td {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 15px;
+    padding: 14px;
+    font-size: 14px;
+    text-align: center;
   }
 
   /* Estilo para linhas ímpares */

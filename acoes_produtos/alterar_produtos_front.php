@@ -44,16 +44,64 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    <div class="quadro">
-        <img src=""> <!-- colocar imagem através do php -->
-        <div class="nome_produto">
-            aaaaaaaa<!-- colocar nome do produto através do php -->
-        </div> 
+        <?php
+            include ("../utils/conexao.php"); 
 
-        <div class="btn_ver">
-            <a class="texto_btn" href="./form_altera_produtos.php">Alterar Dados</a>
-        </div>
-    </div>       
+            $sql= $conecta->query("SELECT * FROM material");
+            $qtd= $sql->num_rows; 
+
+            if($qtd > 0)
+            {
+                print "<table>";
+
+                print "<tr>";
+                    print "<th>ID</td>";
+                    print "<th>Nome Produto</td>";
+                    print "<th>Nome Grupo</td>";
+                    print "<th>Unidade</td>";
+                    print "<th>Local</td>";
+                    print "<th>NCM</td>";
+                    print "<th>OBS</td>";
+                    print "<th>Est. Max.</td>";
+                    print "<th>Est. Min.</td>";
+                    print "<th>Est. Ideal</td>";
+                    print "<th>Valor</td>";
+                    print "<th>Imagem</td>";
+                    print "<th>Ações</td>";
+                print "</tr>";
+
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id."</td>";
+                    print "<td>".$row->nomematerial."</td>";
+                    print "<td>".$row->nomegrupo."</td>";
+                    print "<td>".$row->unidade."</td>";
+                    print "<td>".$row->local."</td>";
+                    print "<td>".$row->id_NCM."</td>";
+                    print "<td>".$row->obs."</td>";
+                    print "<td>".$row->estoquemax."</td>";
+                    print "<td>".$row->estoquemin."</td>";
+                    print "<td>".$row->estoqueideal."</td>";
+                    print "<td>".$row->valor_custo."</td>";
+                    print "<td>".$row->fotomaterial."</td>";
+                    print "<td>
+                        <a class='texto_btn' href='editar.php?id_fornecedor=<?php echo $row->id; ?>'>Editar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class='texto_btn' href='excluir_fornecedores_front.php?id_fornecedor=<?php echo $row->id; ?>'>Excluir</a>
+                    </td>";
+                    
+                    print "</tr>";                                 
+                }
+                print "</table>";
+            }
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
+
+            mysqli_close($conecta); 
+        ?>       
 
 </body>
 </html>
