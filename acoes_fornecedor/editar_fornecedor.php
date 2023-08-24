@@ -91,13 +91,15 @@
                     </div><!--coluna dois-->
                 </div><!--row-->
 
-                <?php
-                    mysqli_close($conecta);
-                ?>
+                
 
                 <div class="lado">
                     <button class="btn btn-dois">Alterar</button>
                 </div>
+
+                <?php
+                    mysqli_close($conecta);
+                ?>
 
                 
             </form>

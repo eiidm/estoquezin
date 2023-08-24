@@ -65,6 +65,7 @@
                     print "<td>".$row->id_grupo."</td>";
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
+
                     <a class='texto_btn' href='editar.php?id_grupo=<?php echo' .$row->id_grupo.'; ?>Editar</a>
                     &nbsp;&nbsp;&nbsp;
                     <a class='texto_btn' href='excluir.php?id_grupo=<?php echo' .$row->id_grupo.'; ?>Excluir</a>
