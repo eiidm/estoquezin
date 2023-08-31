@@ -31,7 +31,11 @@
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_produtos/alterar_produtos_front.php'>Alteração/Exclusão</a></li>
                     <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
-                    <li><a class='menu_item' href=''>Pedido de compra</a></li>
+
+                <li><a class='menu_topico'>Item</a></li>
+                    <li><a class='menu_item' href='./cadastro_item_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href='./entrada_front.php'>Entrada</a></li>
+                    <li><a class='menu_item' href='./saida_front.php'>Saída</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href="./cadastro_fornecedor_front.php">Cadastro</a></li>
@@ -39,17 +43,12 @@
             </ul>
         </div>
 
-    <div class='home'>
-        <img scr=''>
-    </div> <!-- ------ MENU ------ -->
-
     <div class="container">
         <br> <br> 
         <h2 class="texto texto-um">Cadastro de item</h2><br> 
         <div class="tela Um">
             <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
                 <div class="colunaDois">       
-
                     <label class="label-input" for="">
                         <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
                     </label>
@@ -59,18 +58,12 @@
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="text" name="saldoitem" placeholder="Saldo item" required> 
+                        <input type="number" name="saldoitem" placeholder="Saldo item" required> 
                     </label>
-
-
                    
                     <button class="btn btn-dois">Cadastrar item</button>
                 </div>  <!--coluna dois-->
             </form>   
-            
-            
-
-
         </div>  <!--tela um-->
     </div><!--container-->
 
