@@ -53,7 +53,6 @@
         <div class="tela Um">
             <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
                 <div class="colunaDois">       
-
                     <label class="label-input" for="">
                         <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
                     </label>
@@ -63,18 +62,12 @@
                     </label>
 
                     <label class="label-input" for="">
-                        <input type="text" name="saldoitem" placeholder="Saldo item" required> 
+                        <input type="number" name="saldoitem" placeholder="Saldo item" required> 
                     </label>
-
-
                    
                     <button class="btn btn-dois">Cadastrar item</button>
                 </div>  <!--coluna dois-->
             </form>   
-            
-            
-
-
         </div>  <!--tela um-->
     </div><!--container-->
 
