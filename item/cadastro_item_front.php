@@ -43,10 +43,6 @@
             </ul>
         </div>
 
-    <div class='home'>
-        <img scr=''>
-    </div> <!-- ------ MENU ------ -->
-
     <div class="container">
         <br> <br> 
         <h2 class="texto texto-um">Cadastro de item</h2><br> 
