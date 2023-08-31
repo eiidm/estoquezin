@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./cadastro_item.css">
+    <link rel="stylesheet" href="./aquisicao.css">
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
@@ -41,6 +41,7 @@
                     <li><a class='menu_item' href="./cadastro_fornecedor_front.php">Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
-        </div>
-    </body>
+    </div>
+    
+</body>
 </html>
