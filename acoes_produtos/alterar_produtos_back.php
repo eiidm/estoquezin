@@ -8,34 +8,40 @@
    $unidade=$_POST["unidade"];
    $local=$_POST["local"];
    $ncm=$_POST["ncm"];
-   $obs=$_POST["obs"];
-   $estmax=$_POST["estmax"];
    $estmin=$_POST["estmin"];
+   $estmax=$_POST["estmax"];
    $estideal=$_POST["estideal"];
    $valor=$_POST["valor"];
+   $img=$_POST["img"];
+   $obs=$_POST["obs"];
 
-    $sql="UPDATE material 
-             SET nomematerial = '$nomematerial',
-                 nomegrupo = '$nomegrupo',
-                 unidade = '$unidade', 
-		     local = '$local', 
- 		     ncm = '$ncm', 
- 	           obs = '$obs', 
- 	           estmax = $estmax, 
- 	           estmin = $estmin, 
-	           estideal = $estideal, 
-                valor = $valor
-           WHERE id = $id;";
-    
-    $resultado_alterado=mysqli_query($conecta);
-    $qtde=mysqli_affected_rows($resultado_alterado);
+   $sql= $conecta->query("UPDATE material SET 
+   nomematerial='{$nomefornecedor}', 
+   nomegrupo='{$nomefornecedor}', 
+   unidade='{$nomefornecedor}', 
+   local='{$nomefornecedor}', 
+   id_NCM='{$nomefornecedor}', 
+   estoquemin='{$nomefornecedor}', 
+   estoquemax='{$nomefornecedor}', 
+   valor_custo='{$nomefornecedor}', 
+   fotomaterial='{$nomefornecedor}', 
+   obs='{$nomefornecedor}'
+    WHERE $id_grupo =".$_REQUEST["id"]);
 
-    if ($qtde > 0)
-        echo "<script type='text/javascript'>alert('Gravação OK !!!')</script>";
-    else	
-        echo "<script type='text/javascript'>alert('Erro na Gravação !!!')</script>";
+if ($sql==true)
+{
+    echo '<script language="javascript">';
+    echo "alert('Forncedor edidato com sucesso!')";
+    echo '</script>';	
 
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=pesquisar_produtos_front.php'>";
+    header("Location: alterar_produtos_front.php");
+}   
+else
+{
+     echo '<script language="javascript">';
+    echo "alert('Erro na gravação do forncedor!')";
+     echo '</script>';
+}
 
     // Fechando conexão com o Banco de Dados
     mysqli_close($conecta);

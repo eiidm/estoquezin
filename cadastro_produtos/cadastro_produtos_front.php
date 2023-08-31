@@ -102,6 +102,7 @@
                         <label class="label-input" for="">
                             <input type="text" name="obs" placeholder="   Observação" required>
                         </label>
+                        
                     </div>  <!--coluna dois-->
                 </div><!--coluna row-->
                 
