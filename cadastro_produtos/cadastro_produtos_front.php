@@ -22,21 +22,25 @@
 
                 <li><a class='menu_topico'>Empresas</a></li>
                     <li><a class='menu_item' href='../login_empresa/cadastro_empresa_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração/Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/alterar_empresas_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_empresa/excluir_empresas_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Grupos</a></li>
                     <li><a class='menu_item' href="../cadastro_grupo/cadastro_grupo_front.php">Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração/Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/alterar_grupos_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_grupo/excluir_grupos_front.php'>Exclusão</a></li>
 
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='cadastro_produtos_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_produtos/alterar_produtos_front.php'>Alteração/Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_produtos/alterar_produtos_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_produtos/excluir_produtos_front.php'>Exclusão</a></li>
                     <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
                     <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href='../cadastro_fornecedor/cadastro_fornecedor_front.php'>Cadastro</a></li>
-                    <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
+                    <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração</a></li>
+                    <li><a class='menu_item' href='../acoes_fornecedor/excluir_fornecedores_front.php'>Exclusão</a></li>
             </ul>
         </div>
 
@@ -70,18 +74,15 @@
                             <input type="number" name="ncm" placeholder="   NCM (ID)" required>
                         </label>
 
-                        <label class="label-input" for="">
-                            <input type="text" name="obs" placeholder="   Observação" required>
-                        </label>
                     </div>  <!--coluna um -->
                 
                     <div class="colunaDois">                    
                         <label class="label-input" for="">
-                            <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
+                            <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
                         </label>
                         
                         <label class="label-input" for="">
-                            <input type="number" name="estmin" placeholder="   Estoque mínimo" required> 
+                            <input type="number" name="estmax" placeholder="   Estoque máximo" required> 
                         </label>
 
                         <label class="label-input" for="">
@@ -92,12 +93,14 @@
                             <input type="text" name="valor" placeholder="   Valor de custo" required>
                         </label>
 
-                        <label class="label-input" for="">
-                            <input type="text" name="excluido" placeholder="   Excluido(s/n)" required>
-                        </label>
                         
                         <label class="label-input" for="">
                             <input type="file" name="img" placeholder="   Imagem do produto" required>
+                        </label>
+
+                        
+                        <label class="label-input" for="">
+                            <input type="text" name="obs" placeholder="   Observação" required>
                         </label>
                     </div>  <!--coluna dois-->
                 </div><!--coluna row-->
