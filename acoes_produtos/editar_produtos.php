@@ -1,3 +1,11 @@
+<?php
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM material WHERE id=".$_REQUEST["id"]);
+       $row = $sql->fetch_object();
+ ?> 
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,7 +40,6 @@
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_produtos/alterar_produtos_front.php'>Alteração/Exclusão</a></li>
                     <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
-                    <li><a class='menu_item' href=''>Pedido de compra</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href='../cadastro_fornecedor/cadastro_fornecedor_front.php'>Cadastro</a></li>
@@ -45,11 +52,7 @@
     </div> <!-- ------ MENU ------ -->
 
     
-    <?php
-        include ("../utils/conexao.php"); 
-       $sql= $conecta->query("SELECT * FROM nometabelaempresa WHERE id_empresa=".$_REQUEST["id_empresa"]);
-       $row = $sql->fetch_object();
-    ?> 
+    
  
 
     <div class="container">
@@ -58,20 +61,25 @@
             <form class="form" action="./alterar_empresas_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">       
-                    <input type="text" name="id_empresa" value="<?php print $row->id_empresa; ?>" >   
+                    <input type="text" name="id" value="<?php print $row->id; ?>" >   
                         <br>Razao Social
                         <label class="label-input">
-                            <input type="text" name="razaosocial" value="<?php print $row->razaosocial; ?>" >
+                            <input type="text" name="nomematerial" value="<?php print $row->nomematerial; ?>" >
                         </label>
         
                         <br>Email
                         <label class="label-input">
-                            <input type="text" name="email" value="<?php print $row->email; ?>" >
+                            <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >
                         </label>
 
                         <br>Cnpj
                         <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php print $row->cnpj; ?>" >
+                            <input type="text" name="unidade" value="<?php print $row->unidade; ?>" >
+                        </label>
+
+                        <br>Cnpj
+                        <label class="label-input">
+                            <input type="text" name="local" value="<?php print $row->local; ?>" >
                         </label>
                     </div><!--coluna um-->
         
@@ -79,31 +87,58 @@
 
                     <br>Endereço
                         <label class="label-input">
-                            <input type="text" name="endereco" value="<?php print $row->endereco; ?>" >
+                            <input type="text" name="ncm" value="<?php print $row->id_NCM; ?>" >
                         </label>
 
                         <br>Telefone
                         <label class="label-input">
-                            <input type="number" name="telefone" value="<?php print $row->telefone; ?>" >
+                            <input type="number" name="estmin" value="<?php print $row->estoquemin; ?>" >
+                        </label>
+
+                        
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="number" name="estmax" value="<?php print $row->estoquemax; ?>" >
+                        </label>
+
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="number" name="estideal" value="<?php print $row->estoqueideal; ?>" >
                         </label>
 
                         <br>senha
                         <label class="label-input">
-                            <input type="tel" name="senha" value="<?php print $row->senha; ?>" >
+                            <input type="tel" name="valor" value="<?php print $row->valor_custo; ?>" >
                         </label>
+
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="number" name="img" value="<?php print $row->fotomaterial; ?>" >
+                        </label>
+
+                        <br>Telefone
+                        <label class="label-input">
+                            <input type="number" name="obs" value="<?php print $row->obs; ?>" >
+                        </label>
+
+
 
                         
                     </div><!--coluna dois-->
                 </div><!--row-->
 
-                <?php
-                    mysqli_close($conecta);
-                ?>
+               
                 
                 <div class="lado">
                     <button class="btn btn-dois">Alterar</button>
                 </div>
+
+                <?php
+                    mysqli_close($conecta);
+                ?>
             </form>
+
+            
         </div><!--tela um-->
     </div><!--container-->
 </body>

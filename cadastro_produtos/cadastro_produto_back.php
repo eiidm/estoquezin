@@ -6,18 +6,19 @@ $nomegrupo=$_POST["nomegrupo"];
 $unidade=$_POST["unidade"];
 $local=$_POST["local"];
 $ncm=$_POST["ncm"];
-$obs=$_POST["obs"];
-$estmax=$_POST["estmax"];
-$estmin=$_POST["estmin"];
+$estmin=$_POST["estmax"];
+$estmax=$_POST["estmin"];
 $estideal=$_POST["estideal"];
 $valor=$_POST["valor"];
-$excluido='n';
+$img=$_POST["img"];
+$obs=$_POST["obs"];
+
 
 $sql=$conecta->query("INSERT INTO material
-(nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, excluido)
+(nomematerial, nomegrupo, unidade, local, id_NCM, estoquemin, estoquemax, estoqueideal, valor_custo, fotomaterial, obs)
 VALUES (
   '{$nomematerial}', '{$nomegrupo}', '{$unidade}', '{$local}', '{$ncm}', 
-  '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}')");
+  '{$estmin}', '{$estmax}', '{$estideal}', '{$valor}', '{$img}', '{$obs}')");
 
 if ($sql==true)
 {
