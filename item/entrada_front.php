@@ -42,6 +42,6 @@
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
     </div>
-    
+
 </body>
 </html>
