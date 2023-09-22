@@ -48,7 +48,7 @@
         <h2 class="texto texto-um">Cadastro de item</h2><br> 
         <div class="tela Um">
             <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
-                <div class="colunaDois">       
+                <div class="colunaDois">                
                     <label class="label-input" for="">
                         <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
                     </label>

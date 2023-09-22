@@ -42,6 +42,62 @@
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
     </div>
+
+   <?php
+        include ("../utils/conexao.php"); 
+
+        $sql= $conecta->query("SELECT * FROM nometabelafornecedor");
+        $qtd= $sql->num_rows; 
+   ?>
+
+    <form action="processar.php" method="POST">
+        <ul>
+            <?php
+                while ($row = $sql->fetch_object()) 
+                {
+                    echo "<li><input type='radio' name='fornecedor_selecionado[]' value='{$row->id_fornecedor}'> {$row->nomefornecedor}</li>";
+                }
+            ?>
+        </ul>
+        <input type="submit" value="Selecionar fornecedor">
+    </form>
     
+    <div class="container">
+        <br> <br> 
+        <h2 class="texto texto-um">Entrada do item</h2><br> 
+        <div class="tela Um">
+            <form class="form" action="./entrada_back.php" method="post">     
+                <div class="colunaDois">       
+                    <label class="label-input" for="">
+                        <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <input type="text" name="fornecedor" placeholder=" Fornecedor" required> 
+                    </label>
+
+                    <label class="label-input" for="">
+                        <input type="date" name="data" placeholder=" Data de aquisição" required> 
+                    </label>
+
+                    <label class="label-input" for="">
+                        <input type="number" name="valor_un" placeholder=" Valor unitário" required> 
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <input type="number" name="qtde" placeholder=" Quantidade" required> 
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <input type="number" name="valor_total" placeholder=" Valor total" required> 
+                    </label>
+
+                   
+                    <button class="btn btn-dois">Cadastrar item</button>
+                </div>  <!--coluna dois-->
+            </form>   
+        </div>  <!--tela um-->
+    </div><!--container-->
+
 </body>
 </html>
