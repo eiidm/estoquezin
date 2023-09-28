@@ -61,6 +61,18 @@
         </ul>
         <input type="submit" value="Selecionar fornecedor">
     </form>
+
+    <form action="processar_produto.php" method="POST">
+        <ul>
+            <?php
+                while ($row = $sql->fetch_object()) 
+                {
+                    echo "<li><input type='radio' name='produto_selecionado[]' value='{$row->id}'> {$row->nomematerial}</li>";
+                }
+            ?>
+        </ul>
+        <input type="submit" value="Selecionar produto">
+    </form>
     
     <div class="container">
         <br> <br> 
