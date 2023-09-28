@@ -18,6 +18,6 @@
             }
         }
 
-        echo "forn selecionados foram processados com sucesso!";
+        echo "Fornecedor selecionado com sucesso!";
     }
 ?>
