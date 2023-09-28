@@ -10,7 +10,7 @@ $estmin=$_POST["estmax"];
 $estmax=$_POST["estmin"];
 $estideal=$_POST["estideal"];
 $valor=$_POST["valor"];
-$img=$_POST["img"];
+$img=$_FILES["img"];
 $obs=$_POST["obs"];
 
 
