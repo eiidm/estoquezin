@@ -2,38 +2,31 @@
 
     session_start();
     	// script foi chamado de index.php
-    include "../utils/conexao.php";
+    if(empty($_POST) or (empty($_POST["cnpj"]) or (empty($_POST["senha"]))))
+        print "<script>location.href='login_empresa_front.php'</script>";
+    include ("../utils/conexao.php");
 	
+
 	$cnpj = $_POST["cnpj"];
-    $senha = MD5($_POST["senha"]);
+    $senha = $_POST["senha"];
 
-	$sql = "select * from nometabelaempresa where cnpj = '$cnpj' and senha = '$senha' ";
+	$sql = $conecta->query("SELECT * from nometabelaempresa where cnpj = '{$cnpj}' and senha = '{$senha}' ") or die($conecta->error);
 
-    //mascara de dados cnpj
-    if ($_SERVER["REQUEST_METHOD"] == "POST") 
-    {
-        $cnpj = $_POST["cnpj"];
+    $row=$sql->fetch_object();
 
-        // Remove caracteres não numéricos do CNPJ
-        $cnpj = preg_replace('/[^0-9]/', '', $cnpj);
+    $qtd = $sql->num_rows;
+
+    if($qtd > 0){
+        $_SESSION["razaosocial"]= $row->razaosocial;
+        $_SESSION["email"]= $row->email;
+        $_SESSION["cnpj"]= $cnpj;
+        $_SESSION["endereco"]= $row->enereco;
+        $_SESSION["telefone"]= $row->telefone;
+        $_SESSION["senha"]= $senha;
+        print  "<script>location.href='../cadastro_produtos/cadastro_produtos_front.php'</script>";
     }
-
-	$res = mysqli_query($conecta);
-      if (mysqli_num_rows($res) > 0)
-      {
-        $linha = mysqli_fetch_array($res);
-
-        $_SESSION["empresalogada"] = $linha;
-        $_SESSION["adm"] = $linha['adm'];
-        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../index.php'>";
-     }
-     else
-     {
-        echo '<script language="javascript">';
-        echo "alert('cnpj ou senha inválidos!')";
-        echo '</script>';	
-
-        echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=login_empresa_front.php'>";
-     }
+    else{
+        print "<script>alert('Empresa não encontrada')</script>";
+    }
 
 ?>
