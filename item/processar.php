@@ -1,8 +1,7 @@
 <?php
-    $query = "SELECT * FROM fornecedores";
-    $resultado = mysqli_query($conexao, $query);
+    $sql=$conecta->query("SELECT * FROM fornecedores");
 
-    if (!$resultado) {
+    if (!$sql) {
         die("Erro na consulta ao banco de dados: " . mysqli_error($conexao));
     }
 
