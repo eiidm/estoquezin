@@ -1,5 +1,5 @@
 <?php
-    $sql=$conecta->query("SELECT * FROM fornecedores");
+    $sql=$conecta->query("SELECT * FROM nometabelafornecedor");
 
     if (!$sql) {
         die("Erro na consulta ao banco de dados: " . mysqli_error($conexao));
@@ -12,9 +12,8 @@
 
         // Exemplo: inserir os produtos selecionados em uma tabela "produtos_selecionados"
         foreach ($fornecedor_selecionado as $fornecedor_id) {
-            $query = "INSERT INTO fornecedor_selecionado (fornecedor_id) VALUES ('$fornecedor_id')";
-            $resultado = mysqli_query($conexao, $query);
-            if (!$resultado) {
+            $sql=$conecta->query("INSERT INTO fornecedor_selecionado (fornecedor_id) VALUES ('{$fornecedor_id}')");
+            if (!$sql) {
                 die("Erro ao inserir fornecedor selecionado: " . mysqli_error($conexao));
             }
         }
