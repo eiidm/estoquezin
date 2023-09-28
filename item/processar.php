@@ -12,7 +12,7 @@
 
         // Exemplo: inserir os produtos selecionados em uma tabela "produtos_selecionados"
         foreach ($fornecedor_selecionado as $fornecedor_id) {
-            $sql=$conecta->query("INSERT INTO fornecedor_selecionado (fornecedor_id) VALUES ('{$fornecedor_id}')");
+            $sql=$conecta->query("INSERT INTO entrada(fornecedor_id) VALUES ('{$fornecedor_id}')");
             if (!$sql) {
                 die("Erro ao inserir fornecedor selecionado: " . mysqli_error($conexao));
             }
