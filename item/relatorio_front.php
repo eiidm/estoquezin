@@ -61,7 +61,7 @@
                     print "<th>Produto</th>";
                     print "<th>Valor Unitário</th>";
                     print "<th>Quantidade</th>";
-                    print "<th>Valor Tototal</th>";
+                    print "<th>Valor Total</th>";
                 print "</tr>";
 
                 while($row = $sql->fetch_object())

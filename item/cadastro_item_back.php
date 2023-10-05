@@ -1,11 +1,17 @@
 <?php
 include ("../utils/conexao.php");
 
+$nomeitem=$_POST["nomeitem"];
+$codigo=$_POST["codigo"];
+$descricao=$_POST["descricao"];
 $valoraquisicao=$_POST["valoraquisicao"];
 $valorvenda=$_POST["valorvenda"];
-$saldoitem=$_POST["saldoitem"];
+$qtde_estoque=$_POST["qtde_estoque"];
+$qtde_vendida=$_POST["qtde_vendida"];
+$saldoitem=$qtde_estoque-$qtde_vendida; 
 
-$sql=$conecta->query("INSERT INTO item (valoraquisicao. valorvenda, saldo) VALUES ('{$valoraquisicao}','{$valorvenda}', '{$saldoitem}')");
+$sql=$conecta->query("INSERT INTO item (nomeitem, codigo, descricao, valoraquisicao, valorvenda, quantidade_estoque, quantidade_vendida, saldo)
+ VALUES ('{$nomeitem}', '{$descricao}', '{$codigo}', '{$valoraquisicao}','{$valorvenda}', '{$qtde_estoque}', '{$qtde_vendida}', '{$saldoitem}')");
 
 if ($sql==true)
 {
@@ -13,7 +19,7 @@ if ($sql==true)
     echo "alert('Empresa salvo com sucesso!')";
     echo '</script>';	
 
-    header("Location: cadastro_grupo_front.php");
+    header("Location: cadastro_item_front.php");
 }   
 else
 {

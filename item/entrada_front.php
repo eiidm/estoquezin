@@ -88,16 +88,16 @@
                     </select>  
 
                     <label class="label-input" for="">
-                        <input type="text" name="valor_un" placeholder=" Valor unitário" required> 
+                        <input type="number" name="valor_un" placeholder=" Valor unitário" required> 
                     </label>
                     
                     <label class="label-input" for="">
                         <input type="number" name="qtde" placeholder=" Quantidade" required> 
                     </label>
                     
-                    <label class="label-input" for="">
-                        <input type="text" name="valor_total" placeholder=" Valor total" required> 
-                    </label>
+                    <!--<label class="label-input" for="">
+                        <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" > 
+                    </label>-->
                     
                    
                     <button class="btn btn-dois">Realizar Entrada</button>

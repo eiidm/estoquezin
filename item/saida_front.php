@@ -42,5 +42,53 @@
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
         </div>
+        <?php
+            include ("../utils/conexao.php"); 
+
+            $sql= $conecta->query("SELECT * FROM item");
+            $qtd= $sql->num_rows; 
+
+            if($qtd > 0)
+            {
+                print "<table>";
+
+                print "<tr>";
+                    print "<th>ID</th>";
+                    print "<th>Nome do Item</th>";
+                    print "<th>Código do item</th>";
+                    print "<th>Descrição</th>";
+                    print "<th>Valor de Aquisição</th>";
+                    print "<th>Valor de Venda</th>";
+                    print "<th>Quantidade de estoque </th>";
+                    print "<th>Quantidade de Venda</th>";
+                    print "<th>Saldo do item</th>";
+                print "</tr>";
+
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id_item."</td>";
+                    print "<td>".$row->nomeitem."</td>";
+                    print "<td>".$row->codigo."</td>";
+                    print "<td>".$row->descricao."</td>";
+                    print "<td>".$row->valoraquisicao."</td>";
+                    print "<td>".$row->valorvenda."</td>";
+                    print "<td>".$row->quantiade_estoque."</td>";
+                    print "<td>".$row->quantidade_vendida."</td>";
+                    print "<td>".$row->saldo."</td>";
+                    print "</tr>";                                 
+                }
+                print "</table>";
+            }
+            
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
+            mysqli_close($conecta); 
+        ?>            
+
+
+
     </body>
 </html>
