@@ -100,8 +100,6 @@
                         <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" > 
                     </label>-->
 
-                    
-                   
                     <button class="btn btn-dois">Realizar Entrada</button>
                 </div>  <!--coluna dois-->
             </form>   
