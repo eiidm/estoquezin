@@ -38,6 +38,8 @@
                     <li><a class='menu_item' href='../item/cadastro_item_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href='../item/entrada_front.php'>Entrada</a></li>
                     <li><a class='menu_item' href='../item/saida_front.php'>Saída</a></li>
+                    <li><a class='menu_item' href='../item/relatorio_front.php'>Relatório de entrada</a></li>
+
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href='../cadastro_fornecedor/cadastro_fornecedor_front.php'>Cadastro</a></li>
