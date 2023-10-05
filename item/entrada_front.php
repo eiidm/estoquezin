@@ -87,7 +87,7 @@
                     </select>  
 
                     <label class="label-input" for="">
-                        <input type="number" name="valor_un" placeholder=" Valor unitário" required> 
+                        <input type="text" name="valor_un" placeholder=" Valor unitário" required> 
                     </label>
                     
                     <label class="label-input" for="">
