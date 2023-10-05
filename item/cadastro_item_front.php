@@ -54,6 +54,10 @@
                     </label>
                     
                     <label class="label-input" for="">
+                        <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
                         <input type="text" name="codigo" placeholder="Código do item" required>
                     </label>
 

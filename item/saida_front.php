@@ -55,6 +55,7 @@
                 print "<tr>";
                     print "<th>ID</th>";
                     print "<th>Nome do Item</th>";
+                    print "<th>Documento Fiscal da compra</th>";
                     print "<th>Código do item</th>";
                     print "<th>Descrição</th>";
                     print "<th>Valor de Aquisição</th>";
@@ -69,6 +70,7 @@
                     print "<tr>";
                     print "<td>".$row->id_item."</td>";
                     print "<td>".$row->nomeitem."</td>";
+                    print "<td>".$row->documento_compra."</td>";
                     print "<td>".$row->codigo."</td>";
                     print "<td>".$row->descricao."</td>";
                     print "<td>".$row->valoraquisicao."</td>";

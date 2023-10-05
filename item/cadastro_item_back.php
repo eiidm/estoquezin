@@ -2,6 +2,7 @@
 include ("../utils/conexao.php");
 
 $nomeitem=$_POST["nomeitem"];
+$docfiscal=$_POST["docfiscal"];
 $codigo=$_POST["codigo"];
 $descricao=$_POST["descricao"];
 $valoraquisicao=$_POST["valoraquisicao"];
@@ -10,8 +11,8 @@ $qtde_estoque=$_POST["qtde_estoque"];
 $qtde_vendida=$_POST["qtde_vendida"];
 $saldoitem=$qtde_estoque-$qtde_vendida; 
 
-$sql=$conecta->query("INSERT INTO item (nomeitem, codigo, descricao, valoraquisicao, valorvenda, quantidade_estoque, quantidade_vendida, saldo)
- VALUES ('{$nomeitem}', '{$descricao}', '{$codigo}', '{$valoraquisicao}','{$valorvenda}', '{$qtde_estoque}', '{$qtde_vendida}', '{$saldoitem}')");
+$sql=$conecta->query("INSERT INTO item (nomeitem, documento_compra, codigo, descricao, valoraquisicao, valorvenda, quantidade_estoque, quantidade_vendida, saldo)
+ VALUES ('{$nomeitem}', '{$docfiscal}','{$descricao}', '{$codigo}', '{$valoraquisicao}','{$valorvenda}', '{$qtde_estoque}', '{$qtde_vendida}', '{$saldoitem}')");
 
 if ($sql==true)
 {
