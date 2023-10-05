@@ -43,19 +43,20 @@
             </ul>
     </div>
 
+    
    <?php
-        include ("../utils/conexao.php"); 
+        /*include ("../utils/conexao.php"); 
 
         $sql= $conecta->query("SELECT * FROM nometabelafornecedor");
-        $qtd= $sql->num_rows; 
+        $qtd= $sql->num_rows; */
    ?>
-    
     <div class="container">
         <br> <br> 
         <h2 class="texto texto-um">Entrada do item</h2><br> 
         <div class="tela Um">
             <form class="form" action="./entrada_back.php" method="post">     
-                <div class="colunaDois">                       
+                <div class="colunaDois"> 
+
                     <label class="label-input" for="">
                         <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
                     </label>
@@ -87,7 +88,7 @@
                     </select>  
 
                     <label class="label-input" for="">
-                        <input type="text" name="valor_un" placeholder=" Valor unitário" required> 
+                        <input type="number" name="valor_un" placeholder=" Valor unitário" required> 
                     </label>
                     
                     <label class="label-input" for="">
@@ -95,10 +96,10 @@
                     </label>
                     
 
-                    <!--colocar cálculo -->
-                    <label class="label-input" for="">
-                        <input type="text" name="valor_total" placeholder=" Valor total" required> 
-                    </label>
+                    <!--<label class="label-input" for="">
+                        <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" > 
+                    </label>-->
+
                     
                    
                     <button class="btn btn-dois">Realizar Entrada</button>

@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./cadastro_item.css">
+    <link rel="stylesheet" href="./aquisicao.css">
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Cadastro de Fornecedores</title>
+    <title>Entrada do Item</title>
 </head>
 
 <body>
@@ -41,51 +41,52 @@
                     <li><a class='menu_item' href="./cadastro_fornecedor_front.php">Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
-        </div>
+    </div>
 
-    <div class="container">
-        <br> <br> 
-        <h2 class="texto texto-um">Cadastro de item</h2><br> 
-        <div class="tela Um">
-            <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
-                <div class="colunaDois">  
-                    <label class="label-input" for="">
-                        <input type="text" name="nomeitem" placeholder="Nome do item" required>
-                    </label>
+    <?php
+            include ("../utils/conexao.php"); 
+
+            $sql= $conecta->query("SELECT * FROM nometabelaentrada");
+            $qtd= $sql->num_rows; 
+
+            if($qtd > 0)
+            {
+                print "<table>";
+
+                print "<tr>";
+                    print "<th>ID</th>";
+                    print "<th>Documento Fiscal</th>";
+                    print "<th>Fornecedor</th>";
+                    print "<th>Data</th>";
+                    print "<th>Produto</th>";
+                    print "<th>Valor Unitário</th>";
+                    print "<th>Quantidade</th>";
+                    print "<th>Valor Total</th>";
+                print "</tr>";
+
+                while($row = $sql->fetch_object())
+                {
+                    print "<tr>";
+                    print "<td>".$row->id_entrada."</td>";
+                    print "<td>".$row->documento_compra."</td>";
+                    print "<td>".$row->fornecedor."</td>";
+                    print "<td>".$row->data."</td>";
+                    print "<td>".$row->material."</td>";
+                    print "<td>".$row->valor_unitario."</td>";
+                    print "<td>".$row->quantidade."</td>";
+                    print "<td>".$row->valor_total."</td>";
                     
-                    <label class="label-input" for="">
-                        <input type="text" name="codigo" placeholder="Código do item" required>
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="text" name="descricao" placeholder="Descrição do item" required>
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="text" name="valorvenda" placeholder=" Valor de venda" required> 
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="number" name="qtde_estoque" placeholder=" Quantidade Estoque" required> 
-                    </label>
-
-                    <label class="label-input" for="">
-                        <input type="number" name="qtde_vendida" placeholder=" Quantidade Vendida" required> 
-                    </label>
-
-                    <!--<label class="label-input" for="">
-                        <input type="number" name="saldoitem" placeholder="Saldo item" required> 
-                    </label>-->
-                   
-                    <button class="btn btn-dois">Cadastrar item</button>
-                </div>  <!--coluna dois-->
-            </form>   
-        </div>  <!--tela um-->
-    </div><!--container-->
+                    print "</tr>";                                 
+                }
+                print "</table>";
+            }
+            
+            else
+            {
+                print "<p>Não encontrou resultados</p>";
+            }
+            mysqli_close($conecta); 
+        ?>            
 
 </body>
 </html>

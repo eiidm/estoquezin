@@ -54,7 +54,7 @@
 
     <div class="container">
         <h2 class="texto texto-um">Cadastro de Produtos</h2>
-        <div class="tela Um">
+        <div class="tela Um"> 
             <form class="form" action="./cadastro_produto_back.php" method="POST" enctype="multipart/form-data"> 
                 <div class="row">    
                     <div class="colunaUm">      
