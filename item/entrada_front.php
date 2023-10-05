@@ -94,6 +94,8 @@
                         <input type="number" name="qtde" placeholder=" Quantidade" required> 
                     </label>
                     
+
+                    <!--colocar cálculo -->
                     <label class="label-input" for="">
                         <input type="text" name="valor_total" placeholder=" Valor total" required> 
                     </label>
