@@ -49,48 +49,42 @@
         $sql= $conecta->query("SELECT * FROM nometabelafornecedor");
         $qtd= $sql->num_rows; 
    ?>
-
-    <form action="processar.php" method="POST">
-        <ul>
-            <?php
-                while ($row = $sql->fetch_object()) 
-                {
-                    echo "<li><input type='radio' name='fornecedor_selecionado[]' value='{$row->id_fornecedor}'> {$row->nomefornecedor}</li>";
-                }
-            ?>
-        </ul>
-        <input type="submit" value="Selecionar fornecedor">
-    </form>
-
-    <form action="processar_produto.php" method="POST">
-        <ul>
-            <?php
-                while ($row = $sql->fetch_object()) 
-                {
-                    echo "<li><input type='radio' name='produto_selecionado[]' value='{$row->id}'> {$row->nomematerial}</li>";
-                }
-            ?>
-        </ul>
-        <input type="submit" value="Selecionar produto">
-    </form>
     
     <div class="container">
         <br> <br> 
         <h2 class="texto texto-um">Entrada do item</h2><br> 
         <div class="tela Um">
             <form class="form" action="./entrada_back.php" method="post">     
-                <div class="colunaDois">       
+                <div class="colunaDois">                       
                     <label class="label-input" for="">
                         <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
                     </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="fornecedor" placeholder=" Fornecedor" required> 
-                    </label>
+                    <select id="fornecedor" name="fornecedor" required>
+                        <option value="">Selecione um fornecedor</option>
+                        <?php
+                            $sql = $conecta->query('SELECT * FROM nometabelafornecedor');
+                            while ($row = $sql->fetch_object()) 
+                            {
+                                echo "<option value='{$row->id_fornecedor}'>{$row->nomefornecedor}</option>";
+                            }
+                        ?>
+                    </select>                       
 
                     <label class="label-input" for="">
                         <input type="date" name="data" placeholder=" Data de aquisição" required> 
                     </label>
+
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione um produto</option>
+                        <?php
+                            $sql = $conecta->query('SELECT * FROM material');
+                            while ($row = $sql->fetch_object()) 
+                            {
+                                echo "<option value='{$row->id}'>{$row->nomematerial}</option>";
+                            }
+                        ?>
+                    </select>  
 
                     <label class="label-input" for="">
                         <input type="number" name="valor_un" placeholder=" Valor unitário" required> 
@@ -101,11 +95,11 @@
                     </label>
                     
                     <label class="label-input" for="">
-                        <input type="number" name="valor_total" placeholder=" Valor total" required> 
+                        <input type="text" name="valor_total" placeholder=" Valor total" required> 
                     </label>
-
+                    
                    
-                    <button class="btn btn-dois">Cadastrar item</button>
+                    <button class="btn btn-dois">Realizar Entrada</button>
                 </div>  <!--coluna dois-->
             </form>   
         </div>  <!--tela um-->
