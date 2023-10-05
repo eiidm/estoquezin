@@ -36,6 +36,7 @@
                     <li><a class='menu_item' href='./cadastro_item_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href='./entrada_front.php'>Entrada</a></li>
                     <li><a class='menu_item' href='./saida_front.php'>Saída</a></li>
+                    <li><a class='menu_item' href='./relatorio_front.php'>Relatório de entrada</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
                     <li><a class='menu_item' href="./cadastro_fornecedor_front.php">Cadastro</a></li>
@@ -47,7 +48,7 @@
         <br> <br> 
         <h2 class="texto texto-um">Cadastro de item</h2><br> 
         <div class="tela Um">
-            <form class="form" action="./cadastro_fornecedor_back.php" method="post">     
+            <form class="form" action="./cadastro_item_back.php" method="post">     
                 <div class="colunaDois">  
                     <label class="label-input" for="">
                         <input type="text" name="nomeitem" placeholder="Nome do item" required>

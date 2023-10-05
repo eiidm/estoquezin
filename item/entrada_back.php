@@ -10,7 +10,7 @@
     $valor_total= $valor_un*$qtde;
 
     $sql=$conecta->query("INSERT INTO nometabelaentrada
-    (documento_compra, fornecedor, data, material , valor_unitario, quatidade, valor_total)
+    (documento_compra, fornecedor, data, material , valor_unitario, quantidade, valor_total)
     VALUES (
     '{$docfiscal}', '{$fornecedor}', '{$data}', '{$produto}', '{$valor_un}', 
     '{$qtde}', '{$valor_total}')");

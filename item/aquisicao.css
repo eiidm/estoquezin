@@ -21,7 +21,7 @@ body
 {
     color: #6a5be2;
     text-align: center;
-    margin-top: 121px;
+    margin-top: 138px;
 }
 
 .descricao
@@ -80,6 +80,7 @@ body
     justify-content: center;
     align-items: center;
     margin-top: -27px;
+    margin-bottom: 455px;
 }
 
 .tela
@@ -99,8 +100,8 @@ body
 /* tela para cadastro */
 .Um
 {
-    margin-top: 375px;
-    height: 385px;
+    margin-top: 520px;
+    height: 475px;
     width: 650px;
     border: 2px solid#597FB1;
     position: absolute;
