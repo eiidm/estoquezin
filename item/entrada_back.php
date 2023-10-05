@@ -9,7 +9,7 @@
     $qtde=$_POST["qtde"];
     $valor_total= $valor_un*$qtde;
 
-    $sql=$conecta->query("INSERT INTO entrada
+    $sql=$conecta->query("INSERT INTO nometabelaentrada
     (documento_compra, fornecedor, data, material , valor_unitario, quatidade, valor_total)
     VALUES (
     '{$docfiscal}', '{$fornecedor}', '{$data}', '{$produto}', '{$valor_un}', 
