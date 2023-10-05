@@ -95,9 +95,9 @@
                         <input type="number" name="qtde" placeholder=" Quantidade" required> 
                     </label>
                     
-                    <!--<label class="label-input" for="">
+                    <label class="label-input" for="">
                         <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" > 
-                    </label>-->
+                    </label>
                     
                    
                     <button class="btn btn-dois">Realizar Entrada</button>
