@@ -19,7 +19,7 @@ if ($sql==true)
     echo "alert('Empresa salvo com sucesso!')";
     echo '</script>';	
 
-    header("Location: cadastro_item_front.php");
+    header("Location: saida_front.php");
 }   
 else
 {
