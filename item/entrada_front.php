@@ -64,11 +64,13 @@
                     <select id="fornecedor" name="fornecedor" required>
                         <option value="">Selecione um fornecedor</option>
                         <?php
+                            include ("../utils/conexao.php"); 
                             $sql = $conecta->query('SELECT * FROM nometabelafornecedor');
                             while ($row = $sql->fetch_object()) 
                             {
                                 echo "<option value='{$row->id_fornecedor}'>{$row->nomefornecedor}</option>";
                             }
+                            mysqli_close($conecta); 
                         ?>
                     </select>                       
 
@@ -79,11 +81,13 @@
                     <select id="produto" name="produto" required>
                         <option value="">Selecione um produto</option>
                         <?php
+                           include ("../utils/conexao.php"); 
                             $sql = $conecta->query('SELECT * FROM material');
                             while ($row = $sql->fetch_object()) 
                             {
                                 echo "<option value='{$row->id}'>{$row->nomematerial}</option>";
                             }
+                            mysqli_close($conecta); 
                         ?>
                     </select>  
 
