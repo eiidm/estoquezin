@@ -26,7 +26,7 @@ if ($sql==true)
      echo "alert('Produto salvo com sucesso!')";
      echo '</script>';	
 
-     header("Location: cadastro_produto_front.php");
+     header("Location: cadastro_produtos_front.php");
 }   
 else
 {
