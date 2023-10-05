@@ -1,23 +1,34 @@
 <?php
-    $sql=$conecta->query("SELECT * FROM nometabelafornecedor");
+    include("../utils/conexao.php");
 
-    if (!$sql) {
-        die("Erro na consulta ao banco de dados: " . mysqli_error($conexao));
+    $docfiscal=$_POST["docfiscal"];
+    $fornecedor=$_POST["fornecedor"];
+    $data=$_POST["data"];
+    $produto=$_POST["produto"];
+    $valor_un=$_POST["valor_un"];
+    $qtde=$_POST["qtde"];
+    $valor_total= $valor_un*$qtde;
+
+    $sql=$conecta->query("INSERT INTO entrada
+    (documento_compra, fornecedor, data, material , valor_unitario, quatidade, valor_total)
+    VALUES (
+    '{$docfiscal}', '{$fornecedor}', '{$data}', '{$produto}', '{$valor_un}', 
+    '{$qtde}', '{$valor_total}')");
+
+    if ($sql==true)
+    {
+        echo '<script language="javascript">';
+        echo "alert('Entrada salva com sucesso!')";
+        echo '</script>';	
+
+        header("Location: relatorio_front.php");
+    }   
+    else
+    {
+        echo '<script language="javascript">';
+        echo "alert('Erro na gravação do produto!')";
+        echo '</script>';	
     }
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fornecedor_selecionado'])) {
-        $fornecedor_selecionado = $_POST['fornecedor_selecionado'];
-
-        // Agora você pode fazer o que quiser com os produtos selecionados, por exemplo, inseri-los em outra tabela ou realizar alguma outra ação.
-
-        // Exemplo: inserir os produtos selecionados em uma tabela "produtos_selecionados"
-        foreach ($fornecedor_selecionado as $fornecedor_id) {
-            $sql=$conecta->query("INSERT INTO entrada(fornecedor_id) VALUES ('{$fornecedor_id}')");
-            if (!$sql) {
-                die("Erro ao inserir fornecedor selecionado: " . mysqli_error($conexao));
-            }
-        }
-
-        echo "Fornecedor selecionado com sucesso!";
-    }
+   mysqli_close($conecta);
 ?>
