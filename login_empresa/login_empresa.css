@@ -82,7 +82,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    /* z-index: -1; */
     padding-top: 50px;
    /* background-color: lightgray;*/
 }
@@ -97,7 +97,7 @@ body
     align-items: center;
     position: relative;
 
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .tela::before
@@ -122,13 +122,12 @@ body
     border-color: blueviolet;*/
     display: flex;
 
-    z-index: -1;
 }
 
-.Um .colunaDois
+/* .Um .colunaDois
 {
     z-index: 0;
-}
+} */
 
 /* tela para login */
 .Dois
@@ -141,13 +140,12 @@ body
 .Dois .colunaUm
 {
     order: 2;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .Dois .colunaDois
 {
     order: 1;
-    z-index: -1;
 }
 
 /* tela da mensagem */

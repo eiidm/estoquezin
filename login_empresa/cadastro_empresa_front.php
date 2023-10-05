@@ -59,7 +59,7 @@
             <div class="colunaDois">
                 <h2 class="texto texto-dois">Crie sua conta!</h2>
                 <form class="form" action="./cadastro_empresa_back.php" method="post">                    
-                    <label class="label-input" for="">
+                    <label class="label-input" for="razaosocial">
                         <i class="fa-solid fa-user icon"></i>
                         <input type="text" name="razaosocial" placeholder="Razão Social" required>
                     </label>
@@ -81,7 +81,7 @@
 
                     <label class="label-input" for="">
                         <i class="fa-solid fa-phone icon"></i>
-                        <input type="text" name="telefone" id="telefone" maxlength="14" placeholder="Telefone" required>
+                        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="Telefone" required>
                     </label>
 
                     <label class="label-input" for="">
@@ -107,17 +107,17 @@
                     });
                 </script>
 
-                <script> //mascara de dados telefone
-                    document.getElementById('telefone').addEventListener('input', function (e) 
-                    {
+                <script>
+                    // Máscara de dados para telefone
+                    document.getElementById('telefone').addEventListener('input', function (e) {
                         let value = e.target.value;
                         value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
-                        value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
-                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        value = value.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona parênteses e espaço após os primeiros 2 dígitos
+                        value = value.replace(/(\d{5})(\d)/, '$1-$2'); // Adiciona hífen após os próximos 5 dígitos
                         e.target.value = value;
                     });
                 </script>
-            </div>  <!--coluna dois-->
+          </div>  <!--coluna dois-->
         </div>  <!--tela um-->
     </div><!--container-->
 
