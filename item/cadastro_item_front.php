@@ -49,45 +49,51 @@
         <h2 class="texto texto-um">Cadastro de item</h2><br> 
         <div class="tela Um">
             <form class="form" action="./cadastro_item_back.php" method="post">     
-                <div class="colunaDois">  
-                    <label class="label-input" for="">
-                        <input type="text" name="nomeitem" placeholder="Nome do item" required>
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <input type="text" name="codigo" placeholder="Código do item" required>
-                    </label>
+                
 
-                    <label class="label-input" for="">
-                        <input type="text" name="descricao" placeholder="Descrição do item" required>
-                    </label>
+                    <div class="colunaUm">
+                        <label class="label-input" for="">
+                            <input type="text" name="nomeitem" placeholder="Nome do item" required>
+                        </label>
+                        
+                        <label class="label-input" for="">
+                            <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
-                    </label>
+                        
+                        <label class="label-input" for="">
+                            <input type="text" name="codigo" placeholder="Código do item" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="text" name="valorvenda" placeholder=" Valor de venda" required> 
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="text" name="descricao" placeholder="Descrição do item" required>
+                        </label>
+                    </div>
+                    <div class="colunaDois">
 
-                    <label class="label-input" for="">
-                        <input type="number" name="qtde_estoque" placeholder=" Quantidade Estoque" required> 
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
+                        </label>
 
-                    <label class="label-input" for="">
-                        <input type="number" name="qtde_vendida" placeholder=" Quantidade Vendida" required> 
-                    </label>
+                        <label class="label-input" for="">
+                            <input type="text" name="valorvenda" placeholder=" Valor de venda" required> 
+                        </label>
+
+                        <label class="label-input" for="">
+                            <input type="number" name="qtde_estoque" placeholder=" Quantidade Estoque" required> 
+                        </label>
+
+                        <label class="label-input" for="">
+                            <input type="number" name="qtde_vendida" placeholder=" Quantidade Vendida" required> 
+                        </label>
+                </div>
 
                     <!--<label class="label-input" for="">
                         <input type="number" name="saldoitem" placeholder="Saldo item" required> 
                     </label>-->
                    
                     <button class="btn btn-dois">Cadastrar item</button>
-                </div>  <!--coluna dois-->
+                 <!--coluna dois-->
             </form>   
         </div>  <!--tela um-->
     </div><!--container-->

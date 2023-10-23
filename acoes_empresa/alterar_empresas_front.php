@@ -81,7 +81,7 @@
                     print "<td>".$row->telefone."</td>";
                     print "<td>".$row->senha."</td>";
                     print "<td>
-                    <a class='btn btn-sm btn-primary' href='editar_empresa.php?id_empresa=$row[id_empresa]'> Alterar Empresas </a>   
+                    <a class='btn btn_um' href='editar_empresa.php?id_empresa=$row[id_empresa]'> Alterar Empresas </a>   
                     </td>";
                     
                     print "</tr>";                                 
