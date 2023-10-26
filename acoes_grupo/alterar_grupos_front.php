@@ -68,11 +68,16 @@
                     print "<tr>";
                     print "<td>".$row->id_grupo."</td>";
                     print "<td>".$row->nomegrupo."</td>";
-                    /*print "<td>
+                    print "<td>
 
-                    <a class='btn btn-dois' href='editar_grupo.php?id_grupo=$row[id_grupo]'>Alterar Grupos </a>   
+                    <a class='btn btn-dois'>Alterar Grupos </a>   
                          </td>";
-                    print "</tr>"; */                                
+
+                    print "<td>
+
+                         <a class='btn btn-dois'>Excluir Grupos </a>   
+                              </td>";
+                    print "</tr>";                                 
                 }
                 print "</table>";
             }
@@ -82,7 +87,7 @@
             }
     ?>
             <form method="post" action="alterar_grupos_back.php">
-                <input type="hidden" name="id_grupo" value="<?php echo $grupo_id; ?>"> Novo Nome do Grupo: <input type="text" name="nomegrupo" value="<?php echo $row['nomegrupo']; ?>">
+                <input type="hidden" name="id_grupo" value="<?php echo $row['id_grupo']; ?>"> Novo Nome do Grupo: <input type="text" name="nomegrupo" value="<?php echo $row['nomegrupo']; ?>">
                 <input type="submit" value="Atualizar">
             </form>
 
