@@ -70,12 +70,12 @@
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
 
-                    <a class='btn btn-dois'>Alterar Grupos </a>   
+                    <button class='btn btn-dois'>Alterar Grupos </button>   
                          </td>";
 
                     print "<td>
 
-                         <a class='btn btn-dois'>Excluir Grupos </a>   
+                         <button class='btn btn-dois'>Excluir Grupos </button>   
                               </td>";
                     print "</tr>";                                 
                 }
