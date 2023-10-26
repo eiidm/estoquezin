@@ -56,7 +56,6 @@
         <div class="tela Um">
             <form class="form" action="./entrada_back.php" method="post">     
                 <div class="colunaDois"> 
-
                     <label class="label-input" for="">
                         <input type="text" name="docfiscal" placeholder=" Documento Fiscal" required>
                     </label>
@@ -100,7 +99,7 @@
                     </label>
                     
                     <label class="label-input" for="">
-                        <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" > 
+                        <input type="text" name="valor_total" placeholder=" Valor total(Gerado Automaticamente)" readonly> 
                     </label>    
 
                     <button class="btn btn-dois">Realizar Entrada</button>

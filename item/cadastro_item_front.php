@@ -47,9 +47,8 @@
         <br> <br> 
         <h2 class="texto texto-um">Saída do item</h2><br> 
         <div class="tela Um">
-            <form class="form" action="./cadastro_item_back.php" method="post">     
-                
-
+            <form class="form" action="./cadastro_item_back.php" method="post">  
+                <div class="row">   
                     <div class="colunaUm">
                         <label class="label-input" for="">
                             <input type="text" name="nomeitem" placeholder="Nome do item" required>
@@ -85,14 +84,15 @@
                         <label class="label-input" for="">
                             <input type="number" name="qtde_vendida" placeholder=" Quantidade Vendida" required> 
                         </label>
-                </div>
+                    </div>
 
                     <!--<label class="label-input" for="">
                         <input type="number" name="saldoitem" placeholder="Saldo item" required> 
                     </label>-->
-                   
-                    <button class="btn btn-dois">Cadastrar item</button>
+                </div>
+                    <button class="btn btn-dois">Realizar saída</button>
                  <!--coluna dois-->
+                
             </form>   
         </div>  <!--tela um-->
     </div><!--container-->

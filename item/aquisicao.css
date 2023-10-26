@@ -112,6 +112,8 @@ body
 .Um .colunaDois
 {
     z-index: 0;
+    margin-top: 35px;
+    margin-left: 190px;
 }
 
 /* tela para login */
