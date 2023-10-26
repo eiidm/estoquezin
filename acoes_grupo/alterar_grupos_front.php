@@ -65,13 +65,11 @@
 
                 while($row = $sql->fetch_object())
                 {
-                    $id_grupo = $row['id_grupo'];
-                    $nomegrupo = $row['nomegrupo'];
                     print "<tr>";
-                    print "<td>".$id_grupo."</td>";
-                    print "<td>".$nomegrupo."</td>";
+                    print "<td>".$row->id_grupo."</td>";
+                    print "<td>".$row->nomegrupo."</td>";
                     print "<td>
-                                <a href='editar_grupo.php?'>Alterar Grupos </a>
+                                <a href='editar_grupo.php'>Alterar Grupos </a>
      
                          </td>";
 
