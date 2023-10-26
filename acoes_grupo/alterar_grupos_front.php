@@ -69,13 +69,13 @@
                     print "<td>".$row->id_grupo."</td>";
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
-
-                    <a href='alterar_grupos_back.php'>Alterar Grupos </a>   
+                                <a href='editar_grupo.php'>Alterar Grupos </a>
+     
                          </td>";
 
                     print "<td>
 
-                         <button class='btn btn-dois'>Excluir Grupos </button>   
+                         <a href='excluir_grupos_back.php'>Excluir Grupos </button>   
                               </td>";
                     print "</tr>";                                 
                 }
@@ -86,7 +86,7 @@
                 print "<p>Não encontrou resultados</p>";
             }
     ?>
-            <!--<form method="post" action="alterar_grupos_back.php">
+            <!--<form method="post" action="alterar_grupos_bak.php">
                 <input type="hidden" name="id_grupo" value="/*<?php echo $row['id_grupo']; ?>*"> Novo Nome do Grupo: <input type="text" name="nomegrupo" value="<?php echo $row['nomegrupo']; ?>">
                 <input type="submit" value="Atualizar">
             </form>-->
