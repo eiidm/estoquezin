@@ -30,16 +30,15 @@
                 <li><a class='menu_topico'>Produtos</a></li>
                     <li><a class='menu_item' href='../cadastro_produtos/cadastro_produtos_front.php'>Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_produtos/alterar_produtos_front.php'>Alteração/Exclusão</a></li>
-                    <li><a class='menu_item' href='../consulta_produtos/consulta_produtos_front.php'>Consulta</a></li>
 
                 <li><a class='menu_topico'>Item</a></li>
-                    <li><a class='menu_item' href='./cadastro_item_front.php'>Cadastro</a></li>
+                    <li><a class='menu_item' href='./cadastro_item_front.php'>Saída</a></li>
                     <li><a class='menu_item' href='./entrada_front.php'>Entrada</a></li>
-                    <li><a class='menu_item' href='./saida_front.php'>Saída</a></li>
+                    <li><a class='menu_item' href='./saida_front.php'>Relatório de saída</a></li>
                     <li><a class='menu_item' href='./relatorio_front.php'>Relatório de entrada</a></li>
 
                 <li><a class='menu_topico'>Fornecedores</a></li>
-                    <li><a class='menu_item' href="./cadastro_fornecedor_front.php">Cadastro</a></li>
+                <li><a class='menu_item' href="../cadastro_fornecedor/cadastro_fornecedor_front.php">Cadastro</a></li>
                     <li><a class='menu_item' href='../acoes_fornecedor/alterar_fornecedores_front.php'>Alteração/Exclusão</a></li>
             </ul>
     </div>
