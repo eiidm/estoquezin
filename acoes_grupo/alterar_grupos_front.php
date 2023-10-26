@@ -70,7 +70,7 @@
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
 
-                    <a class='btn btn-sm btn-primary' href='editar_grupo.php?id_grupo=$row[id_grupo]'>Alterar Grupos </a>   
+                    <a class='btn btn-dois' href='editar_grupo.php?id_grupo=$row[id_grupo]'>Alterar Grupos </a>   
                          </td>";
                     print "</tr>";                                 
                 }
