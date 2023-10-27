@@ -1,10 +1,3 @@
-<?php
-        include ("../utils/conexao.php"); 
-       $sql= $conecta->query("SELECT * FROM nometabelaempresa WHERE id_empresa=".$_REQUEST["id_empresa"]);
-       $row = $sql->fetch_object();
- ?> 
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -56,7 +49,11 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-    
+    <?php
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM nometabelaempresa WHERE id_empresa=".$_REQUEST["id_empresa"]);
+       $row = $sql->fetch_object();
+    ?> 
     
  
 

@@ -1,10 +1,3 @@
-<?php
-        include ("../utils/conexao.php"); 
-       $sql= $conecta->query("SELECT * FROM material WHERE id=".$_REQUEST["id"]);
-       $row = $sql->fetch_object();
- ?> 
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -57,7 +50,11 @@
     </div> <!-- ------ MENU ------ -->
 
     
-    
+    <?php
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM material WHERE id=".$_REQUEST["id"]);
+       $row = $sql->fetch_object();
+    ?> 
  
 
     <div class="container">

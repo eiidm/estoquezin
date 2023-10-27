@@ -69,7 +69,7 @@
                     print "<td>".$row->id_grupo."</td>";
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
-                                <a href='editar_grupo.php'>Alterar Grupos </a>
+                                <a href='editar_grupo.php'>Alterar Grupos</a>
      
                          </td>";
 

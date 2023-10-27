@@ -1,9 +1,3 @@
-<?php
-        include ("../utils/conexao.php"); 
-       $sql= $conecta->query("SELECT * FROM nometabelafornecedor WHERE id_fornecedor=".$_REQUEST["id_fornecedor"]);
-       $row = $sql->fetch_object();
-    ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -55,7 +49,12 @@
         <img scr=''>
     </div> <!-- ------ MENU ------ -->
 
-       
+    <?php
+        include ("../utils/conexao.php"); 
+       $sql= $conecta->query("SELECT * FROM nometabelafornecedor WHERE id_fornecedor=".$_REQUEST["id_fornecedor"]);
+       $row = $sql->fetch_object();
+    ?>
+
 
     <div class="container">
         <h2 class="texto texto-um">Alteração de Fornecedor</h2>
