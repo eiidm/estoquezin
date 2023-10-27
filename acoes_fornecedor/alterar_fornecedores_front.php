@@ -76,10 +76,10 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                        <a href='editar_fornecedor.php'>Alterar Fornecedores</a>   
+                        <a href='editar_fornecedor.php?id_fornecedor=".$row->id_fornecedor."'>Alterar Fornecedores</a>   
                     </td>";
                     print "<td>
-                        <a href='excluir_fornecedores_back.php'>Excluir Fornecedores</a>   
+                        <a href='excluir_fornecedores_back.php?id_fornecedor=".$row->id_fornecedor."'>Excluir Fornecedores</a>   
                     </td>";
                     
                     print "</tr>";                                 

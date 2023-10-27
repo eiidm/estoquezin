@@ -80,10 +80,10 @@
                     print "<td>".$row->telefone."</td>";
                     print "<td>".$row->senha."</td>";
                     print "<td>
-                        <a href='editar_empresa.php'>Alterar Empresas</a>   
+                        <a href='editar_empresa.php?id_empresa=".$row->id_empresa."'>Alterar Empresas</a>   
                     </td>";
                     print "<td>
-                        <a href='excluir_empresas_back.php'>Excluir Empresas</a>   
+                        <a href='excluir_empresas_back.php?id_empresa=".$row->id_empresa."'>Excluir Empresas</a>   
                     </td>";
                     
                     print "</tr>";                                 

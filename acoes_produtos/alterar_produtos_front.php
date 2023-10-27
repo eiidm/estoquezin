@@ -90,10 +90,10 @@
                     print "<td>".$row->fotomaterial."</td>";
                     print "<td>".$row->obs."</td>";
                     print "<td>
-                        <a  href='editar_produtos.php'>Alterar Produtos </a>   
+                        <a  href='editar_produtos.php?id=".$row->id."'>Alterar Produtos </a>   
                     </td>";
                     print "<td>
-                    <a  href='excluir_produtos_back.php'>Excluir Produtos </a>   
+                    <a  href='excluir_produtos_back.php?id=".$row->id."'>Excluir Produtos </a>   
                     </td>";
                     
                     print "</tr>";                                 
