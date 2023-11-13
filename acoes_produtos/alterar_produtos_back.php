@@ -26,7 +26,7 @@
    valor_custo='{$nomefornecedor}', 
    fotomaterial='{$nomefornecedor}', 
    obs='{$nomefornecedor}'
-    WHERE $id_grupo =".$_REQUEST["id"]);
+    WHERE id ={'$id}'");
 
 if ($sql==true)
 {
@@ -45,4 +45,5 @@ else
 
     // Fechando conexão com o Banco de Dados
     mysqli_close($conecta);
+
 ?>

@@ -11,7 +11,7 @@ if ($sql==true)
     echo "alert('Forncedor excluido com sucesso!')";
     echo '</script>';	
 
-    header("Location: excluir_fornecedores_front.php");
+    header("Location: editar_fornecedor.php");
 }   
 else
 {

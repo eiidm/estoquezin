@@ -2,7 +2,7 @@
 
 include ("../utils/conexao.php");
 
-$sql=$conecta->query("DELETE FROM nometabelaempresa WHERE id_fornecedor=".$_REQUEST["id_empresa"]);
+$sql=$conecta->query("DELETE FROM nometabelaempresa WHERE id_empresa=".$_REQUEST["id_empresa"]);
 
 
 if ($sql==true)

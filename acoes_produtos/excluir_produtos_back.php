@@ -10,7 +10,7 @@
         echo "alert('Forncedor excluido com sucesso!')";
         echo '</script>';	
     
-        header("Location: excluir_produtos_front.php");
+        header("Location: alterar_produtos_front.php");
     }   
     else
     {

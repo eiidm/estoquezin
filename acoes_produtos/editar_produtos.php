@@ -64,22 +64,22 @@
                 <div class="row">
                     <div class="colunaUm">       
                     <input type="text" name="id" value="<?php print $row->id; ?>" >   
-                        <br>Razao Social
+                        <br>Nome do material
                         <label class="label-input">
                             <input type="text" name="nomematerial" value="<?php print $row->nomematerial; ?>" >
                         </label>
         
-                        <br>Email
+                        <br>Nome do grupo
                         <label class="label-input">
                             <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >
                         </label>
 
-                        <br>Cnpj
+                        <br>Unidades
                         <label class="label-input">
                             <input type="text" name="unidade" value="<?php print $row->unidade; ?>" >
                         </label>
 
-                        <br>Cnpj
+                        <br>Local
                         <label class="label-input">
                             <input type="text" name="local" value="<?php print $row->local; ?>" >
                         </label>
@@ -87,38 +87,38 @@
         
                     <div class="colunaDois">
 
-                    <br>Endereço
+                    <br>ID NCM
                         <label class="label-input">
                             <input type="text" name="ncm" value="<?php print $row->id_NCM; ?>" >
                         </label>
 
-                        <br>Telefone
+                        <br>Estoque Mínimo
                         <label class="label-input">
                             <input type="number" name="estmin" value="<?php print $row->estoquemin; ?>" >
                         </label>
 
                         
-                        <br>Telefone
+                        <br>Estoque Máximo
                         <label class="label-input">
                             <input type="number" name="estmax" value="<?php print $row->estoquemax; ?>" >
                         </label>
 
-                        <br>Telefone
+                        <br>Estoque Ideal
                         <label class="label-input">
                             <input type="number" name="estideal" value="<?php print $row->estoqueideal; ?>" >
                         </label>
 
-                        <br>senha
+                        <br>Custo
                         <label class="label-input">
                             <input type="tel" name="valor" value="<?php print $row->valor_custo; ?>" >
                         </label>
 
-                        <br>Telefone
+                        <br>Foto
                         <label class="label-input">
                             <input type="number" name="img" value="<?php print $row->fotomaterial; ?>" >
                         </label>
 
-                        <br>Telefone
+                        <br>Observação
                         <label class="label-input">
                             <input type="number" name="obs" value="<?php print $row->obs; ?>" >
                         </label>

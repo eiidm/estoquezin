@@ -1,6 +1,7 @@
 <?php
     include ("../utils/conexao.php"); 
 
+    $id_fornecedor=$_POST["id_fornecedor"];
     $nomefornecedor=$_POST["nomefornecedor"];
     $razaosocial=$_POST["razaosocial"];
     $contato=$_POST["contato"];
@@ -16,7 +17,7 @@
         inscricao='{$inscricao}',
         number='{$number}'
         WHERE
-            $id_fornecedor =".$_REQUEST["id_fornecedor"]);
+            id_fornecedor ='{$id_fornecedor}'");
 
     if ($sql==true)
     {
@@ -24,7 +25,7 @@
         echo "alert('Forncedor edidato com sucesso!')";
         echo '</script>';	
 
-        header("Location: editar.php");
+        header("Location: editar_fornecedor.php");
     }   
     else
     {
