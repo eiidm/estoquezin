@@ -25,7 +25,7 @@
         echo "alert('Forncedor edidato com sucesso!')";
         echo '</script>';	
 
-        header("Location: editar_fornecedor.php");
+        header("Location: alterar_fornecedores_front.php");
     }   
     else
     {
