@@ -10,7 +10,7 @@
     $number=$_POST["number"];
 
     $sql= $conecta->query("UPDATE nometabelaforncedor SET 
-        nomeforncedor='{$nomefornecedor}',
+        nomefornecedor='{$nomefornecedor}',
         razaosocial='{$razaosocial}',
         contato='{$contato}',
         cnpj='{$cnpj}',
