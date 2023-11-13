@@ -4,7 +4,7 @@
     $nomegrupo=$_POST["nomegrupo"];
    
     $sql= $conecta->query("UPDATE nometabelagrupo SET 
-        nomeforncedor='{$nomefornecedor}' WHERE $id_grupo =".$_REQUEST["id_grupo"]);
+        nomegrupo='{$nomegrupo}' WHERE $id_grupo =".$_REQUEST["id_grupo"]);
 
     if ($sql==true)
     {
@@ -12,7 +12,7 @@
         echo "alert('Forncedor edidato com sucesso!')";
         echo '</script>';	
 
-        header("Location: editar.php");
+        header("Location: alterar_grupos_front.php");
     }   
     else
     {

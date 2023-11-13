@@ -63,7 +63,7 @@
                     <input type="text" name="id_fornecedor" value="<?php print $row->id_grupo; ?>" >   
                         <br>Nome do Grupo
                         <label class="label-input">
-                            <input type="text" name="nomefornecedor" value="<?php print $row->nomegrupo; ?>" >
+                            <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >
                         </label>
                     </div><!--coluna um-->
         
