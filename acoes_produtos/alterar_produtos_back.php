@@ -16,17 +16,18 @@
    $obs=$_POST["obs"];
 
    $sql= $conecta->query("UPDATE material SET 
-   nomematerial='{$nomefornecedor}', 
-   nomegrupo='{$nomefornecedor}', 
-   unidade='{$nomefornecedor}', 
-   local='{$nomefornecedor}', 
-   id_NCM='{$nomefornecedor}', 
-   estoquemin='{$nomefornecedor}', 
-   estoquemax='{$nomefornecedor}', 
-   valor_custo='{$nomefornecedor}', 
-   fotomaterial='{$nomefornecedor}', 
-   obs='{$nomefornecedor}'
-    WHERE id ={'$id}'");
+   nomematerial='{$nomematerial}', 
+   nomegrupo='{$nomegrupo}', 
+   unidade='{$unidade}', 
+   local='{$local}', 
+   id_NCM='{$ncm}', 
+   estoquemin='{$estmin}', 
+   estoquemax='{$estmax}', 
+   estoqueideal='{$estideal}',
+   valor_custo='{$valor}', 
+   fotomaterial='{$img}', 
+   obs='{$obs}'
+    WHERE id ='{$id}'");
 
 if ($sql==true)
 {

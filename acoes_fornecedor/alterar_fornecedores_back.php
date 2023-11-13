@@ -9,7 +9,7 @@
     $inscricao=$_POST["inscricao"];
     $number=$_POST["number"];
 
-    $sql= $conecta->query("UPDATE nometabelaforncedor SET 
+    $sql= $conecta->query("UPDATE nometabelafornecedor SET 
         nomefornecedor='{$nomefornecedor}',
         razaosocial='{$razaosocial}',
         contato='{$contato}',

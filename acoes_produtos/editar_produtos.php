@@ -115,7 +115,7 @@
 
                         <br>Foto
                         <label class="label-input">
-                            <input type="number" name="img" value="<?php print $row->fotomaterial; ?>" >
+                            <input type="file" name="img" value="<?php print $row->fotomaterial; ?>" >
                         </label>
 
                         <br>Observação
