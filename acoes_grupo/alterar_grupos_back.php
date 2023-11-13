@@ -1,10 +1,11 @@
 <?php
     include ("../utils/conexao.php"); 
 
+    $id_grupo=$_POST["id_grupo"];
     $nomegrupo=$_POST["nomegrupo"];
    
     $sql= $conecta->query("UPDATE nometabelagrupo SET 
-        nomegrupo='{$nomegrupo}' WHERE $id_grupo =".$_REQUEST["id_grupo"]);
+        nomegrupo='{$nomegrupo}' WHERE $id_grupo=".$_REQUEST["id_grupo"]);
 
     if ($sql==true)
     {
