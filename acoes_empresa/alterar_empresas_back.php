@@ -1,6 +1,7 @@
 <?php
     include ("../utils/conexao.php"); 
 
+    $id_empresa= $_POST["id_empresa"];
     $razaosocial=$_POST["razaosocial"];
     $email=$_POST["email"];
     $cnpj=$_POST["cnpj"];
@@ -16,7 +17,7 @@
         telefone='{$telefone}',
         senha='{$senha}'
         WHERE
-            $id_empresa =".$_REQUEST["id_empresa"]);
+            id_empresa = '{$id_empresa}'");
 
     if ($sql==true)
     {
@@ -24,7 +25,7 @@
         echo "alert('Forncedor edidato com sucesso!')";
         echo '</script>';	
 
-        header("Location: editar.php");
+        header("Location: alterar_empresas_front.php");
     }   
     else
     {
