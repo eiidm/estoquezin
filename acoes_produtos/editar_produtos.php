@@ -60,7 +60,7 @@
     <div class="container">
         <h2 class="texto texto-um">Alteração de Empresa</h2>
         <div class="tela Um">
-            <form class="form" action="./alterar_empresas_back.php" method="post">
+            <form class="form" action="./alterar_produtos_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">       
                     <input type="text" name="id" value="<?php print $row->id; ?>" >   
