@@ -60,7 +60,7 @@
         <div class="tela Um">
             <form class="form" action="./alterar_grupos_back.php" method="post">
             <div class="colunaUm">    
-                    <input type="text" name="id_fornecedor" value="<?php print $row->id_grupo; ?>" >   
+                    <input type="text" name="id_grupo" value="<?php print $row->id_grupo; ?>" >   
                         <br>Nome do Grupo
                         <label class="label-input">
                             <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >

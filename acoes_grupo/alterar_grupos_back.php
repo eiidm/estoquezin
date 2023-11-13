@@ -7,7 +7,7 @@
         $nomegrupo=$_POST["nomegrupo"];
    
     $sql= $conecta->query("UPDATE nometabelagrupo SET 
-        nomegrupo='{$nomegrupo}' WHERE $id_grupo= '{$id_grupo}'");
+        nomegrupo='{$nomegrupo}' WHERE id_grupo='{$id_grupo}'");
 
     if ($sql==true)
     {
