@@ -9,7 +9,7 @@ $inscricao=$_POST["inscricao"];
 $number=$_POST["number"];
 
 $sql= $conecta->query("INSERT INTO nometabelafornecedor(nomefornecedor, razaosocial, contato, cnpj, inscricao, number)
-VALUES ('{$nomefornecedor}',  '{$razaosocil}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')");
+VALUES ('{$nomefornecedor}',  '{$razaosocial}',  '{$contato}', '{$cnpj}', '{$inscricao}', '{$number}')");
 
 
 //mascara de dados cnpj
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($sql==true)
 {
-    echo '<script language="javascript">';
+    echo '<script>';
     echo "alert('Empresa salvo com sucesso!')";
     echo '</script>';	
 

@@ -73,7 +73,7 @@
                     </label>
                         
                     <label class="label-input" for="">
-                        <input type="text" id="phone" name="phone" maxlength="14" placeholder="   Telefone" required>
+                        <input type="text" id="phone" name="number" maxlength="14" placeholder="   Telefone" required>
                     </label>
                     
                     <button class="btn btn-dois">Cadastrar fornecedor</button>
