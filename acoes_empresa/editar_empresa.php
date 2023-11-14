@@ -62,9 +62,11 @@
         <div class="tela Um">
             <form class="form" action="./alterar_empresas_back.php" method="post">
                 <div class="row">
-                    <div class="colunaUm">       
-                    <input type="text" name="id_empresa" value="<?php print $row->id_empresa; ?>" >   
-                        <br>Razao Social
+                    <div class="colunaUm">  
+                        <br><br>ID    
+                        <input type="text" name="id_empresa" value="<?php print $row->id_empresa; ?>" readonly>   
+                        
+                        <br><br>Razao Social
                         <label class="label-input">
                             <input type="text" name="razaosocial" value="<?php print $row->razaosocial; ?>" >
                         </label>
@@ -76,7 +78,7 @@
 
                         <br>Cnpj
                         <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php print $row->cnpj; ?>" >
+                            <input type="text" name="cnpj" id="cnpj" maxlength="18" value="<?php print $row->cnpj; ?>" >
                         </label>
                     </div><!--coluna um-->
         
@@ -89,28 +91,49 @@
 
                         <br>Telefone
                         <label class="label-input">
-                            <input type="number" name="telefone" value="<?php print $row->telefone; ?>" >
+                            <input type="text" name="telefone" id="telefone" maxlength="15" value="<?php print $row->telefone; ?>" >
                         </label>
 
-                        <br>senha
+                        <br>Senha
                         <label class="label-input">
                             <input type="tel" name="senha" value="<?php print $row->senha; ?>" >
                         </label>
 
+                        <br><br>
+                        <button class="btn btn-dois">Alterar</button>
                         
                     </div><!--coluna dois-->
                 </div><!--row-->
 
-               
-                
-                <div class="lado">
-                    <button class="btn btn-dois">Alterar</button>
-                </div>
 
                 <?php
                     mysqli_close($conecta);
                 ?>
             </form>
+
+            <script> //mascara de dados cnpj
+                    document.getElementById('cnpj').addEventListener('input', function (e) 
+                    {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                        value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                        value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        e.target.value = value;
+                    });
+                </script>
+
+                <script>
+                    // Máscara de dados para telefone
+                    document.getElementById('telefone').addEventListener('input', function (e) {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona parênteses e espaço após os primeiros 2 dígitos
+                        value = value.replace(/(\d{5})(\d)/, '$1-$2'); // Adiciona hífen após os próximos 5 dígitos
+                        e.target.value = value;
+                    });
+                </script>
 
             
         </div><!--tela um-->

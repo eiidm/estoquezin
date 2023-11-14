@@ -62,7 +62,12 @@
             <form class="form" action="./alterar_fornecedores_back.php" method="post">
                 <div class="row">
                     <div class="colunaUm">    
-                    <input type="text" name="id_fornecedor" value="<?php print $row->id_fornecedor; ?>" >   
+                    
+                        <br>ID
+                        <label class="label-input">
+                            <input type="text" name="id_fornecedor" value="<?php print $row->id_fornecedor; ?>" readonly>  
+                        </label> 
+                    
                         <br>Nome do Fornecedor
                         <label class="label-input">
                             <input type="text" name="nomefornecedor" value="<?php print $row->nomefornecedor; ?>" >
@@ -82,7 +87,7 @@
                     <div class="colunaDois">
                         <br>CNPJ
                         <label class="label-input">
-                            <input type="text" name="cnpj" value="<?php print $row->cnpj; ?>" >
+                            <input type="text" name="cnpj" id="cnpj" maxlength="18" value="<?php print $row->cnpj; ?>" >
                         </label>
 
                         <br>Inscrição Estadual
@@ -92,20 +97,43 @@
 
                         <br>Telefone
                         <label class="label-input">
-                            <input type="tel" name="number" value="<?php print $row->number; ?>" >
+                            <input type="text" name="number" id="number" maxlength="15" value="<?php print $row->number; ?>" >
                         </label>
+
+                        <br><br>
+                        <button class="btn btn-dois">Alterar</button>
                     </div><!--coluna dois-->
                 </div><!--row-->
 
-                
-
-                <div class="lado">
-                    <button class="btn btn-dois">Alterar</button>
-                </div>
 
                 <?php
                     mysqli_close($conecta);
                 ?>
+
+                <script> //mascara de dados cnpj
+                    document.getElementById('cnpj').addEventListener('input', function (e) 
+                    {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                        value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                        value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                        e.target.value = value;
+                    });
+                </script>
+
+                <script>
+                    // Máscara de dados para telefone
+                    document.getElementById('number').addEventListener('input', function (e) {
+                        let value = e.target.value;
+                        value = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        value = value.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona parênteses e espaço após os primeiros 2 dígitos
+                        value = value.replace(/(\d{5})(\d)/, '$1-$2'); // Adiciona hífen após os próximos 5 dígitos
+                        e.target.value = value;
+                    });
+                </script>
+
 
                 
             </form>

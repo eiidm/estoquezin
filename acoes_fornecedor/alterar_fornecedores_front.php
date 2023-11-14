@@ -62,7 +62,8 @@
                     print "<th>CNPJ</td>";
                     print "<th>Inscrição Estadual</td>";
                     print "<th>Telefone</td>";
-                    print "<th>Ações</td>";
+                    print "<th>Editar</td>";
+                    print "<th>Excluir</td>";
                 print "</tr>";
 
                 while($row = $sql->fetch_object())
@@ -76,10 +77,10 @@
                     print "<td>".$row->inscricao."</td>";
                     print "<td>".$row->number."</td>";
                     print "<td>
-                        <a href='editar_fornecedor.php?id_fornecedor=".$row->id_fornecedor."'>Alterar Fornecedores</a>   
+                        <a class='btn_acao' href='editar_fornecedor.php?id_fornecedor=".$row->id_fornecedor."'>Alterar Fornecedores</a>   
                     </td>";
                     print "<td>
-                        <a href='excluir_fornecedores_back.php?id_fornecedor=".$row->id_fornecedor."'>Excluir Fornecedores</a>   
+                        <a class='btn_acao' href='excluir_fornecedores_back.php?id_fornecedor=".$row->id_fornecedor."'>Excluir Fornecedores</a>   
                     </td>";
                     
                     print "</tr>";                                 

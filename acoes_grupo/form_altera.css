@@ -80,7 +80,7 @@ body
     border-radius: 15px;
     background-color: #fff;
     width: 960px;
-    height: 60%;
+    height: 63%;
     justify-content: inherit;
     align-items: center;
     position: relative;
@@ -91,7 +91,7 @@ body
 .Um
 {
     margin-left: 385px;
-    height: 285px;
+    height: 350px;
     width: 590px;
     border: 2px solid#597FB1;
     position: absolute;

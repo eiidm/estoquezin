@@ -59,13 +59,17 @@
         <h2 class="texto texto-um">Alteração de Grupo</h2>
         <div class="tela Um">
             <form class="form" action="./alterar_grupos_back.php" method="post">
-            <div class="colunaUm">    
-                    <input type="text" name="id_grupo" value="<?php print $row->id_grupo; ?>" >   
-                        <br>Nome do Grupo
-                        <label class="label-input">
-                            <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >
-                        </label>
-                    </div><!--coluna um-->
+            <div class="colunaUm"> 
+                <br>ID
+                <label class="label-input">
+                    <input type="text" name="id_grupo" value="<?php print $row->id_grupo; ?>" readonly>
+                </label>
+                
+                <br>Nome do Grupo
+                <label class="label-input">
+                    <input type="text" name="nomegrupo" value="<?php print $row->nomegrupo; ?>" >
+                </label>
+           </div><!--coluna um-->
         
                 <div class="lado">
                     <button class="btn btn-dois">Alterar</button>

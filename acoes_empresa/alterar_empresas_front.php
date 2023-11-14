@@ -66,7 +66,8 @@
                     print "<th>Endereço</td>";
                     print "<th>Telefone</td>";
                     print "<th>Senha</td>";
-                    print "<th>Ações</td>";
+                    print "<th>Editar</td>";
+                    print "<th>Excluir</td>";
                 print "</tr>";
 
                 while($row = $sql->fetch_object())
@@ -80,10 +81,10 @@
                     print "<td>".$row->telefone."</td>";
                     print "<td>".$row->senha."</td>";
                     print "<td>
-                        <a href='editar_empresa.php?id_empresa=".$row->id_empresa."'>Alterar Empresas</a>   
+                        <a class='btn_acao' href='editar_empresa.php?id_empresa=".$row->id_empresa."'>Alterar Empresas</a>   
                     </td>";
                     print "<td>
-                        <a href='excluir_empresas_back.php?id_empresa=".$row->id_empresa."'>Excluir Empresas</a>   
+                        <a class='btn_acao' href='excluir_empresas_back.php?id_empresa=".$row->id_empresa."'>Excluir Empresas</a>   
                     </td>";
                     
                     print "</tr>";                                 
@@ -96,7 +97,7 @@
                 print "<p>Não encontrou resultados</p>";
             }
             mysqli_close($conecta); 
-        ?>            
+        ?>    
 
 </body>
 </html>

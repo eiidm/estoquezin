@@ -48,6 +48,13 @@ body
     margin-left: 3px;
 }
 
+.btn_acao
+{
+  color:#4F719D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /*-----------------------------------------------------*/
   /* Estilo para a tabela */
   table {

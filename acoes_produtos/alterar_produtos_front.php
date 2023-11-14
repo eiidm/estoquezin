@@ -65,13 +65,14 @@
                     print "<th>Unidade</td>";
                     print "<th>Local</td>";
                     print "<th>NCM</td>";
-                    print "<th>OBS</td>";
                     print "<th>Est. Max.</td>";
                     print "<th>Est. Min.</td>";
                     print "<th>Est. Ideal</td>";
                     print "<th>Valor</td>";
                     print "<th>Imagem</td>";
-                    print "<th>Ações</td>";
+                    print "<th>OBS</td>";
+                    print "<th>Editar</td>";
+                    print "<th>Excluir</td>";
                 print "</tr>";
 
                 while($row = $sql->fetch_object())
@@ -90,10 +91,10 @@
                     print "<td>".$row->fotomaterial."</td>";
                     print "<td>".$row->obs."</td>";
                     print "<td>
-                        <a  href='editar_produtos.php?id=".$row->id."'>Alterar Produtos </a>   
+                        <a class='btn_acao' href='editar_produtos.php?id=".$row->id."'>Alterar Produtos </a>   
                     </td>";
                     print "<td>
-                    <a  href='excluir_produtos_back.php?id=".$row->id."'>Excluir Produtos </a>   
+                    <a class='btn_acao' href='excluir_produtos_back.php?id=".$row->id."'>Excluir Produtos </a>   
                     </td>";
                     
                     print "</tr>";                                 

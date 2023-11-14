@@ -60,7 +60,8 @@
                 print "<tr>";
                     print "<th>ID</td>";
                     print "<th>Nome</td>";
-                    print "<th>Ações</td>";
+                    print "<th>Editar</td>";
+                    print "<th>Excluir</td>";
                 print "</tr>";
 
                 while($row = $sql->fetch_object())
@@ -69,13 +70,13 @@
                     print "<td>".$row->id_grupo."</td>";
                     print "<td>".$row->nomegrupo."</td>";
                     print "<td>
-                                <a href='editar_grupo.php?id_grupo=".$row->id_grupo."'>Alterar Grupos</a>
+                                <a class='btn_acao' href='editar_grupo.php?id_grupo=".$row->id_grupo."'>Alterar Grupos</a>
      
                          </td>";
 
                     print "<td>
 
-                         <a href='excluir_grupos_back.php?id_grupo=".$row->id_grupo."'>Excluir Grupos </button>   
+                         <a class='btn_acao' href='excluir_grupos_back.php?id_grupo=".$row->id_grupo."'>Excluir Grupos </button>   
                               </td>";
                     print "</tr>";                                 
                 }

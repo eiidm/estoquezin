@@ -62,8 +62,13 @@
         <div class="tela Um">
             <form class="form" action="./alterar_produtos_back.php" method="post">
                 <div class="row">
-                    <div class="colunaUm">       
-                    <input type="text" name="id" value="<?php print $row->id; ?>" >   
+                    <div class="colunaUm">   
+                        
+                        <br>ID
+                        <label class="label-input">
+                            <input type="text" name="id" value="<?php print $row->id; ?>" readonly>   
+                        </label>
+
                         <br>Nome do material
                         <label class="label-input">
                             <input type="text" name="nomematerial" value="<?php print $row->nomematerial; ?>" >
@@ -83,14 +88,14 @@
                         <label class="label-input">
                             <input type="text" name="local" value="<?php print $row->local; ?>" >
                         </label>
-                    </div><!--coluna um-->
-        
-                    <div class="colunaDois">
 
-                    <br>ID NCM
+                        <br>ID NCM
                         <label class="label-input">
                             <input type="text" name="ncm" value="<?php print $row->id_NCM; ?>" >
                         </label>
+                    </div><!--coluna um-->
+        
+                    <div class="colunaDois">
 
                         <br>Estoque Mínimo
                         <label class="label-input">
@@ -120,12 +125,8 @@
 
                         <br>Observação
                         <label class="label-input">
-                            <input type="number" name="obs" value="<?php print $row->obs; ?>" >
+                            <input type="text" name="obs" value="<?php print $row->obs; ?>" >
                         </label>
-
-
-
-                        
                     </div><!--coluna dois-->
                 </div><!--row-->
 
