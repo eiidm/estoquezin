@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 if($sql==true)
 {
    echo '<script language="javascript">';
-   echo "alert('Empresa salvo com sucesso!')";
+   echo "alert('Empresa salva com sucesso!')";
    echo '</script>';	
 
    header("Location: cadastro_empresa_front.php");

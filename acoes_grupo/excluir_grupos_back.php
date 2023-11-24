@@ -8,7 +8,7 @@ $sql=$conecta->query("DELETE FROM nometabelagrupo WHERE id_grupo=".$_REQUEST["id
 if ($sql==true)
 {
     echo '<script language="javascript">';
-    echo "alert('Forncedor excluido com sucesso!')";
+    echo "alert('Grupo de materiais excluido com sucesso!')";
     echo '</script>';	
 
     header("Location: alterar_grupos_front.php");
@@ -16,7 +16,7 @@ if ($sql==true)
 else
 {
      echo '<script language="javascript">';
-    echo "alert('Erro na exclusão do forncedor!')";
+    echo "alert('Erro na exclusão do grupo!')";
      echo '</script>';	
 }
 

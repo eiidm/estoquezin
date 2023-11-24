@@ -8,7 +8,7 @@ $sql=$conecta->query("INSERT INTO nometabelagrupo (nomegrupo) VALUES ('{$nomegru
 if ($sql==true)
 {
     echo '<script language="javascript">';
-    echo "alert('Empresa salvo com sucesso!')";
+    echo "alert('Grupo de materiais salvo com sucesso!')";
     echo '</script>';	
 
     header("Location: cadastro_grupo_front.php");
@@ -16,7 +16,7 @@ if ($sql==true)
 else
 {
     echo '<script language="javascript">';
-    echo "alert('Erro na gravação da empresa!')";
+    echo "alert('Erro na gravação do grupo!')";
     echo '</script>';	
 }
 

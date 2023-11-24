@@ -52,7 +52,7 @@
     <div class="container">
         <div class="tela Um">
             <div class="colunaDois">
-            <h2 class="texto texto-um">Cadastro de Grupos</h2>
+            <h2 class="texto texto-um">Cadastro de Grupos de Materiais</h2>
                 <br>
                 <form class="form" action="../cadastro_grupo/cadastro_grupo_back.php" method="post">                    
                     <label class="label-input" for="">

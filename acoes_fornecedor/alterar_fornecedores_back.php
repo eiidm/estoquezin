@@ -22,7 +22,7 @@
     if ($sql==true)
     {
         echo '<script language="javascript">';
-        echo "alert('Forncedor edidato com sucesso!')";
+        echo "alert('Fornecedor editado com sucesso!')";
         echo '</script>';	
 
         header("Location: alterar_fornecedores_front.php");
@@ -30,7 +30,7 @@
     else
     {
          echo '<script language="javascript">';
-        echo "alert('Erro na gravação do forncedor!')";
+        echo "alert('Erro na gravação do fornecedor!')";
          echo '</script>';	
 }
 

@@ -70,7 +70,7 @@
                     <div class="colunaDois">
 
                         <label class="label-input" for="">
-                            <input type="text" name="valoraqusicao" placeholder="Valor Aquisição" required>
+                            <input type="text" name="valoraquisicao" placeholder="Valor Aquisição" required>
                         </label>
 
                         <label class="label-input" for="">

@@ -26,7 +26,7 @@
     else
     {
         echo '<script language="javascript">';
-        echo "alert('Erro na gravação do produto!')";
+        echo "alert('Erro na gravação da entrada!')";
         echo '</script>';	
     }
 

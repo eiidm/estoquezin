@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($sql==true)
 {
     echo '<script>';
-    echo "alert('Empresa salvo com sucesso!')";
+    echo "alert('Fornecedor salvo com sucesso!')";
     echo '</script>';	
 
     header("Location: cadastro_fornecedor_front.php");
@@ -50,7 +50,7 @@ if ($sql==true)
 else
 {
     echo '<script language="javascript">';
-    echo "alert('Erro na gravação da empresa!')";
+    echo "alert('Erro na gravação do fornecedor!')";
     echo '</script>';	
 }
 

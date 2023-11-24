@@ -56,7 +56,7 @@
     ?>
 
     <div class="container">
-        <h2 class="texto texto-um">Alteração de Grupo</h2>
+        <h2 class="texto texto-um">Alteração de Grupo de Materiais</h2>
         <div class="tela Um">
             <form class="form" action="./alterar_grupos_back.php" method="post">
             <div class="colunaUm"> 

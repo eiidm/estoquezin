@@ -8,7 +8,7 @@ $sql=$conecta->query("DELETE FROM nometabelaempresa WHERE id_empresa=".$_REQUEST
 if ($sql==true)
 {
     echo '<script language="javascript">';
-    echo "alert('Forncedor excluido com sucesso!')";
+    echo "alert('Empresa excluida com sucesso!')";
     echo '</script>';	
 
     header("Location: alterar_empresas_front.php");
@@ -16,7 +16,7 @@ if ($sql==true)
 else
 {
      echo '<script language="javascript">';
-    echo "alert('Erro na exclusão do forncedor!')";
+    echo "alert('Erro na exclusão da empresa!')";
      echo '</script>';	
 }
 

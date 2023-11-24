@@ -7,7 +7,7 @@
     if ($sql==true)
     {
         echo '<script language="javascript">';
-        echo "alert('Forncedor excluido com sucesso!')";
+        echo "alert('Produto excluido com sucesso!')";
         echo '</script>';	
     
         header("Location: alterar_produtos_front.php");
@@ -15,7 +15,7 @@
     else
     {
          echo '<script language="javascript">';
-        echo "alert('Erro na exclusão do forncedor!')";
+        echo "alert('Erro na exclusão do produto!')";
          echo '</script>';	
     }
     

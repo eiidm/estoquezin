@@ -16,6 +16,15 @@
 
     $qtd = $sql->num_rows;
 
+   /* if ($sql = true)
+    {
+        echo '<scrip language="javascript">';
+        echo "alert('Empresa logada!')";
+        echo '</script>';	
+
+        header("Location: ../cadastro_produtos/cadastro_produtos_front.php");
+        exit;
+    }*/
     if($qtd > 0){
         $_SESSION["razaosocial"]= $row->razaosocial;
         $_SESSION["email"]= $row->email;
@@ -23,10 +32,11 @@
         $_SESSION["endereco"]= $row->enereco;
         $_SESSION["telefone"]= $row->telefone;
         $_SESSION["senha"]= $senha;
-        print  "<script>location.href='../cadastro_produtos/cadastro_produtos_front.php'</script>";
+        print  "<script>location.href='../cadastro_produtos/cadastro_produtos_front.php'</scriplocation.href=>";
     }
     else{
         print "<script>alert('Empresa não encontrada')</script>";
+        header("Location: login_empresa_front.php");
     }
 
 ?>
