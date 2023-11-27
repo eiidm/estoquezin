@@ -58,7 +58,7 @@
  
 
     <div class="container">
-        <h2 class="texto texto-um">Alteração de Empresa</h2>
+        <h2 class="texto texto-um">Alteração de Produtos</h2>
         <div class="tela Um">
             <form class="form" action="./alterar_produtos_back.php" method="post">
                 <div class="row">
