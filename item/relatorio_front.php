@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./menu.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/02a8c7e6b8.js" crossorigin="anonymous"></script>
-    <title>Entrada do Item</title>
+    <title>Relatório</title>
 </head>
 
 <body>
