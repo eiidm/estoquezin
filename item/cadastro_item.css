@@ -152,7 +152,7 @@ body
 .form input
 {
     height: 45px;
-    width: 250px;
+    width: 260px;
     border: none;
     background-color: #ecf0f1;  
 }
@@ -163,6 +163,7 @@ body
     display: flex;
     align-items: center;
     margin: 8px;
+    width: 250px;
 }
 
 

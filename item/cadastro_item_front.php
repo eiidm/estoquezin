@@ -51,7 +51,7 @@
                 <div class="row">   
                     <div class="colunaUm">
                         <label class="label-input" for="">
-                            <input type="text" name="nomeitem" placeholder="Nome do item" required>
+                            <input type="text" name="nomeitem" placeholder=" Nome do item" required>
                         </label>
                         
                         <label class="label-input" for="">
@@ -60,17 +60,17 @@
 
                         
                         <label class="label-input" for="">
-                            <input type="text" name="codigo" placeholder="Código do item" required>
+                            <input type="text" name="codigo" placeholder=" Código do item" required>
                         </label>
 
                         <label class="label-input" for="">
-                            <input type="text" name="descricao" placeholder="Descrição do item" required>
+                            <input type="text" name="descricao" placeholder=" Descrição do item" required>
                         </label>
                     </div>
                     <div class="colunaDois">
 
                         <label class="label-input" for="">
-                            <input type="text" name="valoraquisicao" placeholder="Valor Aquisição" required>
+                            <input type="text" name="valoraquisicao" placeholder=" Valor Aquisição" required>
                         </label>
 
                         <label class="label-input" for="">
